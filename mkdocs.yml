@@ -1,5 +1,8 @@
 site_name: 慕迟离的文档
-# site_url: https://www.muchili.com
+# site_url: https://muchili-code.github.io/
+site_author: 慕迟离
+site_description: 欢迎来到我的小站！
+site_logo: images/logo.png
 theme:
   name: material
   palette: #  主题颜色配置
