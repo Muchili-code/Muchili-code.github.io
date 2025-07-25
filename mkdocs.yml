@@ -1,0 +1,8 @@
+site_name: 慕迟离的文档
+# site_url: https://www.muchili.com
+theme:
+  name: material
+  palette: #  主题颜色配置
+    scheme: default # 主题配色方案
+    primary: teal # 主题主色
+    accent: teal # 主题强调色
