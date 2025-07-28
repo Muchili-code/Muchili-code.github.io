@@ -1,54 +1,85 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy MkDocs site to Pages
+# 这是一个简单的工作流程，用于将静态内容部署到 GitHub Pages。
+name: Deploy MkDocs site to Pages with Submodules # 工作流程的名称，显示在 GitHub Actions 页面。
 
 on:
-  # 在推送到 main 分支时运行
+  # 当代码推送到 'main' 分支时触发此工作流程。
   push:
     branches: ["main"]
 
-  # 允许你从 Actions 选项卡手动运行此工作流程
+  # 允许你从 GitHub Actions 选项卡手动运行此工作流程。
   workflow_dispatch:
 
-# 设置 GITHUB_TOKEN 的权限以允许部署到 GitHub Pages
+# 设置 GITHUB_TOKEN 的权限，以允许部署到 GitHub Pages。
+# contents: read 允许读取仓库内容。
+# pages: write 允许写入 GitHub Pages。
+# id-token: write 允许获取 OIDC 令牌，用于部署。
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# 只允许一次并发部署，跳过在进行中运行和最新排队之间的运行。
-# 但是，不要取消进行中的运行，因为我们希望允许这些部署完成。
+# 只允许一次并发部署。
+# 如果有新的推送触发了工作流程，并且上一个工作流程仍在进行中，
+# 则会跳过进行中的运行，并只允许最新的排队运行。
+# 但这里 'cancel-in-progress: false' 表示不会取消正在进行的运行，
+# 而是等待它完成。
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: "pages" # 定义并发组，确保同一时间只有一个 'pages' 部署在运行。
+  cancel-in-progress: false # 不取消正在进行的部署。
 
 jobs:
-  # 构建和部署任务
+  # 'deploy' 是一个任务（Job），负责构建和部署网站。
   deploy:
     environment:
+      # 指定部署环境为 'github-pages'，这是 GitHub Pages 部署的约定环境。
       name: github-pages
+      # 设置部署完成后网站的 URL，方便在 GitHub Actions 界面直接访问。
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # 指定此任务将在最新的 Ubuntu 虚拟机上运行。
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      # 步骤 1: 检出仓库代码，包括子模块。
+      - name: Checkout repository and submodules # 步骤名称
+        uses: actions/checkout@v4 # 使用 GitHub 官方的 checkout Action，版本为 v4。
         with:
-          python-version: 3.x
-      - name: Install dependencies
-        run: |
-          pip install mkdocs
-          # 如果你使用了其他主题（比如 material），也需要在这里安装
-          pip install mkdocs-material 
-      - name: Build
+          submodules: true # 关键！设置为 true 会自动克隆所有子模块。
+          fetch-depth: 0 # 获取完整的 Git 历史，对于子模块的正确克隆通常是必要的。
+
+      # 步骤 2: 设置 Python 环境。
+      - name: Set up Python # 步骤名称
+        uses: actions/setup-python@v4 # 使用 GitHub 官方的 setup-python Action，版本为 v4。
+        with:
+          python-version: 3.x # 指定安装 Python 3.x 版本。
+
+      # 步骤 3: 安装 MkDocs 及其主题依赖。
+      - name: Install dependencies # 步骤名称
+        run:
+          # 使用 pip 安装 MkDocs。
+          - pip install mkdocs
+          # 安装 MkDocs Material 主题。如果你使用其他主题，也需要在这里安装。
+          - pip install mkdocs-material
+
+      # 步骤 4: 构建 MkDocs 网站。
+      # 这将在工作流程的运行器中生成 'site' 文件夹，包含所有静态网站文件。
+      - name: Build # 步骤名称
         run: mkdocs build
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+
+      # 步骤 5: 设置 GitHub Pages。
+      # 这是 GitHub Pages 部署流程的一部分，用于准备部署环境。
+      - name: Setup Pages # 步骤名称
+        uses: actions/configure-pages@v5 # 使用 GitHub 官方的 configure-pages Action，版本为 v5。
+
+      # 步骤 6: 上传构建好的网站文件作为部署 Artifact。
+      # 'site' 文件夹中的内容将被打包并上传。
+      - name: Upload artifact # 步骤名称
+        uses: actions/upload-pages-artifact@v3 # 使用 GitHub 官方的 upload-pages-artifact Action，版本为 v3。
         with:
-          # 从 'site' 文件夹上传
+          # 指定要上传的目录，即 MkDocs 构建生成的 'site' 文件夹。
           path: './site'
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+
+      # 步骤 7: 部署到 GitHub Pages。
+      # 这是最终的部署步骤，将上传的 Artifact 发布到 GitHub Pages。
+      - name: Deploy to GitHub Pages # 步骤名称
+        id: deployment # 为此步骤设置一个 ID，以便其他步骤可以引用其输出（如 URL）。
+        uses: actions/deploy-pages@v4 # 使用 GitHub 官方的 deploy-pages Action，版本为 v4。
