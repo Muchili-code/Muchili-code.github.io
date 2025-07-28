@@ -14,11 +14,53 @@ theme:
   features:
     - navigation.tabs # 启用顶级导航为标签页样式
     - navigation.top # 顶部导航
+    - navigation.instant # 启用页面即时加载，提升浏览体验
+    - navigation.tracking # 追踪当前页面在导航中的位置
+    - toc.integrate # 关键：将当前页面的目录集成到左侧导航栏
+    - content.code.copy # 为代码块添加复制按钮
+    - search.highlight # 搜索结果高亮
+    - content.tabs # 允许在 Markdown 中创建选项卡
+
+markdown_extensions:
+  - admonition # 提示框 (Note, Warning 等)
+  - pymdownx.details # 可折叠的详情块
+  - pymdownx.superfences # 更好的代码块高亮
+  - pymdownx.critic # 评论标记 (插入、删除、替换等)
+  - pymdownx.highlight # 代码高亮
+  - pymdownx.inlinehilite # 行内代码高亮
+  - pymdownx.keys # 键盘按键显示
+  - pymdownx.mark # 文本高亮
+  - pymdownx.tilde # 下标和删除线
+  - pymdownx.caret # 上标
+  - pymdownx.tasklist: # 任务列表
+      custom_checkbox: true
+  - pymdownx.tabbed: # 选项卡
+      alternate_style: true
+  - attr_list # 允许给 Markdown 元素添加 HTML 属性
+  - md_in_html # 允许在 HTML 块中使用 Markdown
+  - def_list # 定义列表
+  - footnotes # 脚注
+  - tables # 表格
+  - toc: # 目录
+      permalink: true
 
 nav:
   - 主页: index.md
   - 入门:
     - 快速开始: getting-started/quick-start.md # 子页面的路径是相对于 docs/ 目录的
     - 安装: getting-started/installation.md
-  #- College2:
-  #  - 数据结构与算法分析: # 这里就是子模块的调用，再说说看，不知道该怎么使用
+  - College2: # 这个路径是相对于你的主仓库的 docs/ 目录的
+    - 数据结构与算法分析: # 这里就是子模块的调用
+      - 0.进阶语法知识: "notes/College 2/2.数据结构与算法分析（FDS）-Fundemental Data Structure/期末复习/自己笔记/0.基础语法知识.md"
+      - 1.绪论: "notes/College 2/2.数据结构与算法分析（FDS）-Fundemental Data Structure/期末复习/自己笔记/1.绪论.md"
+      - 2.线性表: notes/College 2/2.数据结构与算法分析（FDS）-Fundemental Data Structure/期末复习/自己笔记/2.线性表.md
+      - 3.栈和队列: notes/College 2/2.数据结构与算法分析（FDS）-Fundemental Data Structure/期末复习/自己笔记/3.栈和队列.md
+      - 4.串: notes/College 2/2.数据结构与算法分析（FDS）-Fundemental Data Structure/期末复习/自己笔记/4.串.md
+      - 5.数组和广义表: notes/College 2/2.数据结构与算法分析（FDS）-Fundemental Data Structure/期末复习/自己笔记/5.数组和广义表.md
+      - 6.树: notes/College 2/2.数据结构与算法分析（FDS）-Fundemental Data Structure/期末复习/自己笔记/6.树.md
+      - 7.图: notes/College 2/2.数据结构与算法分析（FDS）-Fundemental Data Structure/期末复习/自己笔记//7.图/7.图.md
+      - 9.查找: notes/College 2/2.数据结构与算法分析（FDS）-Fundemental Data Structure/期末复习/自己笔记/9.查找.md
+      - 10.排序: notes/College 2/2.数据结构与算法分析（FDS）-Fundemental Data Structure/期末复习/自己笔记/10.排序.md
+      - 总复习: notes/College 2/2.数据结构与算法分析（FDS）-Fundemental Data Structure/期末复习/自己笔记/总复习.md
+
+
