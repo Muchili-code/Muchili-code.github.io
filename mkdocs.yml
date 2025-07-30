@@ -47,14 +47,20 @@ theme:
     - content.tabs # 允许在 Markdown 中创建选项卡
 
 extra:
-  generator: false  #删除页脚显示“使用 MkDocs 材料制造”
+  generator: false  #删除页脚默认的“使用 MkDocs Material制造”
   social:
-    - icon: fontawesome/brands/github
+    - icon: fontawesome/brands/github # 我的Github主页
       link: https://muchili-code.github.io/
-    - icon: fontawesome/brands/bilibili
+      title: 我的Github主页 # 鼠标悬停时显示的文本
+    - icon: fontawesome/brands/bilibili # bilibili
       link: https://space.bilibili.com/1407028951?spm_id_from=333.1007.0.0
-    - icon: fontawesome/solid/paper-plane
-      link: mailto:<1135801806@qq.com> #联系方式
+    - icon: custom/cc98 # 自定义 SVG 图标--cc98
+    # D:\Program Files (x86)\Python\python-3.12.10\Lib\site-packages\material\templates\.icons是默认的图标目录，容易出错；此外其寻找方式以自己为根目录
+      link: https://www.cc98.org/ # CC98 论坛的链接
+      title: CC98 论坛 
+    - icon: fontawesome/solid/paper-plane # 邮件图标
+      link: mailto:<2979568058@qq.com> #联系方式
+      title: 联系我 
 
 markdown_extensions:
   - admonition # 提示框 (Note, Warning 等)
