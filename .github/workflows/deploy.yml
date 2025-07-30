@@ -62,7 +62,11 @@ jobs:
       # 这将在工作流程的运行器中生成 'site' 文件夹，包含所有静态网站文件。
       - name: Build # 步骤名称
         run: mkdocs build
-
+        env: # <-- 在这里添加 env 块
+          MKDOCS_MATERIAL_GITHUB_TOKEN: ${{ secrets.MKDOCS_BUILD_TOKEN }} # <-- 引用你之前在仓库 Secrets 中设置的 PAT  
+          # 确保这里的 'MKDOCS_BUILD_TOKEN' 与你在 GitHub 仓库 Settings -> Secrets and variables -> Actions 中设置的 Secret 名称完全一致。
+          # PAT     MKDOCS_BUILD     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
+          
       # 步骤 5: 设置 GitHub Pages。
       # 这是 GitHub Pages 部署流程的一部分，用于准备部署环境。
       - name: Setup Pages # 步骤名称
