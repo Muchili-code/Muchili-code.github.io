@@ -1,0 +1,27 @@
+{#-
+  This file was automatically generated - do not edit
+-#}
+<div class="md-social">
+  {% for social in config.extra.social %}
+    {% set rel = "noopener" %}
+    {% if "mastodon" in social.icon %}
+      {% set rel = rel ~ " me" %}
+    {% endif %}
+    {% set title = social.name %}
+    {% if not title and "//" in social.link %}
+      {# 修正这里：social.link 已经是字符串，直接对其进行 split 操作 #}
+      {% set (_, url) = social.link.split("//") %}
+      {% set title = url.split("/") | first %}
+    {% endif %}
+    <a href="{{ social.link }}" target="_blank" rel="{{ rel }}" title="{{ title | e }}" class="md-social__link">
+      {# 添加自定义图标的判断逻辑 #}
+      {% if social.icon == "custom/cc98" %}
+        {# 现在 cc98.svg 位于 overrides/.icons/custom/cc98.svg，可以直接引用 #}
+        {% include ".icons/custom/cc98.svg" %}
+      {% else %}
+        {# 对于其他图标，使用默认的包含方式 #}
+        {% include ".icons/" ~ social.icon ~ ".svg" %}
+      {% endif %}
+    </a>
+  {% endfor %}
+</div>
