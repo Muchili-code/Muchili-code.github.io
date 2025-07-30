@@ -7,9 +7,22 @@ theme:
   custom_dir: overrides # 自定义主题目录
 
   palette: #  主题颜色配置
-    scheme: default # 主题配色方案
-    primary: teal # 主题主色
-    accent: teal #  主题强调色
+  
+    - media: "(prefers-color-scheme: light)" # 方案 1: 浅色模式 (Light Mode)
+      scheme: default # 主题配色方案
+      primary: teal # 主题主色
+      accent: teal #  主题强调色
+      toggle:
+        icon: material/weather-night # 浅色模式下显示的切换图标（例如月亮图标）
+        name: 切换到深色模式                   # 浅色模式下切换按钮的文本
+
+    - media: "(prefers-color-scheme: dark)"  # 方案 2: 深色模式 (Dark Mode)
+      scheme: slate                           # 使用 Material 主题的深色方案
+      primary: blue                           # 深色模式下的主色 (可以不同于浅色)
+      accent: blue                            # 深色模式下的强调色 (可以不同于浅色)
+      toggle:
+        icon: material/weather-sunny # 深色模式下显示的切换图标（例如太阳图标）
+        name: 切换到浅色模式                   # 深色模式下切换按钮的文本
 
 
   features:
@@ -22,6 +35,7 @@ theme:
     - search.highlight # 搜索结果高亮
     - toc.follow # toc 跟随
     - navigation.tracking # 追踪当前页面在导航中的位置
+    - toggle.scheme  # 启用主题切换功能
     - content.code.annotate # 代码行号
     - content.code.copy # 为代码块添加复制按钮
     - navigation.instant # 启用页面即时加载，提升浏览体验
