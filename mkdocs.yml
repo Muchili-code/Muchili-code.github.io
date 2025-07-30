@@ -66,7 +66,7 @@ markdown_extensions:
       permalink: true
 
 nav:
-  - 主页: index.md
+  - 🏠主页: index.md
   - 🤖人工智能:
     - AI 客户端:
       - AI 客户端应用介绍: Artificial Intelligent/AI Desktop Use/quick-start.md # 子页面的路径是相对于 docs/ 目录的
