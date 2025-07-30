@@ -50,10 +50,10 @@ extra:
   generator: false  #删除页脚默认的“使用 MkDocs Material制造”
   social:
     - icon: fontawesome/brands/github # 我的Github主页
-      link: https://muchili-code.github.io/
+      link: https://github.com/Muchili-code/Muchili-code.github.io
       title: 我的Github主页 # 鼠标悬停时显示的文本
     - icon: fontawesome/brands/bilibili # bilibili
-      link: https://space.bilibili.com/1407028951?spm_id_from=333.1007.0.0
+      link: https://space.bilibili.com/3493125026744857?spm_id_from=333.1387.0.0
     - icon: custom/cc98 # 自定义 SVG 图标--cc98
     # D:\Program Files (x86)\Python\python-3.12.10\Lib\site-packages\material\templates\.icons是默认的图标目录，容易出错；此外其寻找方式以自己为根目录
       link: https://www.cc98.org/ # CC98 论坛的链接
