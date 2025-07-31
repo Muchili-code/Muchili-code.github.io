@@ -3,7 +3,7 @@ site_url: https://muchili-code.github.io/
 site_author: 慕迟离
 site_description: Welcome To my site!
 
-# 新增或修改以下两行，用于在页眉显示GitHub仓库链接
+# 以下两行用于在页眉显示GitHub仓库链接
 repo_url: https://github.com/Muchili-code/muchili-code.github.io # 替换为你的博客仓库的实际URL
 repo_name: Muchili/Blog # 可选：自定义显示的仓库名称，例如 "你的GitHub用户名/你的博客仓库名"
 
@@ -12,9 +12,9 @@ theme:
   custom_dir: overrides # 自定义主题目录
   extra_css:
     - assets/stylesheets/extra.css
+  language: zh # 一些提示性的文字会变成中文
 
   palette: #  主题颜色配置
-
     - media: "(prefers-color-scheme: light)" # 方案 1: 浅色模式 (Light Mode)
       scheme: default # 主题配色方案
       primary: teal # 主题主色
@@ -32,22 +32,29 @@ theme:
         name: 切换到浅色模式                   # 深色模式下切换按钮的文本
 
   features:
-    - navigation.tracking # 在url中使用标题定位锚点
-    - navigation.path # 显示当前路径
-    - navigation.prune # 侧边栏自动折叠
-    - navigation.tabs # 启用顶级导航为标签页样式
-    - header.social # 强制社交图标显示在页眉
+    - navigation.tracking # 在url中使用标题定位锚点，即追踪当前页面在导航中的位置，自动更新浏览器地址栏中的 URL 哈希
+    #- navigation.path # 显示当前路径
+    #- navigation.prune # 侧边栏自动折叠，会使得侧边栏只显示当前页面所属的章节及其直接子页面
+    - navigation.tabs # 启用顶级导航为标签页样式，注意顶级导航的概念
+    #- navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
     - navigation.top # 一键回顶部
-    - navigation.footer # 底部导航
+    - navigation.footer # 底部导航，在底部显示“上一页”和“下一页”的导航链接
+    - navigation.instant # 启用页面即时加载，提升浏览体验
+    #- navigation.sections #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
+    - navigation.expand # 打开Tab时左侧目录全部展开
+    #- navigation.indexes #启用节索引页后，可以将文档直接附加到节
+
     - search.highlight # 搜索结果高亮
-    - toc.follow # toc 跟随
-    - navigation.tracking # 追踪当前页面在导航中的位置
-    - toggle.scheme  # 启用主题切换功能
+    - search.suggest # 提供 搜索的建议
+
     - content.code.annotate # 代码行号
     - content.code.copy # 为代码块添加复制按钮
-    - navigation.instant # 启用页面即时加载，提升浏览体验
-    
-    - content.tabs # 允许在 Markdown 中创建选项卡
+    - content.tabs # 允许在 Markdown 中创建选项卡，可以在 Markdown 文件中使用特定的语法来创建选项卡式的布局，比如用选项卡来展示不同编程语言的同一段代码示例
+
+    - toc.follow # toc 跟随。滚动页面时，目录自动高亮显示当前的章节标题
+    - toggle.scheme  # 启用主题切换功能（白天黑夜切换）
+
+copyright: Copyright &copy; 2025 Muchili # 左下角的版权声明
 
 extra:
   generator: false  #删除页脚默认的“使用 MkDocs Material制造”
@@ -64,11 +71,18 @@ extra:
     - icon: fontawesome/solid/paper-plane # 邮件图标
       link: mailto:<2979568058@qq.com> #联系方式
       title: 联系我 
+  repo:
+    provider: github
+    host: github.com
+    user: Muchili # <-- 替换为您的 GitHub 用户名
+    name: Blog # <-- 替换为您的 MkDocs 仓库名称
+  repo_stats: true # <-- 启用星标和 Fork 数量显示
 
 markdown_extensions:
-  - admonition # 提示框 (Note, Warning 等)
+  - admonition # 搜索提示框 (Note, Warning 等)
   - pymdownx.details # 可折叠的详情块
   - pymdownx.superfences # 更好的代码块高亮
+  - pymdownx.emoji # 启用Emoji表情支持
   - pymdownx.critic # 评论标记 (插入、删除、替换等)
   - pymdownx.highlight # 代码高亮
   - pymdownx.inlinehilite # 行内代码高亮
@@ -89,7 +103,11 @@ markdown_extensions:
       permalink: true
 
 nav:
-  - 🏠主页: index.md
+  - 🏠主页: 
+    - 关于我: About.md
+    - 建档指南: 
+      - 仓库链接: Site Instruction/仓库链接.md
+      - 参考资料: Site Instruction/referrence.md
   - 🤖人工智能:
     - AI 客户端:
       - AI 客户端应用介绍: Artificial Intelligent/AI Desktop Use/quick-start.md # 子页面的路径是相对于 docs/ 目录的
