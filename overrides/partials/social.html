@@ -1,5 +1,6 @@
 {#-
   This file was automatically generated - do not edit
+  (但我们为了自定义，需要修改它)
 -#}
 <div class="md-social">
   {% for social in config.extra.social %}
@@ -9,14 +10,14 @@
     {% endif %}
     {% set title = social.name %}
     {% if not title and "//" in social.link %}
-      {# 修正这里：social.link 已经是字符串，直接对其进行 split 操作 #}
       {% set (_, url) = social.link.split("//") %}
       {% set title = url.split("/") | first %}
     {% endif %}
-    <a href="{{ social.link }}" target="_blank" rel="{{ rel }}" title="{{ title | e }}" class="md-social__link">
+    {# 关键修改：在这里添加一个条件类名 #}
+    <a href="{{ social.link }}" target="_blank" rel="{{ rel }}" title="{{ title | e }}" class="md-social__link {% if social.icon == 'custom/cc98' %}md-social__link--cc98{% endif %}">
       {# 添加自定义图标的判断逻辑 #}
       {% if social.icon == "custom/cc98" %}
-        {# 现在 cc98.svg 位于 overrides/.icons/custom/cc98.svg，可以直接引用 #}
+        {# 关键：直接引用相对于 overrides 目录的路径 #}
         {% include ".icons/custom/cc98.svg" %}
       {% else %}
         {# 对于其他图标，使用默认的包含方式 #}

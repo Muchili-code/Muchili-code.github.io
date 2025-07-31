@@ -10,13 +10,16 @@ repo_name: Muchili/Blog # 可选：自定义显示的仓库名称，例如 "你�
 theme:
   name: material
   custom_dir: overrides # 自定义主题目录
+  extra_css:
+    - assets/stylesheets/extra.css
+
   palette: #  主题颜色配置
 
     - media: "(prefers-color-scheme: light)" # 方案 1: 浅色模式 (Light Mode)
       scheme: default # 主题配色方案
       primary: teal # 主题主色
-      accent: teal #  主题强调色
-      toggle:
+      accent: teal #  主题强调色 
+      toggle: 
         icon: material/weather-night # 浅色模式下显示的切换图标（例如月亮图标）
         name: 切换到深色模式                   # 浅色模式下切换按钮的文本
 
