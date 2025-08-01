@@ -79,28 +79,50 @@ extra:
   repo_stats: true # <-- 启用星标和 Fork 数量显示
 
 markdown_extensions:
-  - admonition # 搜索提示框 (Note, Warning 等)
-  - pymdownx.details # 可折叠的详情块
-  - pymdownx.superfences # 更好的代码块高亮
-  - pymdownx.emoji # 启用Emoji表情支持
-  - pymdownx.critic # 评论标记 (插入、删除、替换等)
-  - pymdownx.highlight # 代码高亮
-  - pymdownx.inlinehilite # 行内代码高亮
-  - pymdownx.keys # 键盘按键显示 
-  - pymdownx.mark # 文本高亮
-  - pymdownx.tilde # 下标和删除线
-  - pymdownx.caret # 上标
-  - pymdownx.tasklist: # 任务列表
-      custom_checkbox: true
-  - pymdownx.tabbed: # 选项卡
-      alternate_style: true
-  - attr_list # 允许给 Markdown 元素添加 HTML 属性
-  - md_in_html # 允许在 HTML 块中使用 Markdown
-  - def_list # 定义列表
-  - footnotes # 脚注
-  - tables # 表格
-  - toc: # 目录
-      permalink: true
+  # ----------
+  # 1. 标准 Markdown 增强与结构化扩展
+  # ----------
+  - abbr # 启用缩写功能。
+  - attr_list # 属性列表。允许你为 Markdown 元素（如标题、段落、图片等）添加 HTML 属性。
+  - md_in_html # 允许你在 HTML 块（如 <div>）内部使用 Markdown 语法。
+  - meta # 支持 Markdown 文件顶部的自定义元数据（YAML Front Matter）。
+  - def_list # 定义列表。支持类似 HTML <dl>、<dt>、<dd> 的定义列表语法。
+  - footnotes # 脚注。允许你在文本中添加脚注，并在文档末尾自动生成脚注列表。
+  - tables # 表格。启用标准的 Markdown 表格语法。
+  - toc: # 目录 (Table of Contents) 扩展。
+      permalink: true # 为每个标题生成一个永久链接（锚点），点击后可以直接跳转到该标题位置。
+  # ----------
+  # 2. Pymdown Extensions - 文本格式与特殊标记
+  # ----------
+  - pymdownx.mark # 标记/高亮文本。使用 ==text== 来高亮显示文本
+  - pymdownx.caret # 插入文本标记。使用 ++text++ 来表示插入的文本，通常会带下划线。
+  - pymdownx.tilde # 删除线。使用 ~~text~~ 来给文本添加删除线。
+  - pymdownx.arithmatex:  # LaTeX 数学公式支持。
+      generic: true       # 启用通用模式，允许你使用标准的 LaTeX 语法来书写数学公式。
+  - pymdownx.emoji: # 表情符号支持。
+      emoji_index: !!python/name:materialx.emoji.twemoji # 指定使用 Twemoji 表情符号库，Twemoji 是 Twitter 开源的表情符号集。
+      emoji_generator: !!python/name:materialx.emoji.to_svg # 指定将表情符号渲染为 SVG 格式。
+  - pymdownx.critic # 评论标记。支持插入、删除、替换等标记，常用于文档审阅
+  - pymdownx.keys # 键盘按键显示。允许你以美观的方式显示键盘按键。
+  - pymdownx.tasklist: # 任务列表 (Checklist)。支持带有复选框的任务列表。
+      custom_checkbox: true # 使用自定义的 CSS 样式复选框，而非浏览器默认样式，以保持主题一致性。
+  # ----------
+  # 3. Pymdown Extensions - 内容块与布局
+  # ----------
+  - admonition # 提示框 (Admonition)。支持多种类型的提示块，如 Note, Warning, Info, Tip 等。
+  - pymdownx.details # 可折叠的详情块。允许你创建可展开/折叠的内容区域。
+  - pymdownx.tabbed: # 选项卡 (Tabbed Content)。允许你将内容组织成多个选项卡，用户可以切换查看。
+      alternate_style: true # 使用另一种样式来渲染选项卡，通常更符合 Material 主题的风格。
+  # ----------
+  # 4. Pymdown Extensions - 代码高亮与片段
+  # ---------
+  - pymdownx.highlight: # 代码块高亮。这是 MkDocs Material 主题中代码高亮的核心。
+      anchor_linenums: true # 当显示行号时，为每行代码生成一个锚点。
+      linenums: true # 在代码块左侧显示行号。
+      auto_title: true # 自动在代码块上方显示编程语言的名称
+  - pymdownx.inlinehilite # 行内代码高亮。允许你在普通文本中嵌入高亮的代码片段。
+  - pymdownx.snippets # 代码片段。允许你将其他 Markdown 文件或文本文件作为“代码片段”嵌入到当前文件中。
+  - pymdownx.superfences # 增强型代码块。这是 `highlight` 扩展的依赖，提供了更灵活的代码块定义方式，例如嵌套代码块、自定义代码块属性等。
 
 nav:
   - 🏠主页: 
@@ -108,6 +130,7 @@ nav:
     - 建档指南: 
       - 仓库链接: Site Instruction/仓库链接.md
       - 参考资料: Site Instruction/referrence.md
+
   - 🤖人工智能:
     - AI 客户端:
       - AI 客户端应用介绍: Artificial Intelligent/AI Desktop Use/quick-start.md # 子页面的路径是相对于 docs/ 目录的
