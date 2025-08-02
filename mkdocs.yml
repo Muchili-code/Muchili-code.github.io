@@ -13,6 +13,7 @@ theme:
   extra_css:
     - assets/stylesheets/extra.css
   language: zh # 一些提示性的文字会变成中文
+  favicon: images/favicon.png
 
   palette: #  主题颜色配置
     - media: "(prefers-color-scheme: light)" # 方案 1: 浅色模式 (Light Mode)
@@ -100,7 +101,6 @@ markdown_extensions:
   - pymdownx.arithmatex:  # LaTeX 数学公式支持。
       generic: true       # 启用通用模式，允许你使用标准的 LaTeX 语法来书写数学公式。
   - pymdownx.emoji: # 表情符号支持。
-      emoji_index: !!python/name:materialx.emoji.twemoji # 指定使用 Twemoji 表情符号库，Twemoji 是 Twitter 开源的表情符号集。
       emoji_generator: !!python/name:materialx.emoji.to_svg # 指定将表情符号渲染为 SVG 格式。
   - pymdownx.critic # 评论标记。支持插入、删除、替换等标记，常用于文档审阅
   - pymdownx.keys # 键盘按键显示。允许你以美观的方式显示键盘按键。
