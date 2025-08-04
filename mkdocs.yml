@@ -101,7 +101,8 @@ markdown_extensions:
   - pymdownx.arithmatex:  # LaTeX 数学公式支持。
       generic: true       # 启用通用模式，允许你使用标准的 LaTeX 语法来书写数学公式。
   - pymdownx.emoji: # 表情符号支持。
-      emoji_generator: !!python/name:materialx.emoji.to_svg # 指定将表情符号渲染为 SVG 格式。
+      #emoji_index: !!python/name:material.extensions.emoji.twemoji
+      #emoji_generator: !!python/name:material.emoji.to_svg # 指定将表情符号渲染为 SVG 格式。
   - pymdownx.critic # 评论标记。支持插入、删除、替换等标记，常用于文档审阅
   - pymdownx.keys # 键盘按键显示。允许你以美观的方式显示键盘按键。
   - pymdownx.tasklist: # 任务列表 (Checklist)。支持带有复选框的任务列表。
@@ -110,6 +111,7 @@ markdown_extensions:
   # 3. Pymdown Extensions - 内容块与布局
   # ----------
   - admonition # 提示框 (Admonition)。支持多种类型的提示块，如 Note, Warning, Info, Tip 等。
+  - markdown_gfm_admonition # 启用 GFM 风格的解析
   - pymdownx.details # 可折叠的详情块。允许你创建可展开/折叠的内容区域。
   - pymdownx.tabbed: # 选项卡 (Tabbed Content)。允许你将内容组织成多个选项卡，用户可以切换查看。
       alternate_style: true # 使用另一种样式来渲染选项卡，通常更符合 Material 主题的风格。
@@ -123,6 +125,8 @@ markdown_extensions:
   - pymdownx.inlinehilite # 行内代码高亮。允许你在普通文本中嵌入高亮的代码片段。
   - pymdownx.snippets # 代码片段。允许你将其他 Markdown 文件或文本文件作为“代码片段”嵌入到当前文件中。
   - pymdownx.superfences # 增强型代码块。这是 `highlight` 扩展的依赖，提供了更灵活的代码块定义方式，例如嵌套代码块、自定义代码块属性等。
+
+
 
 nav:
   - 🏠主页: 
