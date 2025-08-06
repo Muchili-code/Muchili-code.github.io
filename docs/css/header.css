@@ -1,0 +1,9 @@
+.md-header.md-header--shadow {
+    opacity: 0;/* 默认情况下，页眉完全透明（不可见）。 */
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out, visibility 0.3s;
+    /* 定义了当透明度、变换或可见性改变时，0.3 秒的平滑过渡效果。 */
+}
+
+.md-header.md-header--shadow:hover {
+    opacity: 1;/* 当鼠标悬停在页眉上时，页眉变为完全不透明（可见）。 */
+}

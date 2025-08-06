@@ -9,9 +9,7 @@ repo_name: Muchili/Blog # 可选：自定义显示的仓库名称，例如 "你�
 
 theme:
   name: material
-  custom_dir: overrides # 自定义主题目录
-  extra_css:
-    - assets/stylesheets/extra.css
+  custom_dir: overrides # 自定义主题目录,优先级目录   
   language: zh # 一些提示性的文字会变成中文
   favicon: images/favicon.png
 
@@ -26,8 +24,7 @@ theme:
 
     - media: "(prefers-color-scheme: dark)"  # 方案 2: 深色模式 (Dark Mode)
       scheme: slate                           # 使用 Material 主题的深色方案
-      primary: blue                           # 深色模式下的主色 (可以不同于浅色)
-      accent: blue                            # 深色模式下的强调色 (可以不同于浅色)
+      primary: black
       toggle:
         icon: material/weather-sunny # 深色模式下显示的切换图标（例如太阳图标）
         name: 切换到浅色模式                   # 深色模式下切换按钮的文本
@@ -55,7 +52,7 @@ theme:
     - toc.follow # toc 跟随。滚动页面时，目录自动高亮显示当前的章节标题
     - toggle.scheme  # 启用主题切换功能（白天黑夜切换）
 
-copyright: Copyright &copy; 2025 Muchili # 左下角的版权声明
+copyright: Copyright &copy; 2025 Muchili/All Rights Reserved. # 左下角的版权声明
 
 extra:
   generator: false  #删除页脚默认的“使用 MkDocs Material制造”
@@ -78,6 +75,17 @@ extra:
     user: Muchili # <-- 替换为您的 GitHub 用户名
     name: Blog # <-- 替换为您的 MkDocs 仓库名称
   repo_stats: true # <-- 启用星标和 Fork 数量显示
+
+extra_css:
+  - css/header.css
+  - css/sidebar.css
+  - css/custom.css
+
+plugins:
+  - heti:
+      disable_serve: false
+  - statistics:
+      words_per_minute: 200
 
 markdown_extensions:
   # ----------
