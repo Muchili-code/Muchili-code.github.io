@@ -80,7 +80,12 @@ extra_css:
   - css/header.css
   - css/sidebar.css
   - css/custom.css
+  - css/card.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
 
+extra_javascript:
+  - javascripts/extra.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
 
 markdown_extensions:
   # ----------
