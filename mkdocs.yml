@@ -81,11 +81,6 @@ extra_css:
   - css/sidebar.css
   - css/custom.css
 
-plugins:
-  - heti:
-      disable_serve: false
-  - statistics:
-      words_per_minute: 200
 
 markdown_extensions:
   # ----------
@@ -133,7 +128,10 @@ markdown_extensions:
   - pymdownx.inlinehilite # 行内代码高亮。允许你在普通文本中嵌入高亮的代码片段。
   - pymdownx.snippets # 代码片段。允许你将其他 Markdown 文件或文本文件作为“代码片段”嵌入到当前文件中。
   - pymdownx.superfences # 增强型代码块。这是 `highlight` 扩展的依赖，提供了更灵活的代码块定义方式，例如嵌套代码块、自定义代码块属性等。
-
+  # ----------
+  # 5. latex 公式支持
+  - pymdownx.arithmatex: # latex支持
+      generic: true
 
 
 nav:
