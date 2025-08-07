@@ -23,3 +23,36 @@
     transform: translateX(0);
     pointer-events: auto;
 }
+
+/* 隐藏两侧目录栏的滚轮 */
+.md-sidebar__scrollwrap {
+  scrollbar-width: none;
+}
+
+/* 两侧目录栏修改（by @TonyCrane） */
+.md-nav--secondary .md-nav__title {
+  background: rgb(255 255 255 / 0%);
+  box-shadow: 0 0 .4rem .4rem rgba(255, 255, 255, 0);
+  position: relative;
+}
+
+.md-nav--lifted>.md-nav__list>.md-nav__item--active>.md-nav__link {
+  background: rgb(255 255 255 / 0%);
+  box-shadow: 0 0 .4rem .4rem rgba(255, 255, 255, 0);
+  position: relative;
+}
+
+.md-nav__list a.is-active {
+  color: var(--md-accent-fg-color);
+}
+
+.md-sidebar--secondary .md-nav > .md-nav__list > li > a + .md-nav {
+  display: none;
+}
+.md-sidebar--secondary .md-nav > .md-nav__list > li > a.is-active + .md-nav {
+  display: block;
+}
+
+[data-md-color-scheme="default"] .md-nav__title {
+  color: #000;
+}
