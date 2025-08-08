@@ -1,0 +1,9 @@
+/* 白天模式配色 */
+[data-md-color-scheme="default"]{
+    background-color: #b3e7f5;
+    --md-footer-fg-color: #000000;
+    --md-footer-bg-color: rgb(162, 226, 244);
+    --md-footer-bg-color--dark:rgb(106, 216, 243);
+    --md-footer-fg-color--light: #000000;
+}
+
