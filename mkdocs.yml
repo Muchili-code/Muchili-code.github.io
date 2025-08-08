@@ -86,12 +86,15 @@ extra_css:
   - https://gcore.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
   - https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
   - https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap
-  - https://unpkg.com/katex@0/dist/katex.min.css
+  - https://unpkg.com/katex@0/dist/katex.min.css  # katex样式
   
 
 extra_javascript:
+  - javascripts/anchor.js
   - javascripts/extra.js
-  - https://unpkg.com/katex@0/dist/katex.min.js
+  - javascripts/katex.js 
+  - https://unpkg.com/katex@0/dist/katex.min.js # KaTeX 核心 JS
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js # auto-render 扩展
 
 markdown_extensions:
   # ----------
