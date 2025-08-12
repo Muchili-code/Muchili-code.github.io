@@ -154,6 +154,7 @@ markdown_extensions:
 
 nav:
   - 🏠主页: 
+    - index.md
     - 关于我: About.md
     - 建档指南: 
       - 仓库链接: Site Instruction/仓库链接.md
