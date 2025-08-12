@@ -77,12 +77,13 @@ extra:
   repo_stats: true # <-- 启用星标和 Fork 数量显示
 
 extra_css:
-  - css/header.css
-  - css/sidebar.css
-  - css/custom.css
   - css/card.css
+  #- css/code.css
+  - css/custom.css
   - css/extra.css
+  - css/header.css
   - css/palette.css
+  - css/sidebar.css
   - https://gcore.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
   - https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
   - https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap
@@ -91,8 +92,11 @@ extra_css:
 
 extra_javascript:
   - javascripts/anchor.js
+  #- javascripts/code.js
   - javascripts/extra.js
   - javascripts/katex.js 
+  - javascripts/toc.js 
+  - javascripts/typed.js
   - https://unpkg.com/katex@0/dist/katex.min.js # KaTeX 核心 JS
   - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js # auto-render 扩展
 

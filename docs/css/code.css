@@ -1,0 +1,42 @@
+/* docs/stylesheets/custom.css */
+
+/* .code-foldable 类添加到 <pre> 标签上 */
+pre.code-foldable {
+    position: relative; /* 用于定位折叠按钮 */
+    overflow: hidden; /* 隐藏超出 max-height 的内容 */
+    max-height: 7em; /* 默认显示的高度，15em 大约是 10-12 行代码 */
+    transition: max-height 0.3s ease-out; /* 展开/折叠时的平滑过渡效果 */
+    padding-bottom: 2.5em; /* 为底部的“显示更多”按钮留出空间 */
+    border-radius: var(--md-code-border-radius); /* 保持主题的圆角 */
+}
+
+/* 样式：展开状态下的代码块 */
+pre.code-foldable.expanded {
+    max-height: none; /* 移除高度限制，显示全部内容 */
+    padding-bottom: 0; /* 展开后不需要为按钮留空间 */
+}
+
+/* 样式：折叠按钮 */
+pre.code-foldable .fold-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    /* 创建一个从底部向上渐变的背景，模拟代码被“遮盖”的效果 */
+    background: linear-gradient(to top, var(--md-default-bg-color) 50%, transparent);
+    padding: 0.5em 0;
+    cursor: pointer; /* 鼠标悬停时显示手型指针 */
+    color: var(--md-accent-fg-color); /* 使用主题的强调色 */
+    font-weight: bold;
+    border-top: 1px solid var(--md-default-fg-color--light); /* 按钮上方的细线 */
+    box-shadow: 0 -5px 10px rgba(0,0,0,0.05); /* 按钮的轻微阴影 */
+    z-index: 1; /* 确保按钮在代码上方 */
+}
+
+/* 样式：展开状态下隐藏渐变背景和边框 */
+pre.code-foldable.expanded .fold-button {
+    background: none; /* 展开后移除渐变背景 */
+    border-top: none; /* 展开后移除边框 */
+    box-shadow: none; /* 展开后移除阴影 */
+}
