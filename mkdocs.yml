@@ -3,9 +3,9 @@ site_url: https://muchili-code.github.io/
 site_author: 慕迟离
 site_description: Welcome To my site!
 
-# 以下两行用于在页眉显示GitHub仓库链接
-repo_url: https://github.com/Muchili-code/muchili-code.github.io # 替换为你的博客仓库的实际URL
-repo_name: Muchili/Blog # 可选：自定义显示的仓库名称，例如 "你的GitHub用户名/你的博客仓库名"
+# 在页眉显示GitHub仓库链接
+repo_url: https://github.com/Muchili-code/muchili-code.github.io # 博客仓库的实际URL
+repo_name: Muchili/Blog # 自定义显示的仓库名称
 
 theme:
   name: material
@@ -100,66 +100,57 @@ extra_javascript:
   - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js # auto-render 扩展
 
 markdown_extensions:
-  # ----------
-  # 1. 标准 Markdown 增强与结构化扩展
-  # ----------
-  - abbr # 启用缩写功能。
-  - attr_list # 属性列表。允许你为 Markdown 元素（如标题、段落、图片等）添加 HTML 属性。
-  - md_in_html # 允许你在 HTML 块（如 <div>）内部使用 Markdown 语法。
-  - meta # 支持 Markdown 文件顶部的自定义元数据（YAML Front Matter）。
-  - def_list # 定义列表。支持类似 HTML <dl>、<dt>、<dd> 的定义列表语法。
-  - footnotes # 脚注。允许你在文本中添加脚注，并在文档末尾自动生成脚注列表。
-  - tables # 表格。启用标准的 Markdown 表格语法。
-  - toc: # 目录 (Table of Contents) 扩展。
-      permalink: true # 为每个标题生成一个永久链接（锚点），点击后可以直接跳转到该标题位置。
-  # ----------
-  # 2. Pymdown Extensions - 文本格式与特殊标记
-  # ----------
-  - pymdownx.mark # 标记/高亮文本。使用 ==text== 来高亮显示文本
-  - pymdownx.caret # 插入文本标记。使用 ++text++ 来表示插入的文本，通常会带下划线。
-  - pymdownx.tilde # 删除线。使用 ~~text~~ 来给文本添加删除线。
+
+  - abbr                  # 启用缩写功能。
+  - attr_list             # 属性列表。允许你为 Markdown 元素（如标题、段落、图片等）添加 HTML 属性。
+  - md_in_html            # 允许你在 HTML 块（如 <div>）内部使用 Markdown 语法。
+  - meta                  # 支持 Markdown 文件顶部的自定义元数据（YAML Front Matter）。
+  - def_list              # 定义列表。支持类似 HTML <dl>、<dt>、<dd> 的定义列表语法。
+  - footnotes             # 脚注。允许你在文本中添加脚注，并在文档末尾自动生成脚注列表。
+  - tables                # 表格。启用标准的 Markdown 表格语法。
+  - toc:                  
+      permalink: true     # 为每个标题生成一个永久链接（锚点）
+
+  - pymdownx.mark         # 标记/高亮文本。
+  - pymdownx.caret        # 插入文本标记。
+  - pymdownx.tilde        # 删除线
   - pymdownx.arithmatex:  # LaTeX 数学公式支持。
-      generic: true       # 启用通用模式，允许你使用标准的 LaTeX 语法来书写数学公式。
+      generic: true       
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - pymdownx.critic # 评论标记。支持插入、删除、替换等标记，常用于文档审阅
-  - pymdownx.keys # 键盘按键显示。允许你以美观的方式显示键盘按键。
-  - pymdownx.tasklist: # 任务列表 (Checklist)。支持带有复选框的任务列表。
+  - pymdownx.critic       # 评论标记。支持插入、删除、替换等标记，常用于文档审阅
+  - pymdownx.keys         # 键盘按键显示。允许你以美观的方式显示键盘按键。
+  - pymdownx.tasklist:    # 任务列表 (Checklist)。支持带有复选框的任务列表。
       custom_checkbox: true # 使用自定义的 CSS 样式复选框，而非浏览器默认样式，以保持主题一致性。
-  # ----------
-  # 3. Pymdown Extensions - 内容块与布局
-  # ----------
-  - admonition # 提示框 (Admonition)。支持多种类型的提示块，如 Note, Warning, Info, Tip 等。
+
+  - admonition            # 提示框 (Admonition)。
   - markdown_gfm_admonition # 启用 GFM 风格的解析
-  - pymdownx.details # 可折叠的详情块。允许你创建可展开/折叠的内容区域。
-  - pymdownx.tabbed: # 选项卡 (Tabbed Content)。允许你将内容组织成多个选项卡，用户可以切换查看。
+  - pymdownx.details      # 可折叠的详情块。允许你创建可展开/折叠的内容区域。
+  - pymdownx.tabbed:      
       alternate_style: true # 使用另一种样式来渲染选项卡，通常更符合 Material 主题的风格。
-  # ----------
-  # 4. Pymdown Extensions - 代码高亮与片段
-  # ---------
-  - pymdownx.highlight: # 代码块高亮。这是 MkDocs Material 主题中代码高亮的核心。
+
+  - pymdownx.highlight:   # 代码块高亮
       anchor_linenums: true # 当显示行号时，为每行代码生成一个锚点。
-      linenums: true # 在代码块左侧显示行号。
-      auto_title: true # 自动在代码块上方显示编程语言的名称
-  - pymdownx.inlinehilite # 行内代码高亮。允许你在普通文本中嵌入高亮的代码片段。
-  - pymdownx.snippets # 代码片段。允许你将其他 Markdown 文件或文本文件作为“代码片段”嵌入到当前文件中。
-  - pymdownx.superfences # 增强型代码块。这是 `highlight` 扩展的依赖，提供了更灵活的代码块定义方式，例如嵌套代码块、自定义代码块属性等。
-  # ----------
-  # 5. latex 公式支持
-  - pymdownx.arithmatex: # latex支持
-      generic: true
+      linenums: true      # 在代码块左侧显示行号。
+      auto_title: true    # 自动在代码块上方显示编程语言的名称
+  - pymdownx.inlinehilite # 行内代码高亮
+  - pymdownx.snippets     # 代码片段。允许你将其他 Markdown 文件或文本文件作为“代码片段”嵌入到当前文件中。
+  - pymdownx.superfences  # 增强型代码块。这是 `highlight` 扩展的依赖，提供了更灵活的代码块定义方式，例如嵌套代码块、自定义代码块属性等。
+
 
 plugins:
   - statistics:
       words_per_minute: 200
       codelines_per_minute: 80
       page_template: "assets/template.html"
+  - changelog
+  - search
 
 nav:
   - 🏠主页: 
-    - index.md
-    - 关于我: About.md
+    - Hmoe: index.md
+    - 更新记录: changelog.md
     - 建档指南: 
       - 仓库链接: Site Instruction/仓库链接.md
       - 参考资料: Site Instruction/referrence.md
