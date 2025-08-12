@@ -58,7 +58,8 @@ jobs:
           pip install --upgrade pip
           pip install mkdocs        # 使用 pip 安装 MkDocs。
           pip install mkdocs-material # 安装 MkDocs Material 主题。如果你使用其他主题，也需要在这里安装。
-          pip install markdown-gfm-admonition
+          pip install markdown-gfm-admonition 
+          pip install mkdocs-statistics-plugin
 
       # 步骤 4: 构建 MkDocs 网站。
       # 这将在工作流程的运行器中生成 'site' 文件夹，包含所有静态网站文件。

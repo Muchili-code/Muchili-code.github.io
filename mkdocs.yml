@@ -89,7 +89,6 @@ extra_css:
   - https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap
   - https://unpkg.com/katex@0/dist/katex.min.css  # katex样式
   
-
 extra_javascript:
   - javascripts/anchor.js
   #- javascripts/code.js
@@ -121,9 +120,9 @@ markdown_extensions:
   - pymdownx.tilde # 删除线。使用 ~~text~~ 来给文本添加删除线。
   - pymdownx.arithmatex:  # LaTeX 数学公式支持。
       generic: true       # 启用通用模式，允许你使用标准的 LaTeX 语法来书写数学公式。
-  - pymdownx.emoji: # 表情符号支持。
-      #emoji_index: !!python/name:material.extensions.emoji.twemoji
-      #emoji_generator: !!python/name:material.emoji.to_svg # 指定将表情符号渲染为 SVG 格式。
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.critic # 评论标记。支持插入、删除、替换等标记，常用于文档审阅
   - pymdownx.keys # 键盘按键显示。允许你以美观的方式显示键盘按键。
   - pymdownx.tasklist: # 任务列表 (Checklist)。支持带有复选框的任务列表。
@@ -151,6 +150,11 @@ markdown_extensions:
   - pymdownx.arithmatex: # latex支持
       generic: true
 
+plugins:
+  - statistics:
+      words_per_minute: 200
+      codelines_per_minute: 80
+      page_template: "assets/template.html"
 
 nav:
   - 🏠主页: 
