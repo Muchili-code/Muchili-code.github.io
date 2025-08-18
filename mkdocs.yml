@@ -16,8 +16,7 @@ theme:
   palette: #  主题颜色配置
     - media: "(prefers-color-scheme: light)" # 方案 1: 浅色模式 (Light Mode)
       scheme: default # 主题配色方案
-      primary: teal # 主题主色
-      accent: teal #  主题强调色 
+      primary: white # 主色调
       toggle: 
         icon: material/weather-night # 浅色模式下显示的切换图标（例如月亮图标）
         name: 切换到深色模式                   # 浅色模式下切换按钮的文本
