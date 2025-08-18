@@ -9,11 +9,17 @@ statistics: True
 <div markdown="1" class="homepage">
 <h1 style="font-size: 2rem; margin-left: 10%"><span id="typed"></span></h1>
 </div>
-本站共有 {{ pages }} 个页面，{{ words }} 个字，{{ codes }} 行代码，{{ images }} 张图片。
+???+ success "Blog信息"
+     <center>上次更新于</center>
+     
+     <center>目前本站共有 {{ pages }} 个页面，{{ words }} 个字，{{ codes }} 行代码，{{ images }} 张图片。</center>
+
+<center>
+    <font color="#788bb8" size="6" class="ml3">无限进步！</font>
+</center>
 
 
-
-## About me
-
-???+ note
-     I'm a student in Zhejiang University.In the website I'll share some of my notes during my college life.
+???+ note ":simple-github: About me"
+     - 主修生物医学工程，<strong><font color="#788bb8" class="ml3">Make BME Great Again！</font></strong>
+     - 大二春夏开始的笔记
+     - 收藏的各种网页
