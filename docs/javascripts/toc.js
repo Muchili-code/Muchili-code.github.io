@@ -1,4 +1,3 @@
-
 /* The source code was written by @TonyCrane，优化目录交互体验 */
 (function (window, document) {
     function register($toc) {
