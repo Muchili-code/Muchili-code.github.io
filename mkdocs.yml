@@ -11,7 +11,7 @@ theme:
   name: material
   custom_dir: overrides # 自定义主题目录,优先级目录   
   language: zh # 一些提示性的文字会变成中文
-  favicon: images/favicon.png
+  favicon: images/kuma.png
 
   palette: #  主题颜色配置
     - media: "(prefers-color-scheme: light)" # 方案 1: 浅色模式 (Light Mode)
