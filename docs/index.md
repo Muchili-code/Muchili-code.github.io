@@ -23,3 +23,5 @@ statistics: True
      - 主修生物医学工程，<strong><font color="#788bb8" class="ml3">Make BME Great Again！</font></strong>
      - 大二春夏开始的笔记
      - 收藏的各种网页
+
+<center>Ciallo～(∠・ω＜)⌒☆</center>
