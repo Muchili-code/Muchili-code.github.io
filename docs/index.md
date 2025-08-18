@@ -23,5 +23,12 @@ statistics: True
      - 主修生物医学工程，<strong><font color="#788bb8" class="ml3">Make BME Great Again！</font></strong>
      - 大二春夏开始的笔记
      - 收藏的各种网页
+---
+![alt text](./images/朝武芳乃.png)
 
-<center>Ciallo～(∠・ω＜)⌒☆</center>
+<center>芳乃太美啦</center>
+<strong>
+     <center>
+          <font color="#788bb8" size="3" class="ml3">Ciallo～(∠・ω＜)⌒☆</font>
+     </center>     
+</strong>
