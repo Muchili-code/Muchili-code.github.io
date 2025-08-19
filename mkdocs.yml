@@ -29,32 +29,32 @@ theme:
         name: 切换到浅色模式                   # 深色模式下切换按钮的文本
 
   features:
-    - navigation.tracking # 在url中使用标题定位锚点，即追踪当前页面在导航中的位置，自动更新浏览器地址栏中的 URL 哈希
-    #- navigation.path # 显示当前路径
-    #- navigation.prune # 侧边栏自动折叠，会使得侧边栏只显示当前页面所属的章节及其直接子页面
-    - navigation.tabs # 启用顶级导航为标签页样式，注意顶级导航的概念
+    - navigation.tracking   # 在url中使用标题定位锚点，即追踪当前页面在导航中的位置，自动更新浏览器地址栏中的 URL 哈希
+    #- navigation.path      # 显示当前路径
+    #- navigation.prune     # 侧边栏自动折叠，会使得侧边栏只显示当前页面所属的章节及其直接子页面
+    - navigation.tabs       # 启用顶级导航为标签页样式，注意顶级导航的概念
     #- navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
-    - navigation.top # 一键回顶部
-    - navigation.footer # 底部导航，在底部显示“上一页”和“下一页”的导航链接
-    - navigation.instant # 启用页面即时加载，提升浏览体验
-    #- navigation.sections #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
-    - navigation.expand # 打开Tab时左侧目录全部展开
-    #- navigation.indexes #启用节索引页后，可以将文档直接附加到节
+    - navigation.top        # 一键回顶部
+    - navigation.footer     # 底部导航，在底部显示“上一页”和“下一页”的导航链接
+    - navigation.instant    # 启用页面即时加载，提升浏览体验
+    #- navigation.sections  #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
+    - navigation.expand     # 打开Tab时左侧目录全部展开
+    #- navigation.indexes   #启用节索引页后，可以将文档直接附加到节
 
-    - search.highlight # 搜索结果高亮
-    - search.suggest # 提供搜索的建议
+    - search.highlight      # 搜索结果高亮
+    - search.suggest        # 提供搜索的建议
 
     - content.code.annotate # 代码行号
-    - content.code.copy # 为代码块添加复制按钮
-    - content.tabs # 允许在 Markdown 中创建选项卡，可以在 Markdown 文件中使用特定的语法来创建选项卡式的布局，比如用选项卡来展示不同编程语言的同一段代码示例
+    - content.code.copy     # 为代码块添加复制按钮
+    - content.tabs          # 允许在 Markdown 中创建选项卡
 
-    - toc.follow # toc 跟随。滚动页面时，目录自动高亮显示当前的章节标题
-    - toggle.scheme  # 启用主题切换功能（白天黑夜切换）
+    - toc.follow            # toc 跟随。滚动页面时，目录自动高亮显示当前的章节标题
+    - toggle.scheme         # 启用主题切换功能（白天黑夜切换）
 
 copyright: Copyright &copy; 2025 Muchili/All Rights Reserved. # 左下角的版权声明
 
 extra:
-  generator: false  #删除页脚默认的“使用 MkDocs Material制造”
+  generator: false          #删除页脚默认的“使用 MkDocs Material制造”
   social:
     - icon: fontawesome/brands/github # 我的Github主页
       link: https://github.com/Muchili-code/Muchili-code.github.io
@@ -71,9 +71,9 @@ extra:
   repo:
     provider: github
     host: github.com
-    user: Muchili # <-- 替换为您的 GitHub 用户名
-    name: Blog # <-- 替换为您的 MkDocs 仓库名称
-  repo_stats: true # <-- 启用星标和 Fork 数量显示
+    user: Muchili     # <-- 替换为您的 GitHub 用户名
+    name: Blog        # <-- 替换为您的 MkDocs 仓库名称
+  repo_stats: true    # <-- 启用星标和 Fork 数量显示
 
 extra_css:
   - css/card.css
@@ -179,7 +179,9 @@ nav:
       - 9.查找: notes/College 2/2.数据结构与算法分析（FDS）-Fundemental Data Structure/期末复习/自己笔记/9.查找.md
       - 10.排序: notes/College 2/2.数据结构与算法分析（FDS）-Fundemental Data Structure/期末复习/自己笔记/10.排序.md
       - 总复习: notes/College 2/2.数据结构与算法分析（FDS）-Fundemental Data Structure/期末复习/自己笔记/总复习.md
+      
   - 📍杂项: 
+    - 友情链接: Miscellaneous/友链.md
     - 选调生相关:
       - 选调生座谈会: Miscellaneous/选调座谈会.md
 

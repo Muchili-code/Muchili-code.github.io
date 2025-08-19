@@ -148,8 +148,35 @@ img:not([src$=".svg"]) {
   color: #BA0000 !important;
 }
 
+/*警示框*/
+.highlight span.filename {
+  border-bottom: none;
+  border-radius: var(--base-border-radius);
+  display: inline;
+  font-family: var(--md-code-font-family);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.highlight span.filename + pre > code,
+.md-typeset pre > code {
+  border-radius: var(--base-border-radius);
+  border-top-left-radius: 0;
+}
+.md-typeset .admonition {
+  border-width: 0px;
+  border-left-width: var(--admonition-border-left-width);
+}
+[dir="ltr"] .md-typeset blockquote {
+  border-radius: 0.2rem;
+  border-left-width: var(--admonition-border-left-width);
+}
+/* 让所有admonition（包括!!! tip）圆角化且更自然 */
 .md-typeset .admonition,
 .md-typeset details {
-  border-width: 0;
-  border-left-width: 4px;
+  border-radius: 1.5em;
+  box-shadow: 0 2px 12px 0 rgba(60,60,60,0.07);
+  transition: border-radius 0.4s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
+  overflow: hidden;
 }
