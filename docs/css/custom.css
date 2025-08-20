@@ -118,6 +118,28 @@ img:not([src$=".svg"]) {
   box-shadow: var(--md-shadow-z3);
 }
 
+/*圆角边框功能*/
+#rcorners1 {
+  border-radius: 25px;
+  background: linear-gradient(to right, rgba(189, 224, 245), rgba(218, 232, 241), rgba(238, 237, 238));
+  /* #F0EFEB; F5F4F1*/
+  padding: 20px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  align-items: center; /* 垂直居中 */
+  font-size: 16px;
+}
+
+#rcorners2 {
+  border-radius: 25px;
+  /*border: 2px solid #518FC1;*/
+  padding: 20px; 
+  width: 100%;
+  height: 100%; 
+  font-size:16px;
+}
+
 /* 亚克力材质的导航栏 */
 [data-md-color-scheme="slate"] .md-header, [data-md-color-scheme="slate"] .md-tabs {
   background-color: rgba(0, 0, 0, 0.7);

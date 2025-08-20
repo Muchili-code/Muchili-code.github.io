@@ -79,7 +79,7 @@ extra_css:
   - css/card.css
   #- css/code.css
   - css/custom.css
-  - css/extra.css
+  #- css/extra.css
   - css/header.css
   - css/palette.css
   - css/sidebar.css

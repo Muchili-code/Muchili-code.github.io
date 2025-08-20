@@ -4,6 +4,7 @@ author: "Muchili"
 date: "2025-07-31"
 description: "这是一个文档的简短描述"
 statistics: True
+comments: true
 ---
 
 <div markdown="1" class="homepage">
@@ -80,8 +81,8 @@ statistics: True
      - 收藏的各种网页
 
 -   :simple-materialformkdocs:{ .lg .middle } __推荐阅读__
-     
-     ---
+    
+    ---
 
     - [我的收藏页](http://muchili-code.github.io/Miscellaneous/友链/)
     - [建站资料](http://muchili-code.github.io/Site Instruction/referrence/)
