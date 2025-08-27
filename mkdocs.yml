@@ -49,7 +49,10 @@ theme:
     - content.tabs          # 允许在 Markdown 中创建选项卡
 
     - toc.follow            # toc 跟随。滚动页面时，目录自动高亮显示当前的章节标题
+    #- toc.integrate
     - toggle.scheme         # 启用主题切换功能（白天黑夜切换）
+  toc: 
+    depth: 4
 
 copyright: Copyright &copy; 2025 Muchili/All Rights Reserved. # 左下角的版权声明
 
@@ -147,6 +150,7 @@ plugins:
       page_template: "assets/template.html"
   - changelog
   - search
+  - awesome-pages
 
 nav:
   - 🏠主页: 
