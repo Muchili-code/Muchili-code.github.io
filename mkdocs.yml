@@ -183,7 +183,20 @@ nav:
       - 9.查找: notes/College 2/2.数据结构与算法分析（FDS）-Fundemental Data Structure/期末复习/自己笔记/9.查找.md
       - 10.排序: notes/College 2/2.数据结构与算法分析（FDS）-Fundemental Data Structure/期末复习/自己笔记/10.排序.md
       - 总复习: notes/College 2/2.数据结构与算法分析（FDS）-Fundemental Data Structure/期末复习/自己笔记/总复习.md
-      
+  - 📚College 3:
+    - 嵌入式系统:
+      - 1.导论: notes/College 3/1.嵌入式系统/自己笔记/1-导论.md
+      - 2.处理器设计导论: notes/College 3/1.嵌入式系统/自己笔记/2-处理器设计导论.md
+      - 3.ARM体系结构: notes/College 3/1.嵌入式系统/自己笔记/3-ARM体系结构.md
+      - 4.ARM编程模型: notes/College 3/1.嵌入式系统/自己笔记/4-ARM编程模型.md
+      - 5.汇编语言编程: notes/College 3/1.嵌入式系统/自己笔记/5-ARM汇编语言编程.md
+      - 6.ARM流水线组织: notes/College 3/1.嵌入式系统/自己笔记/6-ARM流水线组织.md
+      - 7.ARM指令集: notes/College 3/1.嵌入式系统/自己笔记/7-ARM指令集.md
+      - 10.ARM存储器接口及AMBA总线: notes/College 3/1.嵌入式系统/自己笔记/10-ARM存储器接口及AMBA总线.md
+      - 13.ARM-JTAG测试与调试结构: notes/College 3/1.嵌入式系统/自己笔记/13-ARM-JTAG测试与调试结构.md
+      - 14.ARM处理器核系列介绍: notes/College 3/1.嵌入式系统/自己笔记/14-ARM处理器核系列介绍.md
+      - 16.存储器管理单元及保护单元: notes/College 3/1.嵌入式系统/自己笔记/16-存储器管理单元及保护单元.md
+
   - 📍杂项: 
     - 友情链接: Miscellaneous/友链.md
     - 选调生相关:
