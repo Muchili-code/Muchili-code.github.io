@@ -57,8 +57,8 @@ jobs:
         run: | # 关键：这里使用了一个竖线 |，表示下面的内容是多行字符串
           pip install --upgrade pip
           pip install mkdocs        # 使用 pip 安装 MkDocs。
-          pip install mkdocs-material # 安装 MkDocs Material 主题。如果你使用其他主题，也需要在这里安装。
-          pip install markdown-gfm-admonition 
+          pip install mkdocs-material # 安装 MkDocs Material 主题。若使用其他主题，也需要在这里安装。
+          pip install markdown-gfm-admonition mkdocs-mermaid2-plugin
           pip install mkdocs-statistics-plugin mkdocs-changelog-plugin mkdocs-awesome-pages-plugin
 
       # 步骤 4: 构建 MkDocs 网站。

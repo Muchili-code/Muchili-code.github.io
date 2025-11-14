@@ -155,7 +155,7 @@
 				})
 				$('.chinese-font').css('display', 'none')
 			});
-			<!--离开页面改变title-->
+			/*<!--离开页面改变title-->*/
 			var time;
 			var normar_title = document.title;
 			document.addEventListener('visibilitychange', function () {

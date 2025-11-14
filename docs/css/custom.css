@@ -1,4 +1,4 @@
-/*自定义字体*/
+/*自定义字体和admonition*/
 :root {
   --md-text-font: "JetBrains Mono", "LXGW WenKai Screen"; 
   --md-code-font: "JetBrains Mono", "Consolas", "LXGW WenKai Screen";
