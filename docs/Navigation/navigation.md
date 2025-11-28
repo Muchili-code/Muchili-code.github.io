@@ -118,13 +118,13 @@ hide:
   <nav id="sidebar" class="nav-sidebar">
       <div id="resizer-top" class="resizer top"></div>
       <div class="sidebar-menu">
-          <a onclick="scrollToId('cat-teach')" class="sidebar-item"><span class="sidebar-icon">📚</span><span class="sidebar-text">教学管理</span></a>
-          <a onclick="scrollToId('cat-study')" class="sidebar-item"><span class="sidebar-icon">📖</span><span class="sidebar-text">学习资源</span></a>
-          <a onclick="scrollToId('cat-research')" class="sidebar-item"><span class="sidebar-icon">🔬</span><span class="sidebar-text">科研相关</span></a>
-          <a onclick="scrollToId('cat-info')" class="sidebar-item"><span class="sidebar-icon">📡</span><span class="sidebar-text">信息服务</span></a>
           <a onclick="scrollToId('cat-ai')" class="sidebar-item"><span class="sidebar-icon">🤖</span><span class="sidebar-text">AI 工具</span></a>
           <a onclick="scrollToId('cat-tools')" class="sidebar-item"><span class="sidebar-icon">🛠</span><span class="sidebar-text">工具集合</span></a>
+          <a onclick="scrollToId('cat-study')" class="sidebar-item"><span class="sidebar-icon">📖</span><span class="sidebar-text">学习资源</span></a>
           <a onclick="scrollToId('cat-cs')" class="sidebar-item"><span class="sidebar-icon">💻</span><span class="sidebar-text">计算机学习</span></a>
+          <a onclick="scrollToId('cat-research')" class="sidebar-item"><span class="sidebar-icon">🔬</span><span class="sidebar-text">科研相关</span></a>
+          <a onclick="scrollToId('cat-teach')" class="sidebar-item"><span class="sidebar-icon">📚</span><span class="sidebar-text">教学管理</span></a>
+          <a onclick="scrollToId('cat-info')" class="sidebar-item"><span class="sidebar-icon">📡</span><span class="sidebar-text">信息服务</span></a>
           <a onclick="scrollToId('cat-zju-other')" class="sidebar-item"><span class="sidebar-icon">🏫</span><span class="sidebar-text">浙大 · 其他</span></a>
           <a onclick="scrollToId('cat-editor')" class="sidebar-item"><span class="sidebar-icon">📝</span><span class="sidebar-text">编辑器教学</span></a>
           <a onclick="scrollToId('cat-my')" class="sidebar-item"><span class="sidebar-icon">🏠</span><span class="sidebar-text">我的站点</span></a>
@@ -144,28 +144,59 @@ hide:
               <span style="font-size: 0.8em; opacity: 0.8;">而漫无目的的奔忙，结局注定是平庸与疲惫。</span>
           </div>
       </div>
-      <div id="cat-teach" class="category-box">
-          <div class="category-title">📚 教学管理</div>
+      <div id="cat-ai" class="category-box">
+          <div class="category-title">🤖 AI 工具</div>
           <div class="grid-wrapper">
-              <a href="https://courses.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/学在浙大.png" onerror="this.src='default.svg'"><div class="title">学在浙大</div><div class="desc">课程平台</div></a>
-              <a href="http://jwbinfosys.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/教务网.png" onerror="this.src='default.svg'"><div class="title">教务网</div><div class="desc">选课查分</div></a>
-              <a href="http://st.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/素质拓展.png" onerror="this.src='default.svg'"><div class="title">素质拓展</div><div class="desc">第二课堂</div></a>
-              <a href="https://classroom.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/智云课堂.png" onerror="this.src='default.svg'"><div class="title">智云课堂</div><div class="desc">课程回放</div></a>
-              <a href="http://zy.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/教学资源.png" onerror="this.src='default.svg'"><div class="title">教学资源</div><div class="desc">资源管理</div></a>
-              <a href="https://chalaoshi.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/查老师.png" onerror="this.src='default.svg'"><div class="title">查老师</div><div class="desc">教师评价</div></a>
-              <a href="http://libweb.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/浙大图书馆.png" onerror="this.src='default.svg'"><div class="title">浙大图书馆</div><div class="desc">资源检索</div></a>
-              <a href="https://www.icourse163.org/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/MOOC.png" onerror="this.src='default.svg'"><div class="title">MOOC</div><div class="desc">慕课网</div></a>
-              <a href="https://www.zhihuishu.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/智慧树.png" onerror="this.src='default.svg'"><div class="title">智慧树</div><div class="desc">网课平台</div></a>
+              <a href="https://gemini.google.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Gemini.png" onerror="this.src='default.svg'"><div class="title">Gemini</div><div class="desc">Google AI</div></a>
+              <a href="https://aistudio.google.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/AI Studio.png" onerror="this.src='default.svg'"><div class="title">AI Studio</div><div class="desc">Google Dev</div></a>
+              <a href="https://chatgpt.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/ChatGPT.svg" onerror="this.src='default.svg'"><div class="title">ChatGPT</div><div class="desc">OpenAI</div></a>
+              <a href="https://claude.ai/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Claude.png" onerror="this.src='default.svg'"><div class="title">Claude</div><div class="desc">Anthropic</div></a>
+              <a href="https://www.deepseek.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/DeepSeek.png" onerror="this.src='default.svg'"><div class="title">DeepSeek</div><div class="desc">深度求索</div></a>
+              <a href="https://www.doubao.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/豆包.png" onerror="this.src='default.svg'"><div class="title">豆包</div><div class="desc">字节跳动</div></a>
+              <a href="https://kimi.moonshot.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Kimi.png" onerror="this.src='default.svg'"><div class="title">Kimi</div><div class="desc">长文本AI</div></a>
+              <a href="https://yuanbao.tencent.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/腾讯元宝.png" onerror="this.src='default.svg'"><div class="title">腾讯元宝</div><div class="desc">腾讯混元</div></a>
+              <a href="https://chat.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/浙大先生.png" onerror="this.src='default.svg'"><div class="title">浙大先生</div><div class="desc">zju结合ds的ai</div></a>
+              <a href="https://www.zchat.tech/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Zhcat.png" onerror="this.src='default.svg'"><div class="title">Zchat</div><div class="desc">学生可调用模型</div></a>
+          </div>
+      </div>
+      <div id="cat-tools" class="category-box">
+          <div class="category-title">🛠 工具集合</div>
+          <div class="grid-wrapper">
+              <a href="https://zjuers.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/zjuers轻首页.png" onerror="this.src='default.svg'"><div class="title">轻首页</div><div class="desc">zjuers的轻首页</div></a>
+              <a href="https://zjuers.jiepeng.tech/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/zjuers轻首页.png" onerror="this.src='default.svg'"><div class="title">轻首页自定义版</div><div class="desc">自定义版的轻首页</div></a>
+              <a href="https://www.tboxn.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Tbox导航.png" onerror="this.src='default.svg'"><div class="title">Tbox导航</div><div class="desc">工具导航</div></a>
+              <a href="https://www.pangmenzd.vip/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/旁门左道PPT.png" onerror="this.src='default.svg'"><div class="title">旁门左道PPT</div><div class="desc">PPT资源</div></a>
+              <a href="https://www.goto-mars.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/个人导航.png" onerror="this.src='default.svg'"><div class="title">旁门-个人导航</div><div class="desc">旁门左道的个人导航</div></a>
+              <a href="https://www.maxiaobang.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/马小帮.png" onerror="this.src='default.svg'"><div class="title">马小帮</div><div class="desc">效率工具</div></a>
+              <a href="https://www.it168.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/IT技术之家.png" onerror="this.src='default.svg'"><div class="title">IT技术之家</div><div class="desc">技术资讯</div></a>
+              <a href="https://www.fc8.top/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/FC8软件库.png" onerror="this.src='default.svg'"><div class="title">FC8软件库</div><div class="desc">资源下载</div></a>
+              <a href="https://woobx.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/一个木函.png" onerror="this.src='default.svg'"><div class="title">一个木函</div><div class="desc">多功能工具</div></a>
+              <a href="https://www.tudingyy.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/图钉办公.png" onerror="this.src='default.svg'"><div class="title">图钉办公</div><div class="desc">办公助手</div></a>
           </div>
       </div>
       <div id="cat-study" class="category-box">
           <div class="category-title">📖 学习资源</div>
           <div class="grid-wrapper">
-              <a href="https://www.cc98.org/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/CC98.png" onerror="this.src='default.svg'"><div class="title">CC98</div><div class="desc">校内论坛</div></a>
+            <a href="https://search.bilibili.com/all?vt=76243560" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/bilibili.png" onerror="this.src='default.svg'"><div class="title">Bibilli搜索版</div><div class="desc">仅仅搜索引擎的b站</div></a>
+              <a href="https://www.cc98.org/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/CC98-1.png" onerror="this.src='default.svg'"><div class="title">CC98</div><div class="desc">校内论坛</div></a>
               <a href="https://qsct.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/课程攻略.png" onerror="this.src='default.svg'"><div class="title">课程攻略</div><div class="desc">共享计划</div></a>
               <a href="https://fanyi.baidu.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/百度翻译.png" onerror="this.src='default.svg'"><div class="title">百度翻译</div><div class="desc">在线翻译</div></a>
               <a href="https://translate.google.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/谷歌翻译.svg" onerror="this.src='default.svg'"><div class="title">谷歌翻译</div><div class="desc">多语种翻译</div></a>
-              <a href="https://singlelogin.re/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Zlibrary.png" onerror="this.src='default.svg'"><div class="title">Zlibrary</div><div class="desc">电子书库</div></a>
+              <a href="https://z-library.ec" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Zlibrary.png" onerror="this.src='default.svg'"><div class="title">Zlibrary</div><div class="desc">电子书库</div></a>
+          </div>
+      </div>
+      <div id="cat-cs" class="category-box">
+          <div class="category-title">💻 计算机学习</div>
+          <div class="grid-wrapper">
+              <a href="https://github.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/GitHub.png" onerror="this.src='default.svg'"><div class="title">GitHub</div><div class="desc">全球最大同性交友</div></a>
+              <a href="https://www.github-zh.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/GitHub CN.png" onerror="this.src='default.svg'"><div class="title">GitHub CN</div><div class="desc">中文社区</div></a>
+              <a href="https://www.runoob.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/菜鸟教程.png" onerror="this.src='default.svg'"><div class="title">菜鸟教程</div><div class="desc">基础技术教程</div></a>
+              <a href="https://www.w3schools.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/W3Schools.png" onerror="this.src='default.svg'"><div class="title">W3Schools</div><div class="desc">Web开发教程</div></a>
+              <a href="https://csdiy.wiki/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/CS自学指南.png" onerror="this.src='default.svg'"><div class="title">CS自学指南</div><div class="desc">自学百科全书</div></a>
+              <a href="https://csguide.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/编程指北.png" onerror="this.src='default.svg'"><div class="title">编程指北</div><div class="desc">校招/路线图</div></a>
+              <a href="https://subingwen.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/爱编程的大丙.png" onerror="this.src='default.svg'"><div class="title">爱编程的大丙</div><div class="desc">C++/Linux</div></a>
+              <a href="https://www.hello-algo.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Hello 算法.png" onerror="this.src='default.svg'"><div class="title">Hello 算法</div><div class="desc">动画图解算法</div></a>
+              <a href="https://space.bilibili.com/95228778?spm_id_from=333.788.upinfo.head.click" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/王道操作系统.png" onerror="this.src='default.svg'"><div class="title">王道操作系统</div><div class="desc">CSDN资源</div></a>
           </div>
       </div>
       <div id="cat-research" class="category-box">
@@ -182,6 +213,20 @@ hide:
               <a href="https://sci-hub.se/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Sci-Hub.png" onerror="this.src='default.svg'"><div class="title">Sci-Hub</div><div class="desc">文献下载</div></a>
           </div>
       </div>
+      <div id="cat-teach" class="category-box">
+          <div class="category-title">📚 教学管理</div>
+          <div class="grid-wrapper">
+              <a href="https://courses.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/学在浙大.png" onerror="this.src='default.svg'"><div class="title">学在浙大</div><div class="desc">课程平台</div></a>
+              <a href="http://jwbinfosys.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/zju.png" onerror="this.src='default.svg'"><div class="title">教务网</div><div class="desc">教学管理相关的网站</div></a>
+              <a href="http://st.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/素质拓展.png" onerror="this.src='default.svg'"><div class="title">素质拓展</div><div class="desc">浙江大学素拓网站</div></a>
+              <a href="https://classroom.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/浙江大学.png" onerror="this.src='default.svg'"><div class="title">智云课堂</div><div class="desc">课程回放</div></a>
+              <a href="http://zy.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/教学资源.png" onerror="this.src='default.svg'"><div class="title">教学资源</div><div class="desc">资源管理</div></a>
+              <a href="https://chalaoshi.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/查老师.png" onerror="this.src='default.svg'"><div class="title">查老师</div><div class="desc">教师评价</div></a>
+              <a href="http://libweb.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/浙江大学.png" onerror="this.src='default.svg'"><div class="title">浙大图书馆</div><div class="desc">资源检索</div></a>
+              <a href="https://www.icourse163.org/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/MOOC.png" onerror="this.src='default.svg'"><div class="title">MOOC</div><div class="desc">慕课网</div></a>
+              <a href="https://www.zhihuishu.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/智慧树.png" onerror="this.src='default.svg'"><div class="title">智慧树</div><div class="desc">网课平台</div></a>
+          </div>
+      </div>
       <div id="cat-info" class="category-box">
           <div class="category-title">📡 信息服务</div>
           <div class="grid-wrapper">
@@ -192,49 +237,9 @@ hide:
               <a href="https://zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/正版软件.png" onerror="this.src='default.svg'"><div class="title">正版软件</div><div class="desc">OS/Office</div></a>
               <a href="https://mail.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/浙大邮箱.png" onerror="this.src='default.svg'"><div class="title">浙大邮箱</div><div class="desc">Student Mail</div></a>
               <a href="https://pan.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/浙大云盘.png" onerror="this.src='default.svg'"><div class="title">浙大云盘</div><div class="desc">文件存储</div></a>
-              <a href="http://zuinfo.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/服务平台.png" onerror="this.src='default.svg'"><div class="title">服务平台</div><div class="desc">综合服务</div></a>
-          </div>
-      </div>
-      <div id="cat-ai" class="category-box">
-          <div class="category-title">🤖 AI 工具</div>
-          <div class="grid-wrapper">
-              <a href="https://chatgpt.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/ChatGPT.png" onerror="this.src='default.svg'"><div class="title">ChatGPT</div><div class="desc">OpenAI</div></a>
-              <a href="https://gemini.google.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Gemini.png" onerror="this.src='default.svg'"><div class="title">Gemini</div><div class="desc">Google AI</div></a>
-              <a href="https://aistudio.google.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/AI Studio.png" onerror="this.src='default.svg'"><div class="title">AI Studio</div><div class="desc">Google Dev</div></a>
-              <a href="https://www.doubao.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/豆包.png" onerror="this.src='default.svg'"><div class="title">豆包</div><div class="desc">字节跳动</div></a>
-              <a href="https://www.deepseek.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/DeepSeek.png" onerror="this.src='default.svg'"><div class="title">DeepSeek</div><div class="desc">深度求索</div></a>
-              <a href="https://yuanbao.tencent.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/腾讯元宝.png" onerror="this.src='default.svg'"><div class="title">腾讯元宝</div><div class="desc">腾讯混元</div></a>
-              <a href="https://ai.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/浙大先生.png" onerror="this.src='default.svg'"><div class="title">浙大先生</div><div class="desc">校内AI</div></a>
-              <a href="https://kimi.moonshot.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Kimi.png" onerror="this.src='default.svg'"><div class="title">Kimi</div><div class="desc">长文本AI</div></a>
-              <a href="https://claude.ai/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Claude.png" onerror="this.src='default.svg'"><div class="title">Claude</div><div class="desc">Anthropic</div></a>
-              <a href="https://zchat.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Zchat.png" onerror="this.src='default.svg'"><div class="title">Zchat</div><div class="desc">浙大智聊</div></a>
-          </div>
-      </div>
-      <div id="cat-tools" class="category-box">
-          <div class="category-title">🛠 工具集合</div>
-          <div class="grid-wrapper">
-              <a href="https://www.tboxn.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Tbox导航.png" onerror="this.src='default.svg'"><div class="title">Tbox导航</div><div class="desc">工具导航</div></a>
-              <a href="https://www.pangmen.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/旁门左道PPT.png" onerror="this.src='default.svg'"><div class="title">旁门左道PPT</div><div class="desc">PPT资源</div></a>
-              <a href="http://nav.pangmen.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/个人导航.png" onerror="this.src='default.svg'"><div class="title">个人导航</div><div class="desc">旁门左道</div></a>
-              <a href="https://www.maxiaobang.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/马小帮.png" onerror="this.src='default.svg'"><div class="title">马小帮</div><div class="desc">效率工具</div></a>
-              <a href="https://www.it168.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/IT技术之家.png" onerror="this.src='default.svg'"><div class="title">IT技术之家</div><div class="desc">技术资讯</div></a>
-              <a href="https://www.fc8.top/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/FC8软件库.png" onerror="this.src='default.svg'"><div class="title">FC8软件库</div><div class="desc">资源下载</div></a>
-              <a href="https://woobx.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/一个木函.png" onerror="this.src='default.svg'"><div class="title">一个木函</div><div class="desc">多功能工具</div></a>
-              <a href="https://www.tuding.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/图钉办公.png" onerror="this.src='default.svg'"><div class="title">图钉办公</div><div class="desc">办公助手</div></a>
-          </div>
-      </div>
-      <div id="cat-cs" class="category-box">
-          <div class="category-title">💻 计算机学习</div>
-          <div class="grid-wrapper">
-              <a href="https://github.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/GitHub.png" onerror="this.src='default.svg'"><div class="title">GitHub</div><div class="desc">全球最大同性交友</div></a>
-              <a href="https://www.githubs.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/GitHub CN.png" onerror="this.src='default.svg'"><div class="title">GitHub CN</div><div class="desc">中文社区</div></a>
-              <a href="https://csdiy.wiki/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/CS自学指南.png" onerror="this.src='default.svg'"><div class="title">CS自学指南</div><div class="desc">自学百科全书</div></a>
-              <a href="https://www.runoob.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/菜鸟教程.png" onerror="this.src='default.svg'"><div class="title">菜鸟教程</div><div class="desc">基础技术教程</div></a>
-              <a href="https://www.w3schools.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/W3Schools.png" onerror="this.src='default.svg'"><div class="title">W3Schools</div><div class="desc">Web开发教程</div></a>
-              <a href="https://csguide.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/编程指北.png" onerror="this.src='default.svg'"><div class="title">编程指北</div><div class="desc">校招/路线图</div></a>
-              <a href="https://subingwen.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/爱编程的大丙.png" onerror="this.src='default.svg'"><div class="title">爱编程的大丙</div><div class="desc">C++/Linux</div></a>
-              <a href="https://www.hello-algo.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Hello 算法.png" onerror="this.src='default.svg'"><div class="title">Hello 算法</div><div class="desc">动画图解算法</div></a>
-              <a href="https://blog.csdn.net/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/王道操作系统.png" onerror="this.src='default.svg'"><div class="title">王道操作系统</div><div class="desc">CSDN资源</div></a>
+              <a href="https://service.zju.edu.cn/_s2/cs_sy/main.psp" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/浙江大学.png" onerror="this.src='default.svg'"><div class="title">服务平台</div><div class="desc">综合服务</div></a>
+              <a href="https://eta.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/浙江大学.png" onerror="this.src='default.svg'"><div class="title">ETA</div><div class="desc">三全育人平台</div></a>
+              <a href="https://www.career.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/浙江大学.png" onerror="this.src='default.svg'"><div class="title">就业服务</div><div class="desc">浙江大学就业指导与服务中心</div></a>
           </div>
       </div>
       <div id="cat-zju-other" class="category-box">
@@ -244,21 +249,20 @@ hide:
               <a href="http://www.cbeis.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/生仪学院.png" onerror="this.src='default.svg'"><div class="title">生仪学院</div><div class="desc">生物医学工程</div></a>
               <a href="http://bksy.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/本科生院.png" onerror="this.src='default.svg'"><div class="title">本科生院</div><div class="desc">教学管理</div></a>
               <a href="http://www.xlzx.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/心理服务.png" onerror="this.src='default.svg'"><div class="title">心理服务</div><div class="desc">心理健康中心</div></a>
-              <a href="https://zju.youth.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/智慧团建.png" onerror="this.src='default.svg'"><div class="title">智慧团建</div><div class="desc">网上共青团</div></a>
-              <a href="http://www.youth.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/浙大团委.png" onerror="this.src='default.svg'"><div class="title">浙大团委</div><div class="desc">团委官网</div></a>
-              <a href="http://js.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/竞赛管理.png" onerror="this.src='default.svg'"><div class="title">竞赛管理</div><div class="desc">学科竞赛</div></a>
+              <a href="https://zhtj.youth.cn/zhtj/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/智慧团建.png" onerror="this.src='default.svg'"><div class="title">智慧团建</div><div class="desc">网上共青团</div></a>
+              <a href="http://www.youth.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/浙江大学.png" onerror="this.src='default.svg'"><div class="title">浙大团委</div><div class="desc">团委官网</div></a>
+              <a href="http://kyjs.zju.edu.cn/preview#/preview" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/竞赛管理.png" onerror="this.src='default.svg'"><div class="title">竞赛管理</div><div class="desc">学科竞赛</div></a>
               <a href="https://www.chsi.com.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/学信网.png" onerror="this.src='default.svg'"><div class="title">学信网</div><div class="desc">学籍查询</div></a>
-              <a href="https://www.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/旷野指南.png" onerror="this.src='default.svg'"><div class="title">旷野指南</div><div class="desc">大学探索</div></a>
+              <a href="https://ai.feishu.cn/wiki/VSe1wM70mi6WPBkW8VCc3CCOn7g" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/旷野指南.png" onerror="this.src='default.svg'"><div class="title">旷野指南</div><div class="desc">大学探索</div></a>
           </div>
       </div>
        <div id="cat-editor" class="category-box">
           <div class="category-title">📝 编辑器教学</div>
           <div class="grid-wrapper">
               <a href="https://www.overleaf.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Overleaf.png" onerror="this.src='default.svg'"><div class="title">Overleaf</div><div class="desc">在线LaTeX</div></a>
-              <a href="https://blog.csdn.net/search/all?q=Typora%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Typora技巧.png" onerror="this.src='default.svg'"><div class="title">Typora技巧</div><div class="desc">跳转与快捷键</div></a>
-              <a href="https://blog.csdn.net/search/all?q=Markdown%E8%AF%AD%E6%B3%95" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Markdown.png" onerror="this.src='default.svg'"><div class="title">Markdown</div><div class="desc">10分钟学会</div></a>
-              <a href="https://blog.csdn.net/search/all?q=LaTeX%E6%95%99%E7%A8%8B" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/LaTeX教程.png" onerror="this.src='default.svg'"><div class="title">LaTeX教程</div><div class="desc">详细总结</div></a>
-              <a href="https://blog.csdn.net/search/all?q=LaTeX%E5%85%AC%E5%BC%8F" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/LaTeX公式.png" onerror="this.src='default.svg'"><div class="title">LaTeX公式</div><div class="desc">数学公式输入</div></a>
+              <a href="https://blog.csdn.net/qq_41907769/article/details/121722716" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Typora技巧.png" onerror="this.src='default.svg'"><div class="title">Typora跳转技巧</div><div class="desc">各种跳转语法</div></a>
+              <a href="https://blog.csdn.net/u014061630/article/details/81359144?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522172327586116800175791009%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=172327586116800175791009&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-81359144-null-null.142^v100^pc_search_result_base5&utm_term=markdown%E8%AF%AD%E6%B3%95&spm=1018.2226.3001.4187" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Markdown.png" onerror="this.src='default.svg'"><div class="title">md使用技巧</div><div class="desc">10分钟学会markdown</div></a>
+              <a href="https://blog.csdn.net/NSJim/article/details/109045914" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/LaTeX教程.png" onerror="this.src='default.svg'"><div class="title">LaTeX教程</div><div class="desc">详细总结</div></a>
           </div>
       </div>
       <div id="cat-my" class="category-box">
