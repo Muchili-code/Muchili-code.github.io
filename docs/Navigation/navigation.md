@@ -119,9 +119,11 @@ hide:
       <div id="resizer-top" class="resizer top"></div>
       <div class="sidebar-menu">
           <a onclick="scrollToId('cat-teach')" class="sidebar-item"><span class="sidebar-icon">📚</span><span class="sidebar-text">教学管理</span></a>
+          <a onclick="scrollToId('cat-study')" class="sidebar-item"><span class="sidebar-icon">📖</span><span class="sidebar-text">学习资源</span></a>
           <a onclick="scrollToId('cat-research')" class="sidebar-item"><span class="sidebar-icon">🔬</span><span class="sidebar-text">科研相关</span></a>
           <a onclick="scrollToId('cat-info')" class="sidebar-item"><span class="sidebar-icon">📡</span><span class="sidebar-text">信息服务</span></a>
           <a onclick="scrollToId('cat-ai')" class="sidebar-item"><span class="sidebar-icon">🤖</span><span class="sidebar-text">AI 工具</span></a>
+          <a onclick="scrollToId('cat-tools')" class="sidebar-item"><span class="sidebar-icon">🛠</span><span class="sidebar-text">工具集合</span></a>
           <a onclick="scrollToId('cat-cs')" class="sidebar-item"><span class="sidebar-icon">💻</span><span class="sidebar-text">计算机学习</span></a>
           <a onclick="scrollToId('cat-zju-other')" class="sidebar-item"><span class="sidebar-icon">🏫</span><span class="sidebar-text">浙大 · 其他</span></a>
           <a onclick="scrollToId('cat-editor')" class="sidebar-item"><span class="sidebar-icon">📝</span><span class="sidebar-text">编辑器教学</span></a>
@@ -142,7 +144,6 @@ hide:
               <span style="font-size: 0.8em; opacity: 0.8;">而漫无目的的奔忙，结局注定是平庸与疲惫。</span>
           </div>
       </div>
-
       <div id="cat-teach" class="category-box">
           <div class="category-title">📚 教学管理</div>
           <div class="grid-wrapper">
@@ -153,14 +154,20 @@ hide:
               <a href="http://zy.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/教学资源.png" onerror="this.src='default.svg'"><div class="title">教学资源</div><div class="desc">资源管理</div></a>
               <a href="https://chalaoshi.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/查老师.png" onerror="this.src='default.svg'"><div class="title">查老师</div><div class="desc">教师评价</div></a>
               <a href="http://libweb.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/浙大图书馆.png" onerror="this.src='default.svg'"><div class="title">浙大图书馆</div><div class="desc">资源检索</div></a>
-              <a href="https://qsct.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/课程攻略.png" onerror="this.src='default.svg'"><div class="title">课程攻略</div><div class="desc">共享计划</div></a>
-              <a href="https://fanyi.baidu.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/百度翻译.png" onerror="this.src='default.svg'"><div class="title">百度翻译</div><div class="desc">在线翻译</div></a>
-              <a href="https://translate.google.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/谷歌翻译.svg" onerror="this.src='default.svg'"><div class="title">谷歌翻译</div><div class="desc">多语种翻译</div></a>
               <a href="https://www.icourse163.org/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/MOOC.png" onerror="this.src='default.svg'"><div class="title">MOOC</div><div class="desc">慕课网</div></a>
               <a href="https://www.zhihuishu.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/智慧树.png" onerror="this.src='default.svg'"><div class="title">智慧树</div><div class="desc">网课平台</div></a>
           </div>
       </div>
-
+      <div id="cat-study" class="category-box">
+          <div class="category-title">📖 学习资源</div>
+          <div class="grid-wrapper">
+              <a href="https://www.cc98.org/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/CC98.png" onerror="this.src='default.svg'"><div class="title">CC98</div><div class="desc">校内论坛</div></a>
+              <a href="https://qsct.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/课程攻略.png" onerror="this.src='default.svg'"><div class="title">课程攻略</div><div class="desc">共享计划</div></a>
+              <a href="https://fanyi.baidu.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/百度翻译.png" onerror="this.src='default.svg'"><div class="title">百度翻译</div><div class="desc">在线翻译</div></a>
+              <a href="https://translate.google.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/谷歌翻译.svg" onerror="this.src='default.svg'"><div class="title">谷歌翻译</div><div class="desc">多语种翻译</div></a>
+              <a href="https://singlelogin.re/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Zlibrary.png" onerror="this.src='default.svg'"><div class="title">Zlibrary</div><div class="desc">电子书库</div></a>
+          </div>
+      </div>
       <div id="cat-research" class="category-box">
           <div class="category-title">🔬 科研相关</div>
           <div class="grid-wrapper">
@@ -175,7 +182,6 @@ hide:
               <a href="https://sci-hub.se/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Sci-Hub.png" onerror="this.src='default.svg'"><div class="title">Sci-Hub</div><div class="desc">文献下载</div></a>
           </div>
       </div>
-
       <div id="cat-info" class="category-box">
           <div class="category-title">📡 信息服务</div>
           <div class="grid-wrapper">
@@ -189,7 +195,6 @@ hide:
               <a href="http://zuinfo.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/服务平台.png" onerror="this.src='default.svg'"><div class="title">服务平台</div><div class="desc">综合服务</div></a>
           </div>
       </div>
-
       <div id="cat-ai" class="category-box">
           <div class="category-title">🤖 AI 工具</div>
           <div class="grid-wrapper">
@@ -205,7 +210,19 @@ hide:
               <a href="https://zchat.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Zchat.png" onerror="this.src='default.svg'"><div class="title">Zchat</div><div class="desc">浙大智聊</div></a>
           </div>
       </div>
-
+      <div id="cat-tools" class="category-box">
+          <div class="category-title">🛠 工具集合</div>
+          <div class="grid-wrapper">
+              <a href="https://www.tboxn.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Tbox导航.png" onerror="this.src='default.svg'"><div class="title">Tbox导航</div><div class="desc">工具导航</div></a>
+              <a href="https://www.pangmen.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/旁门左道PPT.png" onerror="this.src='default.svg'"><div class="title">旁门左道PPT</div><div class="desc">PPT资源</div></a>
+              <a href="http://nav.pangmen.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/个人导航.png" onerror="this.src='default.svg'"><div class="title">个人导航</div><div class="desc">旁门左道</div></a>
+              <a href="https://www.maxiaobang.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/马小帮.png" onerror="this.src='default.svg'"><div class="title">马小帮</div><div class="desc">效率工具</div></a>
+              <a href="https://www.it168.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/IT技术之家.png" onerror="this.src='default.svg'"><div class="title">IT技术之家</div><div class="desc">技术资讯</div></a>
+              <a href="https://www.fc8.top/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/FC8软件库.png" onerror="this.src='default.svg'"><div class="title">FC8软件库</div><div class="desc">资源下载</div></a>
+              <a href="https://woobx.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/一个木函.png" onerror="this.src='default.svg'"><div class="title">一个木函</div><div class="desc">多功能工具</div></a>
+              <a href="https://www.tuding.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/图钉办公.png" onerror="this.src='default.svg'"><div class="title">图钉办公</div><div class="desc">办公助手</div></a>
+          </div>
+      </div>
       <div id="cat-cs" class="category-box">
           <div class="category-title">💻 计算机学习</div>
           <div class="grid-wrapper">
@@ -220,7 +237,6 @@ hide:
               <a href="https://blog.csdn.net/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/王道操作系统.png" onerror="this.src='default.svg'"><div class="title">王道操作系统</div><div class="desc">CSDN资源</div></a>
           </div>
       </div>
-
       <div id="cat-zju-other" class="category-box">
           <div class="category-title">🏫 浙大 · 其他</div>
           <div class="grid-wrapper">
@@ -235,7 +251,6 @@ hide:
               <a href="https://www.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/旷野指南.png" onerror="this.src='default.svg'"><div class="title">旷野指南</div><div class="desc">大学探索</div></a>
           </div>
       </div>
-
        <div id="cat-editor" class="category-box">
           <div class="category-title">📝 编辑器教学</div>
           <div class="grid-wrapper">
@@ -246,14 +261,12 @@ hide:
               <a href="https://blog.csdn.net/search/all?q=LaTeX%E5%85%AC%E5%BC%8F" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/LaTeX公式.png" onerror="this.src='default.svg'"><div class="title">LaTeX公式</div><div class="desc">数学公式输入</div></a>
           </div>
       </div>
-
       <div id="cat-my" class="category-box">
           <div class="category-title">🏠 我的站点</div>
           <div class="grid-wrapper">
               <a href="https://muchili-code.github.io/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/我的博客.png" onerror="this.src='default.svg'"><div class="title">我的博客</div><div class="desc">返回主页</div></a>
           </div>
       </div>
-
       <div class="footer-quote"><span id="typing-text">正在加载灵感...</span></div>
   </main>
 </div>
