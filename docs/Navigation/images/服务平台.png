@@ -1,0 +1,392 @@
+<!DOCTYPE html lang="zh-CN">
+
+
+
+
+
+
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title key="createFolder.title">
+		统一身份认证平台
+	</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/fonts/font-awesome-4.4.0/css/font-awesome.css" />
+	<script type='text/javascript' src='js/qrcode/qrcode.js'>
+	</script>
+	<script type='text/javascript' src="js/jquery/jquery-1.11.1-min.js"></script>
+	<script type="text/javascript" src="js/jquery/jquery.i18n.properties-1.0.9.js"></script>
+	<script type="text/javascript" src="js/i18n.js"></script>
+	<script type='text/javascript' src="js/login/security.js"></script>
+	<script type="text/javascript" src="js/login/pwdYz.js"></script>
+	<script type="text/javascript" src="js/login/login.js"></script>
+
+
+	<script type="text/javascript">
+    //å¤æ­æä½ç³»ç»åæµè§å¨ç±»åï¼éè¦å¤æ­çé¡µé¢å ä¸detectOS()ï¼
+    function detectOS() {
+        var sUserAgent = navigator.userAgent;
+        var isWin = (navigator.platform == "Win32") || (navigator.platform == "Windows");
+        if (isWin) {
+            if(navigator.userAgent.indexOf("MSIE 6.0")>0
+                || navigator.userAgent.indexOf("MSIE 7.0")>0
+                //|| navigator.userAgent.indexOf("MSIE 8.0")>0
+				){ //IE6ã7ã8ã9
+                window.location.href = "https://zuinfo.zju.edu.cn/system/browser.zf";
+            }
+        }
+    }
+    detectOS();
+
+    var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?fe1e64d90fd28a9fbda7cf412f7c5251";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+
+    
+</script>
+
+</head>
+
+<body>
+<input id="send_error" type="hidden" value=" loginView.sendsms.error  "/>
+
+
+
+
+
+<div class="login-page">
+	<div style="padding:10px 20px;text-align:right;font-size:14px">
+		<a href="login?service=https://zuinfo.zju.edu.cn/system/login/login.zf&locale=zh_CN">
+			中文 | </a>
+		<a href="login?service=https://zuinfo.zju.edu.cn/system/login/login.zf&locale=en">
+			English </a>
+	</div>
+	<div class="logo">
+		<img src="assets/images/cas_logo.png" class="" alt="浙江大学">
+	</div>
+	<div class="login-container">
+		<div class="col-xs-12 text-center login-passtitle">
+			<label alt="浙大通行证" title="浙大通行证">浙大通行证 </label>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div class="col-xs-12 login-form-wrap">
+
+			<div class="login-form">
+				<div class="login-header">
+					<ul class="login-ul">
+						<li class="active">
+							<a>
+								<img class="hidden-xs" title="扫码登录"src="images/qcode.png" onclick="showDingQr()" alt="Image about qcode">
+								<img class="blue-qcode hidden-lg hidden-md hidden-sm" src="assets/images/qcode-mobile.png" alt="qcode-mobile">
+							</a>
+						</li>
+						<li>
+							<a><img src="images/qcode-pc.png" alt="qcode-pc"></a>
+						</li>
+						<input type="hidden" id="uuid" value="5212966335002292875" />
+						<input type="hidden" id="baseUrl" value="http://zjuam.zju.edu.cn:80/cas" />
+					</ul>
+				</div>
+				<div class="login-middle">
+					<div class="tab-content">
+						<div class="tab-pane fade active in" id="qcode">
+							<form id="fm1" action="/cas/login?service=https://zuinfo.zju.edu.cn/system/login/login.zf" method="post">
+								<div class="form-group">
+									<p class="error text-left" id="errormsg" role="heading">
+										
+									</p>
+									<div class="input-group">
+										
+										<div class="input-group-addon"><img src="assets/images/user.png" alt="user"></div>
+										<input id="username" name="username" class="form-control user-input" title="职工号/学号/邮箱/别名" tabindex="1" placeholder="职工号/学号/邮箱/别名" type="text" value="" size="25" alt="userNamePlaceholder" autocomplete="off"/>
+										<a class="forget-pwd" target="_blank" href="https://zjuam.zju.edu.cn/zjuam-main/security/activateUser/index" title="点击激活用户" alt="点击激活用户">
+											点击激活用户
+										</a>
+										<input type="button" id="sendsms" class="btn btn-primary get-code-btn" title="获取动态口令" value="获取动态口令" style="display:none" />
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="input-group">
+										<div class="input-group-addon"><img src="assets/images/lock.png" alt="lock"></div>
+										<input id="password" name="password" class="form-control pwd-input" title="输入密码" tabindex="2" onkeyup="CreateRatePasswdReq(this);" type="password" value="" size="25" alt="输入密码" autocomplete="off"/>
+										<a class="forget-pwd" target="_blank" href="https://zjuam.zju.edu.cn/zjuam-main/security/retakepwdUser/index" title="忘记登录密码 ?" alt="忘记登录密码 ?">
+											忘记登录密码 ? </a>
+									</div>
+								</div>
+								<div class="code" id="kaptcha">
+									<div class="col-xs-2 text-left p-r-0 code-text" role="heading">
+										<span>验证码 </span>
+									</div>
+
+									<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 p-0">
+										<div class="col-xs-5">
+											<input id="authcode" name="authcode" class="form-control" tabindex="2" type="text" value="" size="10" autocomplete="off"/>
+										</div>
+										<div class="col-xs-7 p-0 code-img"><img id="yzmPic" onclick="javascript:refreshCode();" class="" />
+											<a href="javascript:refreshCode();">
+												看不清 ? </a>
+										</div>
+									</div>
+
+								</div>
+								<div class="login-info row">
+									<div class="col-lg-9 col-md-9 col-sm-9 col-xs-8 p-l-25 login-button"><button type="button" class="btn btn-block btn-primary login-btn" id="dl" title="登 录 " >登 录 </button></div>
+									<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 remember-me ">
+										<input class="default-checkbox checkbox" type="checkbox" name="rememberMe" value="true"  id="rember">
+										<label for="rember">记住我 </label>
+									</div>
+								</div>
+								<input type="hidden" name="execution" value="937da77c-9ad9-4be0-80b3-8dd45a940fca_ZXlKaGJHY2lPaUpJVXpVeE1pSjkuVFhCemIySXllRmg0VUd0bGIzZDBhVVpOYUhSTVpWVkNOa1o2SzB0Mk5VcFlaak5UTW1ZelVHNXVNVzkzTWpJNFZ6YzNlRlIwUlZsTlNETXJNQzlIV1RsaFdqVTJNV2R5WW1ORk5YQjRSVEZtYUdka1RtbHNXVE01U0hOQmFrUjNTMlZqWkRNeUszUkJUamxEWlU5V1pTOXpSR3R4VVRkMmRrbDFNVU4xUzNSV2VWQTBLMWh4YWk5eGNVOUJjVGw2VlRONVNXNDJUSGxPUTBrd2NWSllkVGRuSzI5dWNYaGtSMGR3WVUxak5uWm5XV0p3ZWpWSFR5OW5PVWw0VEdsRmJuSmlRemxtTjBoSU9FRTVlbUZZZW1OU1pXMVhSa2RPVVVkaWNVbFFabkpJYlV4M09DdG1aRUpEWlRKRU5pOTZSV1p5VDNOeFEzWmhjVGxZYlhObWFXOXNZV1ZJUkRGcFdHeHFVbThyUWtreFFVNDFReXMzU0V0NWFUQmlVSHBQYUdOUGRrZFVhV0pxTWxKR1NETTRlQzh3UTFacWJVaHlka05XSzNRMU1WUTRORlpOYkVwbGMyOUNjbk5KWkRGNk1tNUlXVGxXTWxSNVdWWm9NalZEU2tKR2JtRm9VMGQyV1ZseFJVMWlVSHBhWm1sSk5ETjNNVzlGWm1acGIxWm1XUzlTZHpsYVVHWkZaSE5JZEhWdmVVTm9UMUJOTm5SbmFYbENhVnB0ZVdGc2VXVmFObnBqYWxBMVF6VklVMUZpVGtreFRFTjVZa2MyT0docVJ5OVNNRlJ1WjFaV05uTjFTMm8yY1V4UFYzaGxZWEJuYjFKRmNVWkpSWEJEVWxsM2FHbFNRV1E0ZERaNlZ6UXphV0pVY25RNGFubE9kRGhKV21GclV6ZERVRFp2VUZKTGNtWkNUbmszYlhndmVYRmpiSGRFVFVkNFlrTlVhblZzV2pWRmVVc3pLemN5TTBGU1ZtUkZjelEzTW1kc1dUWmhSRE5GVVRaSlRFVkZUMGxXWkZoUlpYbGFaa1Z5UjFveWFVRnFjQzl6UlZKRGEwWnRVVGcyYkdNelRIQTVTVkJVVDJaRGFFbG9Ta0phTkVsbmEybHBWM0J6WW1vM2FtcGhSbk41WTFCUU5XSTNLME5WVG1JdlZUTmxiWEZuUzJ0V1JXWmpiV05HVlU0eFYyWmtSSFJaZEcxMldGTlVjaXNyWlRjMFRWaElOblozZUdwMFNXZEtUbkkzVDFGNlJVTmpRVEpuVTFST1UwcFpkV1kwV0d4WlRVTlFUSGMxZWtoSVVUQmpRMmx5ZFUxa1JXSkRhR3RFYm5ZeVpYVlJjbUYxYW5SM1ZHZHNOVTl6WXpCNmFYZENkeXRzUzBsWVRYRXZaRmRUV1RSME1IRlNaRk50ZG5NNFZXeGhaemRUV0RFemNsUnlSa1F5VGpGeWFYaEdZblpzWms5dVJXWXhPV05WUnpVMWRETnZZblI2UjNkaldUUkhlRTUwU0ROalkxTnFhWFJJYjJrNWFtcGFVWEFyYUdGak9HZFdaVWhMZFVnM1VsUXlSV1J6TWpsQmNtZERSekE1T1ZaUWNVdGpObGczYjFVcllVZHFhVzVyZW1wNWExRmxOalIwUkRaeVlrNTBVemRxZEhOT01tOTVTR2syT0RKV1JuZFBZM2hPYkU4dlpsWlpUVkpEZG05NFExWjNkMEYzVDBGR0swbElhMlJQU1c5b01TOURTMDlHUzBnclRXTlBVVzVwYW1aME9HdEJaVFkxY2xSYVdVUnFRMlZITlZkS1R6bEdORmxXUW5OcFMwZGxla3dyUzJKMVkxbFpVRlpLYmpoMmNraFJkVVZ4TjFSVk5GZHZVREpFV0ZSbVJ6RXZPVkpVY1ZKblNsWnhlblp3Y1V0SGVIZFZWMHRXUWt4eVVXMU5VMGxVYTFaQlRFWlZUMkZsYkZsNlJWUndiV0paUVd0TmIycHFhMFJ0Y25GWVREUnNlbTFqUzI1TVZsYzBTU3RIZUZwVFEwWk5jemxsYzBWU05HMXNUV2Q1VEZOaU5ISXZRVFJKTkhKVk4yZE9TM3BYUmxWQ09VVnlSSHBLTVd0YUwwVXZUa3cyTUZwR2MwZ3pURXA2ZUhwbGJqWlRUamxhYlV0RGN6SlRkRWg1YjFaemNHZ3ZPVEJhUlZKUlpUWnROR0ZqZGpKNlJVUk5lbFZxUlZkbWVHaHZVVTVDTWxaQ1JFMUdOVFY1VVRWd2EwZG1RemR2Y205NWRFdzVkRUoxYkc4cmFWUlpLek5OYUdZNFFsTkdhbVkwTTBFelRXTTRXVmhJZG5Wc1JqTkRTM0Y2VWt3MGRubEpZMWMwUVV0Tk1ESkliSFZPYWs5Q1RpdDNZakZHTDJSRmEzRjVabll5TjFOdlJrSnZXa2xYTmpsbVNrOHJZV2hDVjIxRlMzTkhTVEUxVFdSM1V6Qm9jWFZKUjBoSE9IRnFXV3RYWlV4MVFrMVRUWGRWUXl0c1VYaEJMMjRyUlVsa2NtcEdNblpxY2pBM01qbHNkRzV6VDBOSmIwMTNUMmhuWkc5eldFWnphM1UyTVVST1JFcFFOM0E1V0dSUU1XdDVjbUZYYUhFME9FbGhWMHgzZVhaa2NtZDJNVTF0Y1hZMVNFTjFUMWxYT1Vka01XOUtiMnB0TWtGcE9WTnpWWHB3TTJWVVUzQkNRVXgwZURORFJVVk5TV1ZyYmk4dlYxVjZlWFo1VmxreFpqbHRlRWhhWXpKUE0zaFNhVTVRVjJkaFVXaE5ia0ZqWjFKdWNuZzNhM1ZQTVRsMGJHbE1XR0ZaY1doQlpFdG9iREZ1VkRVMVVHTkJWblpWZEZkQk9WYzVMelpRVFhjck1HSkxjM0ZPZG1Wa1VuUnZXbTlDVUhaUGMxSmlUMVU1VUcxeFQxbDJaQ3RzTmpGSFRGWk9kRkpzZEhsT1YwSkJkMjh2WVRSNlJqSmtRMEZTVTAxaWIzTkJkamhKVlhaR00yeHdZWGxJT0dFNU1Wb3ZhMUU0TVRsdGNVMDVRM2RoZFVaMFNWWlBjVmhJT0ZwU1ozQnVNbTVrVFhkb1lqRXdiVmRVYlRsdU0yMHpkVGg2YUV0bVF6SjFRbFZDU2tvd1pXRTBVVzVLUVV4bk9VRnhSMFU0TVdFM1dtRktkVVF4S3k4ck9VODROSEZSU2pGSmIzcHNlakZDYkV0Nk5tOUplVzh3TjFab1pqVXJTSGRzY0RjeVZEZHhPVVVyYUVwR1psWXZiMlpMU25OalpYbDNXVU4zUkhSM2VISlplbE15YUc1SWJpOUZUR0Z3WjI5QlJqaFFSMjFWUzFwWk1rbzNTblEwV1hrMU9XbDRTbmRaY3pkQk5USjRVa1ZySzBKUlNuQTVVbFptT1RoVWQyRktVSFZYVkZZNFFrZHlXVGhOUnpkWFNWbENPVVJvVDNWbWNWaElTSFJHZVcxUmNUTlBXSHBaT1dWMmJqWnNVVUZYTkZoalVucHJiV05FV2lzeGFWWlZjMjFzUm5CNVVsbExiMlp1Ylc5cVFtZFNZbTFYVUhZNU9VTkRWM0JWYTNoR1VVMUdaMWxEUVhOWVZFOUlVMDFoUzNKTU4zRkVSRUkyZUZwaVkxRlFSaXR1YTBkVmREUjJhbWxTV1VWMFpqVnJUbGhGVDNreVJXUmFhazlQY3pGdWNuVmpkVzFEZUc1VFYzUkhPWHBSTUdGaU1GbExjbGRYWm5KNlRYaEdiRWxZVmpGVU9VNW1UMmxFUlU5Wk1GSlFVMmQyTXpOd01YcE9VekJ5T1VSaWExa3dkRnBLUVZZeWVGTm1Ua0ptUmt4SmNUTlJNRkIzZWt0SGVYaElSbXQ0YVRsb00wZGpSVm94TDFwTFduYzJVa0UzU0dSalpHMXhWRXRLVjBjMFprbHBSVGx2VVZSck5ubGhUSHBUTVZreGVUUnJlRE5TTldWd1dqUnJLME0xTUd0S1pVWnNjMlpzVGtWUE9TdDNlRkV4TTI5VGJtNW9ObWhwWVZaRGRVSlRlVzlCZUc5TmExWkpWVkkzZWxKM1RUZG5SemgzT1RSMVJVMTRZMjU2TUdOWlozZG1jMnRzVWxweFVVOVVNSHB3TUZSb2RYSlFZVFZJTm5JeFRqSlBURWxMWmtkU1NFd3ZUSGxETWtkUlEyMXlZMHBJSzBveU5tTXlVaXRKVFZCM01reEJVM0IxY21Wb1ltUm9jVkpLTWtwVFJDOTVObEZsU1ZVMFEwUkxjWGxDUTJwT2QwZzNjSEZWWkVSblkyNW5RMjloUkdWd05WTXhXa1p2TDBSVUwxZEdLMmRSTmpRMU1tOWhPRVY2WlU1UU5UbE1jM0k1VEhOR2JTdG5kMnBPUlVoSVYzWXhaMWhQUmt0Wk9XdFVNRmhKYTFKb2MwcFBVak5hTjFsTmRVTnZaMnBzWW10Rk0zTkpRVWhqWVhCM2QwWnlWVEJLUVZwaGJtSmljbmwyUmtSaVdXazNXbVZ2VjFkclR6RXJVekoxT1ZKS05reHhkRVZvYlZGSlluaHFXVVUxT0ROblNsVkhVVUUxUlNzeVltZFlXRzlyZGpSTmRIRlVUbWRVUTA1dFN6ZFBOVmhXTDI5Q2RXSXZOVE5oVGtzd1MybEJjMGhqYVU5aVNVRXhWV3Q0Ukd4UmFXdEVUelJOZG1wQ2JEUm5NelY1ZDBSb1NtSmpXbWMzVkhFMlVVZE9kWGhQVjJKaVVFUnhRM0o2VlZwWmRYbFlhRzUyVVRZclUwOWhVV1o0VEVweFkwVjFVbEpGVEZCblMwZEZWMVV4UkRoUEszRnBhU3MxYUV0UFdFSldhbEJDT0VGcU1FTm1lVXg1U2xOYVVHOHdUWHBSVTNwRE5EWTJUSGQyV0ZwTlJWWkRZMFJOWlc4MFNtdFVka1J6UVhJd1NVZzVWMFI2Vmk4NU1GTlphVFkwUWxSTFJGZEVXSHB4Y1VKbVNtUnlTUzkyYkdOcGFtTlNjMlY0Ykd4c2FFeFNiUzlwYzFwNWVVeFBNMFJvVkVKVmMyTmlRM3BsVERWMlUwSXlNbU5UY2s1YVlrdzFTMEZ6YTNOS2FVZDBOM0o1TVVsUGVreEdUMUZ0Y1dsa0wyOHpjMkZuVHpoaGNVOHpkRGt5VERkaWFsVjRTRzkwTDJSRmFVbEhjRGxXVEVGMlRVOVhVVTVvZHpKVlFqVnpObHBPU3paeWMwRlRVMFl2U3l0WWRrNU1jSFpIUlc1NU9FRllZazh5TUhaMVMwcFhSbXQzTW5Cbk9VbzNRVFJZZW5KYVN5OVRMeTg1TjJ4U2JtSXlSMk5QUmpVemRVbzFOMmRyUlhWc1ptWlpUVGRJVW10c2FEWmFialEzUm5GNE1UWTNlVmh3ZVU5WGFGQk9lU3MyYWxsMk9HczBibGxzVG14NVMwRm1kRmhzY1VnNFIyWnRhVXhtVEdaVWNHZGhUR1kzWlc1eldWZ3pjRTFsZWt4WU1HWk5SMGQ2WkdrMVpHaFViVTFqTXpnemNVbE5UbmhWUkd0NVlsVkxPR0kyWlhOV2NEQkRRMnRrTWtWSk0wWldOSGwzYzNWWlRVaExOMnRrV1d4MVpGQk5jMHhXYUdremJGWndRMjFJVFZaa1RHWjNlVVIzUkhkTVlsRkRjREZOWldaT2JqQjVhRlIzZFVoTVlTdEhWMDFuZGtkQ1RVWlJPV1o2UVVSVFVscFFSelU1VkhOTVUzbGtXWEpZTWtWV1dHaHhlbVZWTjFaWVJrMHhMMGhQVXpGb1YyczVRV05ZWkdWUlkzY3ZkUzk0V2s1WlVVTjJLMFI1ZG1rMmJqaFlibXBrYTBKMlRtNDNLMDFxWm5selJISndLek4yWVVkSFduTklXRlZaV0VaU1MwNWxTMWRQT0Znd05tUkpTRTFZVW5Wb1pXUlFNbVpOVkhORFoyOUhUbk5HUVZSVVpVbElOV2RNWmxaeFFWUm5TMlp6T0VONE55OXBVMHRXUTBVek1tbDZVR3gwUlZkdGRuTkRZM0JFVlhGVE1qSjNWWGxZZVVwWk5pczVOM1IxYWxGVlJqWlZSVGx4UlZvMkwwOW9Sa1ZKYUdOVFkzWnBRMFpvTWtkQ1VXNVhaRVV2TUdaMU9VNDRiMmMzUjJ4cFNHOVFOR1ZJYW5SeU5GSXZjSGx6WWpaQ09IQkVOVXhLVVdsc1JXcDNSRTlKTjB4VFozTlNWV1l2UVZCQ05tc3hWV2g0U0ZkMWRrUXlaa2R0VHpGdGVubDJOME0zYm5GQlNrSkxaR1F2VlVoc1dtcFFhVlJFYmtvdmJsRXdhMlJ1T1dSeGVVNVJhRWhUZGtkSE0zUTNRMnRRTkhnNVEzZEVSalZTUTJ0c2RHRTVUVkZZTVVSNk9GUnJXVTF0TlVOb2NYRmhhM0UwY3pWdE1ucHpVbGhYT1ZkdVdUUnBlVkZ2ZG1wWVpsaHpkRFpVUldrMk16WmhaM0Z5WW5vMFQwMVBia0Y1ZEZOVE56bHdVazlyVkhOQlluaG1VRXhoUzBwVFNtcFVSSGM0VkVjd2NuUkljMUpTUnpRM2MyRkNNa2xvT0ZObFVHNWlOMnN5YTFocVlsRm9VRmxUUjNKUVkzUnBUV1IyV0dKMFVGUnRUSFF6WlRkeVpEQm5Tbk5HZEdWcU4xZEROMDQ0Ym1JM1RHNHZUSFJ4UjJ4TldFMVRjRWRyV0hOdE9FOVRkbTlDTjNBcmRVTXlWMjlZYVU1ek1rSTJaMmx1YkdOV09XSjJXRUp0TDI5b2FWaDNXa2w1ZHpWSkswWndZVTE1Y0RBMlJqWkVSRmRZWVRWeFRYcEhhallyVVV0aVZtOUYucHMyN3p1bG5sYVEwdzVFcDBobUNPMFJkYjhxaXhpQS1jNmo0UXJVNXM2RV85c3ZKYzJVWEhGeHoycDNxdjFENGstcGxYZ2pGRUtNQjk1WGd6ZnhPSnc=" />
+								<input type="hidden" name="_eventId" value="submit" />
+							</form>
+							<div class="text-center">
+
+								<p class="text-center notice">
+
+								</p>
+
+								
+
+								<div class="login-img">
+									<h3 role="heading" title="国际校区师生登录">
+										国际校区师生登录
+									</h3>
+									<a href="https://login.microsoftonline.com/292620c5-ae10-4553-accf-68ec80325008/oauth2/v2.0/authorize?client_id=b85e9cdb-5584-4536-9108-5136aa1db133&response_type=code&redirect_uri=https%3a%2f%2fzjuam.zju.edu.cn%2fcas%2flogin%3fclient_name%3dAdfsClient&scope=https%3A%2F%2Fgraph.microsoft.com%2FUser.read"><img src="assets/images/intl.png" title="国际校区" alt="国际校区"></a>
+								</div>
+								<div class="login-way">
+									<h3 role="heading"  title="第三方账号登录">
+										第三方账号登录 </h3>
+									<a href="#" title="钉钉"><i class="dingding" onclick="showDingQr()"></i></a>
+									<a href="#" title="QQ"><i class="fa fa-qq"></i></a>
+									<a href="#" title="微信"><i class="fa fa-weixin"></i></a>
+								</div>
+								<p class="text-center notice">
+									统一身份认证咨询电话 0571-87951669
+								</p>
+							</div>
+						</div>
+						<div class="tab-pane fade text-center" id="qcodepc">
+							<span>手机扫描，安全登录 </span>
+							<!--<a target="_blank" id="qrcode" href="javascript:void(0);">
+<div id="qrcode-img">
+
+</div>
+</a>-->
+
+							<a target="_blank" id="qrcode" href="javascript:void(0);">
+								<div id="qrcode-img"></div>
+							</a>
+							<div id="qrcode-content">
+								<div class="qrcode-bg"></div>
+								<p class="refresh-text">
+									<i class="fa fa-refresh"></i>
+									<a href="#" id="qrcode_refresh">
+										刷新 </a>
+								</p>
+							</div>
+
+							<span>只限于<span class="blue"><a href="http://m.zju.edu.cn" target="_blank">我的浙大APP</a></span>扫码登录</span>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="login-footer"></div>
+			</div>
+		</div>
+	</div>
+	<div class="ding-QR">
+		<div>
+			<img onclick="returnPre()" class="qr-toPre" src="images/qcode-pc.png" alt="Image about qcode">
+			<div class="ding-show ding-qrcode">
+				<div id="login_container"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+    $(function() {
+        // ж IE     
+        if (navigator.appName == "Microsoft Internet Explorer" && parseInt(navigator.appVersion.split(";")[1].replace(/[ ]/g, "").replace("MSIE", "")) < 9) {
+            $("body").append("<style>.default-checkbox + label:before{border:0px;}</style>");
+            //console.log("您的浏览器版本过低，请使用IE9及以上版本");
+            $(".login-page").css("height", $(window).height());
+            $(".login-container").css("filter", "progid:DXImageTransform.Microsoft.gradient(startColorstr=#70000000,endColorstr=#70000000)");
+            $(".blue-qcode").css("display", "none");
+            $(".default-checkbox").css({
+                "margin-top": "11px",
+                "margin-left": "35px"
+            });
+        }
+        var loginMargintop = $(window).height() - $('.login-container').height();
+        var loginMarginright = $(window).width() - $('.login-container').width();
+        var logoMarginright = $(window).width() - $('.logo').width();
+
+        $('.login-container').css({
+            'right': loginMarginright / 2,
+            'margin-top': loginMargintop / 2 + 10
+        });
+        $(".ding-QR").css({
+            'right': loginMarginright / 2,
+            'margin-top': loginMargintop / 2 + 10
+        });
+
+        if ($(window).width() > 1440) {
+
+            $('.logo').css({
+                'top': '20%',
+                'right': logoMarginright / 2
+            });
+
+        } else {
+
+            $('.logo').css({
+                'top': '5%',
+                'right': logoMarginright / 2
+            });
+        }
+    });
+    $(window).resize(function() {
+
+        var loginMargintop = $(window).height() - $('.login-container').height();
+        var loginMarginright = $(window).width() - $('.login-container').width();
+        var logoMarginright = $(window).width() - $('.logo').width();
+
+        $('.login-container').css({
+            'right': loginMarginright / 2,
+            'margin-top': loginMargintop / 2 + 10
+        });
+
+        if ($(window).width() > 1440) {
+
+            $('.logo').css({
+                'top': '20%',
+                'right': logoMarginright / 2
+            });
+
+        } else {
+
+            $('.logo').css({
+                'top': '5%',
+                'right': logoMarginright / 2
+            });
+        }
+
+    });
+
+    !function (window, document) {
+        function d(a) {
+			var url = "https%3a%2f%2foapi.dingtalk.com%2fconnect%2foauth2%2fsns_authorize%3fappid%3ddingoayiy2etqcpmyc0lpk%26response_type%3dcode%26scope%3dsnsapi_login%26state%3dSTATE%26redirect_uri%3dhttps%253A%252F%252Fzjuam.zju.edu.cn%252Fcas%252Flogin%253Fclient_name%253DDingDingClient";
+			var service = GetQueryString("service");
+			if (service != null) {
+				url = url + encodeURIComponent(encodeURIComponent("&service="+encodeURIComponent(service)));
+			}
+
+            var e, c = document.createElement("iframe"),
+                d = "https://login.dingtalk.com/login/qrcode.htm?goto=" + url ;
+            d += a.style ? "&style=" + encodeURIComponent(a.style) : "",
+                d += a.href ? "&href=" + a.href : "",
+                c.src = d,
+                c.frameBorder = "0",
+                c.allowTransparency = "true",
+                c.scrolling = "no",
+                c.width =  a.width ? a.width + 'px' : "365px",
+                c.height = a.height ? a.height + 'px' : "400px",
+                e = document.getElementById(a.id),
+                e.innerHTML = "",
+                e.appendChild(c)
+        }
+        window.DDLogin = d
+    }(window, document);
+
+
+    function showDingQr() {
+        $('#username').after($('#username').prop("outerHTML")).remove();
+        $('#password').after($('#password').prop("outerHTML")).remove();
+        $(".ding-QR").show();
+        $(".login-container").hide();
+
+		var obj = DDLogin({
+			id:"login_container",//这里需要你在自己的页面定义一个HTML标签并设置id，例如<div id="login_container"></div>或<span id="login_container"></span>
+			goto: "https%3a%2f%2foapi.dingtalk.com%2fconnect%2foauth2%2fsns_authorize%3fappid%3ddingoayiy2etqcpmyc0lpk%26response_type%3dcode%26scope%3dsnsapi_login%26state%3dSTATE%26redirect_uri%3dhttps%253A%252F%252Fzjuam.zju.edu.cn%252Fcas%252Flogin%253Fclient_name%253DDingDingClient", //请参考注释里的方式
+			style: "border:none;background-color:#FFFFFF;",
+			width : "300",
+			height: "350"
+		});
+    }
+
+    function returnPre() {
+        $('#username').after($('#username').prop("outerHTML")).remove();
+        $('#password').after($('#password').prop("outerHTML")).remove();
+        $(".ding-QR").hide();
+        $(".login-container").show();
+
+    }
+	function GetQueryString(name) {
+		var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+		var r = window.location.search.substr(1).match(reg);
+		if(r!=null){
+			return  unescape(r[2]);
+		}else{
+			return null;
+		}
+	}
+    var handleMessage = function (event) {
+        var origin = event.origin;
+        console.log("origin", event.origin);
+        if( origin == "https://login.dingtalk.com" ) { //判断是否来自ddLogin扫码事件。
+            var loginTmpCode = event.data;
+            //获取到loginTmpCode后就可以在这里构造跳转链接进行跳转了
+
+            window.location.href="https://oapi.dingtalk.com/connect/oauth2/sns_authorize?appid=dingoayiy2etqcpmyc0lpk&response_type=code&scope=snsapi_login&state=STATE&redirect_uri=REDIRECT_URI&loginTmpCode="+loginTmpCode;
+        }
+    };
+    if (typeof window.addEventListener != 'undefined') {
+        window.addEventListener('message', handleMessage, false);
+    } else if (typeof window.attachEvent != 'undefined') {
+        window.attachEvent('onmessage', handleMessage);
+    }
+</script>
+<!-- Matomo -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+	/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u = "http://piwik.zju.edu.cn/";
+        _paq.push(['setTrackerUrl', u + 'piwik.php']);
+        _paq.push(['setSiteId', '6']);
+        var d = document,
+            g = d.createElement('script'),
+            s = d.getElementsByTagName('script')[0];
+        g.type = 'text/javascript';
+        g.async = true;
+        g.defer = true;
+        g.src = u + 'piwik.js';
+        s.parentNode.insertBefore(g, s);
+    })();
+</script>
+<!-- End Matomo Code -->
+
+</body>
+
+</html>

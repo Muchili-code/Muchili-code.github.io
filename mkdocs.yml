@@ -153,8 +153,8 @@ plugins:
   - awesome-pages
 
 nav:
-  - 🏠主页: 
-    - Home: index.md
+  - 🏠主页:  index.md
+  - Home:
     - 更新记录: changelog.md
     - 建档指南: 
       - 仓库链接: Site Instruction/仓库链接.md
@@ -183,6 +183,7 @@ nav:
       - 9.查找: notes/College 2/2.数据结构与算法分析（FDS）-Fundemental Data Structure/期末复习/自己笔记/9.查找.md
       - 10.排序: notes/College 2/2.数据结构与算法分析（FDS）-Fundemental Data Structure/期末复习/自己笔记/10.排序.md
       - 总复习: notes/College 2/2.数据结构与算法分析（FDS）-Fundemental Data Structure/期末复习/自己笔记/总复习.md
+
   - 📚College 3:
     - 嵌入式系统:
       - 1.导论: notes/College 3/1.嵌入式系统/自己笔记/1-导论.md
@@ -206,4 +207,4 @@ nav:
     - 友情链接: Miscellaneous/友链.md
     - 选调生相关:
       - 选调生座谈会: Miscellaneous/选调座谈会.md
-
+  - 🛫导航: Navigation/navigation.md
