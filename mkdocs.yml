@@ -153,8 +153,8 @@ plugins:
   - awesome-pages
 
 nav:
-  - 🏠主页:  index.md
-  - Home:
+  - 🏠主页:  
+    - 🏡Home: index.md
     - 更新记录: changelog.md
     - 建档指南: 
       - 仓库链接: Site Instruction/仓库链接.md

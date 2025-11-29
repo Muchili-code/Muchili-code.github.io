@@ -1,4 +1,12 @@
 - "2025":
+  - "2025-11-29":
+    - "newpage":
+        text: 增加了自己的网址页导航
+        href: /Navigation/
+  - "2025-11-18":
+    - "pageupdate":
+        text: 添加误差理论的笔记
+        href: \notes\College 3\1.误差理论和数据处理\期末复习\
   - "2025-11-14":
     - "pageupdate":
         text: 添加嵌入式系统的笔记
