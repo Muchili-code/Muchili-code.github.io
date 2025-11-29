@@ -114,7 +114,6 @@ hide:
 
 <div class="nav-page-wrapper">
   <div id="stars"></div><div id="stars2"></div><div id="stars3"></div>
-
   <nav id="sidebar" class="nav-sidebar">
       <div id="resizer-top" class="resizer top"></div>
       <div class="sidebar-menu">
@@ -135,7 +134,6 @@ hide:
           <button id="toggleBtn" class="footer-btn" title="折叠"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 19l-7-7 7-7m8 14l-7-7 7-7"></path></svg></button>
       </div>
   </nav>
-
   <main class="nav-main">
       <div class="header-area">
           <div class="main-title">我的导航站</div>
@@ -178,7 +176,7 @@ hide:
           <div class="category-title">📖 学习资源</div>
           <div class="grid-wrapper">
             <a href="https://search.bilibili.com/all?vt=76243560" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/bilibili.png" onerror="this.src='default.svg'"><div class="title">Bibilli搜索版</div><div class="desc">仅仅搜索引擎的b站</div></a>
-              <a href="https://www.cc98.org/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/CC98-1.png" onerror="this.src='default.svg'"><div class="title">CC98</div><div class="desc">校内论坛</div></a>
+              <a href="https://www.cc98.org/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/cc98-1.png" onerror="this.src='default.svg'"><div class="title">CC98</div><div class="desc">校内论坛</div></a>
               <a href="https://qsct.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/课程攻略.png" onerror="this.src='default.svg'"><div class="title">课程攻略</div><div class="desc">共享计划</div></a>
               <a href="https://fanyi.baidu.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/百度翻译.png" onerror="this.src='default.svg'"><div class="title">百度翻译</div><div class="desc">在线翻译</div></a>
               <a href="https://translate.google.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/谷歌翻译.svg" onerror="this.src='default.svg'"><div class="title">谷歌翻译</div><div class="desc">多语种翻译</div></a>
