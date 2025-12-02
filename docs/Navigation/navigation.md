@@ -266,7 +266,8 @@ hide:
       <div id="cat-my" class="category-box">
           <div class="category-title">🏠 我的站点</div>
           <div class="grid-wrapper">
-              <a href="https://muchili-code.github.io/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/我的博客.png" onerror="this.src='default.svg'"><div class="title">我的博客</div><div class="desc">返回主页</div></a>
+              <a href="https://muchili-code.github.io/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/我的博客.png" onerror="this.src='default.svg'"><div class="title">我的个人博客</div><div class="desc">返回主页</div></a>
+              <a href="https://www.cnblogs.com/Muchilli/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/博客园.png" onerror="this.src='default.svg'"><div class="title">我的博客园</div><div class="desc">返回</div></a>
           </div>
       </div>
       <div class="footer-quote"><span id="typing-text">正在加载灵感...</span></div>
