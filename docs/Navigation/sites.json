@@ -7,7 +7,7 @@
   "素质拓展": "http://st.zju.edu.cn/",
   "智云课堂": "https://classroom.zju.edu.cn/",
   "教学资源": "http://zy.zju.edu.cn/",
-  "查老师": "https://chalaoshi.cn/",
+  "查老师": "https://chalaoshi.de/static/img/favicon.ico",
   "浙大图书馆": "http://libweb.zju.edu.cn/",
   "MOOC": "https://www.icourse163.org/",
   "智慧树": "https://www.zhihuishu.com/",
@@ -66,7 +66,7 @@
   "编程指北": "https://csguide.cn/",
   "爱编程的大丙": "https://subingwen.cn/",
   "Hello 算法": "https://www.hello-algo.com/",
-   "王道操作系统": "https://space.bilibili.com/95228778?spm_id_from=333.788.upinfo.head.click",
+  "王道操作系统": "https://space.bilibili.com/95228778?spm_id_from=333.788.upinfo.head.click",
 
   "浙江大学": "https://www.zju.edu.cn/",
   "生仪学院": "http://www.cbeis.zju.edu.cn/",
@@ -83,5 +83,6 @@
   "Markdown": "https://markdown.com.cn/",
   "LaTeX教程": "https://www.latex-project.org/",
   "LaTeX公式": "https://katex.org/",
-  "我的博客": "https://muchili-code.github.io/"
+  "我的博客": "https://muchili-code.github.io/",
+  "博客园": "https://www.cnblogs.com/"
 }
