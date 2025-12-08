@@ -2,7 +2,7 @@
 
 ## 前言
 
-由于某次校内DNS的污染，导致ZJU的chaolaoshi域名被墙，现在只能挂梯子查看。这里列出几个学校热心同学开发的chalaoshi的网站。
+由于某次校内 DNS 的污染，导致 ZJU 的 chaolaoshi 域名被墙，现在只能挂梯子查看。这里列出几个学校热心同学开发的 chalaoshi 的网站。
 
 ## 查老师原生网站
 
@@ -10,13 +10,13 @@
 
 ![chalaoshi-原生网站](./chalaoshi-原生网站.png)
 
-## 查老师镜像网站1
+## 查老师镜像网站 1
 
 [查老师 - 浙大匿名教评系统（无需挂梯子）](https://0.e.0.0.1.1.f.1.0.7.4.0.1.0.0.2.ip6.arpa/)
 
-![chalaoshi-镜像网站1](./chalaoshi-镜像网站1.png)
+![chalaoshi-镜像网站 1](./chalaoshi-镜像网站1.png)
 
-## chalaoshi离线版1
+## chalaoshi 离线版 1
 
 [查老师离线版镜像搜索网站（不需挂梯子）](https://chalaoshi.netlify.app/)
 
@@ -26,14 +26,14 @@
 
 
 
-## 查老师离线版2
+## 查老师离线版 2
 
-[查老师离线版（不许挂梯子）](https://chalaoshi.qzz.io/)
+[查老师离线版（不需挂梯子）](https://chalaoshi.qzz.io/)
 
-![chalaoshi-离线版2](./chalaoshi-离线版2.png)
+![chalaoshi-离线版 2](./chalaoshi-离线版2.png)
 
 ## 查老师离线客户端
 
-见校内链接：[查老师离线客户端For Win11](https://www.cc98.org/topic/6264822)
+见校内链接：[查老师离线客户端 For Win11](https://www.cc98.org/topic/6264822)
 
 ![PixPin_2025-12-08_17-10-29](./查老师离线客户端.png)
