@@ -1,0 +1,46 @@
+/* 顶部导航栏雪花按钮样式 */
+.snowflake-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.25s;
+    margin-right: 0.5rem; /* 跟右边的元素稍微拉开点距离 */
+}
+
+.snowflake-toggle:hover {
+    opacity: 1;
+}
+
+/* 自动适配日间/夜间模式的颜色 */
+.snowflake-toggle svg {
+    fill: currentColor;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+/* 控制引入的 SVG 图片大小 */
+.snow-icon-img {
+    width: 1.5rem;  /* 控制图标宽度 */
+    height: 1.5rem; /* 控制图标高度 */
+    vertical-align: middle;
+}
+
+/* 确保原来的容器样式依然有效 */
+.snowflake-toggle {
+    /* 保持原来的 flex 布局等设置 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.25s;
+    margin-right: 0.5rem;
+}
+
+.snowflake-toggle:hover {
+    opacity: 1;
+}

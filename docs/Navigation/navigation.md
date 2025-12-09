@@ -6,8 +6,8 @@ hide:
 ---
 
 <style>
-  /* 屏蔽全局雪花特效 */
-  body > canvas { display: none !important; }
+  /* 屏蔽全局雪花特效
+  body > canvas { display: none !important; } */
   
   /* 基础 MkDocs 样式重置 */
   .md-content__inner > h1 { display: none; }
@@ -164,7 +164,7 @@ hide:
               <a href="https://zjuers.jiepeng.tech/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/zjuers轻首页.png" onerror="this.src='default.svg'"><div class="title">轻首页自定义版</div><div class="desc">自定义版的轻首页</div></a>
               <a href="https://www.tboxn.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Tbox导航.png" onerror="this.src='default.svg'"><div class="title">Tbox导航</div><div class="desc">工具导航</div></a>
               <a href="https://www.pangmenzd.vip/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/旁门左道PPT.png" onerror="this.src='default.svg'"><div class="title">旁门左道PPT</div><div class="desc">PPT资源</div></a>
-              <a href="https://www.goto-mars.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/个人导航.png" onerror="this.src='default.svg'"><div class="title">旁门-个人导航</div><div class="desc">旁门左道的个人导航</div></a>
+              <a href="https://www.goto-mars.com/people/aLYqyNvYvd" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/个人导航.png" onerror="this.src='default.svg'"><div class="title">旁门-个人导航</div><div class="desc">旁门左道的个人导航</div></a>
               <a href="https://www.maxiaobang.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/马小帮.png" onerror="this.src='default.svg'"><div class="title">马小帮</div><div class="desc">效率工具</div></a>
               <a href="https://www.it168.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/IT技术之家.png" onerror="this.src='default.svg'"><div class="title">IT技术之家</div><div class="desc">技术资讯</div></a>
               <a href="https://www.fc8.top/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/FC8软件库.png" onerror="this.src='default.svg'"><div class="title">FC8软件库</div><div class="desc">资源下载</div></a>
