@@ -15,6 +15,9 @@ title: 英语备考
 
 <iframe src="./2025年6月英语六级真题(第3套)-作文.pdf" width="100%" height="600px" frameborder="0"></iframe>
 
+### 2025年6月英语六级真题(第2套)-作文解析
+
+<iframe src="./2025年6月英语六级真题(第2套)-作文.pdf" width="100%" height="600px" frameborder="0"></iframe>
 
 <style>
      /* 屏蔽全局雪花特效 */
