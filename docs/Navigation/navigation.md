@@ -8,12 +8,12 @@ hide:
 <style>
   /* 屏蔽全局雪花特效
   body > canvas { display: none !important; } */
-  
+
   /* 基础 MkDocs 样式重置 */
   .md-content__inner > h1 { display: none; }
   .md-content { padding: 0 !important; max-width: 100% !important; }
   .md-grid { max-width: 100% !important; margin: 0 !important; }
-  
+
   /* --- 变量定义 --- */
   :root {
       --page-bg: #f2f3f5;
@@ -50,43 +50,43 @@ hide:
   /* --- 侧边栏样式 --- */
   .nav-sidebar { position: fixed; left: 15px; width: var(--sidebar-width); top: var(--sidebar-top); bottom: var(--sidebar-bottom); background: var(--sidebar-bg); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-radius: 24px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); z-index: 100; padding: 10px 8px; display: flex; flex-direction: column; transition: width 0.3s ease; overflow: hidden; border: 1px solid var(--card-border); user-select: none; }
   .nav-sidebar.collapsed { width: var(--sidebar-collapsed-width); }
-  
+
   .resizer { position: absolute; left: 0; width: 100%; height: 10px; cursor: ns-resize; z-index: 101; opacity: 0; transition: opacity 0.2s; }
   .resizer:hover { opacity: 1; background: rgba(128, 128, 128, 0.2); }
   .resizer.top { top: 0; } .resizer.bottom { bottom: 0; }
-  
+
   .sidebar-menu { flex: 1; overflow-y: auto; overflow-x: hidden; margin: 5px 0; padding-top: 5px; }
   .sidebar-menu::-webkit-scrollbar { width: 4px; }
   .sidebar-menu::-webkit-scrollbar-thumb { background: rgba(128, 128, 128, 0.3); border-radius: 4px; }
-  
+
   .sidebar-item { display: flex; align-items: center; padding: 10px 10px; margin-bottom: 4px; border-radius: 12px; color: var(--text-main); cursor: pointer; transition: background 0.2s; }
   .sidebar-item:hover { background-color: var(--sidebar-hover); }
   .sidebar-icon { font-size: 18px; width: 24px; text-align: center; margin-right: 10px; flex-shrink: 0; }
   .sidebar-text { font-size: 13px; font-weight: 500; white-space: nowrap; opacity: 1; transition: opacity 0.2s; }
   .nav-sidebar.collapsed .sidebar-text { display: none; }
-  
+
   .sidebar-footer { border-top: 1px solid var(--card-border); padding-top: 5px; flex-shrink: 0; display: flex; gap: 5px; }
   .footer-btn { flex: 1; background: transparent; border: none; cursor: pointer; color: var(--text-sub); padding: 8px 0; border-radius: 8px; display: flex; justify-content: center; align-items: center; transition: background 0.2s; }
   .footer-btn:hover { background: var(--sidebar-hover); color: var(--text-main); }
-  
+
   /* --- 主内容样式 --- */
   .nav-main { margin-left: calc(var(--sidebar-width) + 30px); margin-right: 20px; padding-bottom: 80px; transition: margin-left 0.3s ease; }
   .nav-sidebar.collapsed ~ .nav-main { margin-left: calc(var(--sidebar-collapsed-width) + 30px); }
-  
+
   .header-area { text-align: center; margin-bottom: 50px; }
   .main-title { font-size: 32px; font-weight: 800; margin-bottom: 15px; }
-  
+
   .category-box { background: var(--section-box-bg); backdrop-filter: blur(10px); border-radius: 24px; padding: 25px; margin-bottom: 30px; border: 1px solid var(--card-border); }
   .category-title { font-size: 18px; font-weight: 700; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; padding-left: 5px; scroll-margin-top: 100px; }
   .grid-wrapper { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 12px; }
-  
+
   /* 卡片 */
   .nav-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 14px; padding: 12px 8px; display: flex; flex-direction: column; align-items: center; text-align: center; text-decoration: none !important; color: var(--text-main) !important; transition: transform 0.2s, box-shadow 0.2s; overflow: hidden; }
   .nav-card:hover { transform: translateY(-3px); box-shadow: 0 8px 16px rgba(0,0,0,0.15); }
   .nav-card .icon-img { width: 32px; height: 32px; margin-bottom: 8px; border-radius: 6px; object-fit: contain; background: white; padding: 2px; }
   .nav-card .title { font-size: 13px; font-weight: 600; margin-bottom: 2px; width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
   .nav-card .desc { font-size: 10px; color: var(--text-sub); opacity: 0.8; width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-  
+
   /* --- 底部文字渐变动画 --- */
   .footer-quote { 
       text-align: center; 
@@ -96,7 +96,7 @@ hide:
       opacity: 0.7; 
       min-height: 20px; /* 防止文字切换时高度塌陷 */
   }
-  
+
   /* 关键修复：添加过渡效果 */
   #typing-text { 
       transition: opacity 0.8s ease-in-out; 
@@ -149,12 +149,15 @@ hide:
               <a href="https://aistudio.google.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/AI Studio.png" onerror="this.src='default.svg'"><div class="title">AI Studio</div><div class="desc">Google Dev</div></a>
               <a href="https://chatgpt.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/ChatGPT.svg" onerror="this.src='default.svg'"><div class="title">ChatGPT</div><div class="desc">OpenAI</div></a>
               <a href="https://claude.ai/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Claude.png" onerror="this.src='default.svg'"><div class="title">Claude</div><div class="desc">Anthropic</div></a>
+              <a href="https://tongyi.aliyun.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/qwen.svg" onerror="this.src='default.svg'"><div class="title"></div>千问系列<div class="desc">Aliyun</div></a>
               <a href="https://www.deepseek.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/DeepSeek.png" onerror="this.src='default.svg'"><div class="title">DeepSeek</div><div class="desc">深度求索</div></a>
               <a href="https://www.doubao.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/豆包.png" onerror="this.src='default.svg'"><div class="title">豆包</div><div class="desc">字节跳动</div></a>
-              <a href="https://kimi.moonshot.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Kimi.png" onerror="this.src='default.svg'"><div class="title">Kimi</div><div class="desc">长文本AI</div></a>
-              <a href="https://yuanbao.tencent.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/腾讯元宝.png" onerror="this.src='default.svg'"><div class="title">腾讯元宝</div><div class="desc">腾讯混元</div></a>
+              <a href="https://kimi.moonshot.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Kimi.png" onerror="this.src='default.svg'"><div class="title">Kimi</div><div class="desc">Moonshot Al</div></a>
+              <a href="https://yuanbao.tencent.com/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/腾讯元宝.png" onerror="this.src='default.svg'"><div class="title">腾讯元宝</div><div class="desc">Tecent</div></a>
               <a href="https://chat.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/浙大先生.png" onerror="this.src='default.svg'"><div class="title">浙大先生</div><div class="desc">ZJU官方结合ds推出</div></a>
               <a href="https://www.zchat.tech/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/Zhcat.png" onerror="this.src='default.svg'"><div class="title">Zchat</div><div class="desc">zju学生自建的AI集合</div></a>
+              <a href="https://api.chatanywhere.tech/#/shop" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/ChatAnyWhere.png" onerror="this.src='default.svg'"><div class="title">ChatAnyWhere</div><div class="desc">api站点</div></a>
+             <a href="https://api2.aigcbest.top/" target="_blank" class="nav-card"><img loading="lazy" class="icon-img" src="../images/钱多多API.png" onerror="this.src='default.svg'"><div class="title">钱多多API</div><div class="desc">api站点</div></a> 
           </div>
       </div>
       <div id="cat-tools" class="category-box">
@@ -282,7 +285,7 @@ hide:
     if(localStorage.getItem('sidebarState') === 'collapsed') { setCollapsed(true); }
 
     toggleBtn.addEventListener('click', () => { setCollapsed(!sidebar.classList.contains('collapsed')); });
-
+    
     function setCollapsed(collapse) {
         if(collapse) {
             sidebar.classList.add('collapsed');
@@ -294,7 +297,7 @@ hide:
             localStorage.setItem('sidebarState', 'expanded');
         }
     }
-
+    
     // --- 拖拽与重置逻辑 ---
     const root = document.documentElement;
     const resetBtn = document.getElementById('resetBtn');
@@ -302,7 +305,7 @@ hide:
     const savedBottom = localStorage.getItem('sidebarBottom');
     if (savedTop) root.style.setProperty('--sidebar-top', savedTop);
     if (savedBottom) root.style.setProperty('--sidebar-bottom', savedBottom);
-
+    
     function makeResizable(resizer, isTop) {
         resizer.addEventListener('mousedown', (e) => {
             e.preventDefault();
@@ -327,7 +330,7 @@ hide:
     }
     makeResizable(document.getElementById('resizer-top'), true);
     makeResizable(document.getElementById('resizer-bottom'), false);
-
+    
     resetBtn.addEventListener('click', () => {
         localStorage.removeItem('sidebarTop');
         localStorage.removeItem('sidebarBottom');
@@ -336,7 +339,7 @@ hide:
         resetBtn.style.transform = "rotate(-360deg)";
         setTimeout(() => resetBtn.style.transform = "none", 400);
     });
-
+    
     // --- 平滑滚动 ---
     function scrollToId(id) {
         const element = document.getElementById(id);
@@ -346,7 +349,7 @@ hide:
             window.scrollTo({ top: offsetPosition, behavior: "smooth" });
         }
     }
-
+    
     // --- 底部文字渐变轮播 ---
     const quotes = [
         "或许国内绝大部分大学的本科教学，不是濒临崩溃，而是早已崩溃",
@@ -367,7 +370,7 @@ hide:
             textElement.style.opacity = 1; // 淡入
         }, 800); // 必须与 CSS 中的 transition 时间一致 (0.8s)
     }, 5000);
-
+    
     // --- 默认图标兜底 ---
     const defaultIcon = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='2' y1='12' x2='22' y2='12'%3E%3C/line%3E%3Cpath d='M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z'%3E%3C/path%3E%3C/svg%3E";
     document.querySelectorAll('.icon-img').forEach(img => {
