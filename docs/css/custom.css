@@ -54,13 +54,13 @@
 .md-nav__list a.is-active {
   color: var(--md-accent-fg-color);
 }
-/*
+
 .md-sidebar--secondary .md-nav > .md-nav__list > li > a + .md-nav {
   display: none;
 }
 .md-sidebar--secondary .md-nav > .md-nav__list > li > a.is-active + .md-nav {
   display: block;
-}*/
+}
 
 [data-md-color-scheme="default"] .md-nav__title {
   color: #000;

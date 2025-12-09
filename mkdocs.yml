@@ -36,7 +36,7 @@ theme:
     #- navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
     - navigation.top        # 一键回顶部
     - navigation.footer     # 底部导航，在底部显示“上一页”和“下一页”的导航链接
-    - navigation.instant    # 启用页面即时加载，提升浏览体验
+    #- navigation.instant    # 启用页面即时加载，提升浏览体验
     #- navigation.sections  #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
     - navigation.expand     # 打开Tab时左侧目录全部展开
     #- navigation.indexes   #启用节索引页后，可以将文档直接附加到节
@@ -48,7 +48,7 @@ theme:
     - content.code.copy     # 为代码块添加复制按钮
     - content.tabs          # 允许在 Markdown 中创建选项卡
 
-    - toc.follow            # toc 跟随。滚动页面时，目录自动高亮显示当前的章节标题
+    #- toc.follow            # toc 跟随。滚动页面时，目录自动高亮显示当前的章节标题
     #- toc.integrate
     - toggle.scheme         # 启用主题切换功能（白天黑夜切换）
   #toc: 
