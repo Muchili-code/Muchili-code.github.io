@@ -24,12 +24,13 @@
     pointer-events: auto;
 }
 
-/* 隐藏两侧目录栏的滚轮 */
+/*隐藏两侧目录栏的滚轮 
 .md-sidebar__scrollwrap {
   scrollbar-width: none;
-}
+}*/
 
-/* 两侧目录栏修改（by @TonyCrane） */
+
+/* 两侧目录栏修改（by @TonyCrane） 
 .md-nav--secondary .md-nav__title {
   background: rgb(255 255 255 / 0%);
   box-shadow: 0 0 .4rem .4rem rgba(255, 255, 255, 0);
@@ -46,13 +47,15 @@
   color: var(--md-accent-fg-color);
 }
 
+
 .md-sidebar--secondary .md-nav > .md-nav__list > li > a + .md-nav {
-  display: none;
+  display: none; /* 默认隐藏二级及以下目录 
 }
 .md-sidebar--secondary .md-nav > .md-nav__list > li > a.is-active + .md-nav {
-  display: block;
+  display: block; /*当父级激活时显示子目录
 }
 
 [data-md-color-scheme="default"] .md-nav__title {
-  color: #000;
+  color: #000; /* 默认主题下侧边栏标题颜色 
 }
+*/

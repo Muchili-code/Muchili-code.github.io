@@ -51,8 +51,8 @@ theme:
     - toc.follow            # toc 跟随。滚动页面时，目录自动高亮显示当前的章节标题
     #- toc.integrate
     - toggle.scheme         # 启用主题切换功能（白天黑夜切换）
-  toc: 
-    depth: 4
+  #toc: 
+  #  depth: 4
 
 copyright: Copyright &copy; 2025 Muchili/All Rights Reserved. # 左下角的版权声明
 
@@ -82,7 +82,7 @@ extra_css:
   - css/card.css
   #- css/code.css
   - css/custom.css
-  #- css/extra.css
+  - css/counter.css
   - css/header.css
   - css/palette.css
   - css/sidebar.css
@@ -91,12 +91,13 @@ extra_css:
   - https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
   - https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap
   - https://unpkg.com/katex@0/dist/katex.min.css  # katex样式
+  - https://cdn.jsdelivr.net/npm/pseudocode@latest/build/pseudocode.min.css
   
 extra_javascript:
   - javascripts/anchor.js
   #- javascripts/code.js
   - javascripts/custom.js
-  - javascripts/extra.js
+  #- javascripts/extra.js
   - javascripts/katex.js 
   - javascripts/toc.js 
   - javascripts/typed.js
@@ -113,7 +114,10 @@ markdown_extensions:
   - footnotes             # 脚注。允许你在文本中添加脚注，并在文档末尾自动生成脚注列表。
   - tables                # 表格。启用标准的 Markdown 表格语法。
   - toc:                  
-      permalink: true     # 为每个标题生成一个永久链接（锚点）
+      permalink: ⚓︎       # 为每个标题生成一个永久链接（锚点），图标是⚓︎
+      title: 目录         # 目录标题
+      slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}} # Unicode link
+      toc_depth: 2-4
 
   - pymdownx.mark         # 标记/高亮文本。
   - pymdownx.caret        # 插入文本标记。
@@ -208,4 +212,5 @@ nav:
     - 选调生相关:
       - 选调生座谈会: Miscellaneous/选调座谈会.md
     - 查老师: Miscellaneous/chalaoshi.md
+    - 英语备考: Miscellaneous/English_Grade/README.md
   - 🛫导航: Navigation/navigation.md
