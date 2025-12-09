@@ -82,9 +82,9 @@ extra_css:
   - css/card.css
   #- css/code.css
   - css/custom.css
-  - css/counter.css
+  #- css/counter.css
   - css/header.css
-  - css/palette.css
+  #- css/palette.css
   - css/sidebar.css
   - css/timeline.css
   - https://gcore.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css

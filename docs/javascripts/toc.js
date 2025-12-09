@@ -1,4 +1,4 @@
-/* The source code was written by @TonyCrane，优化目录交互体验 */
+/* The source code was written by @TonyCrane */
 (function (window, document) {
     function register($toc) {
       const currentInView = new Set();
