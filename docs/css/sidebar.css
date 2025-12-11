@@ -1,4 +1,4 @@
-@media screen and (min-width: 1220px)  {
+@media screen and (min-width: 1220px)  { /* 大于等于1220px时（PC宽屏模式）生效，而平板和移动端不生效*/
 
     .md-sidebar.md-sidebar--primary .md-sidebar__inner {
         opacity: 0;
