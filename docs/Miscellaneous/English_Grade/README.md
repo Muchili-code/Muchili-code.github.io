@@ -16,14 +16,18 @@
 
 #### 第2套-南水北调
 
-<object data="./2025年6月英语六级真题(第2套)-翻译.pdf" type="application/pdf" width="100%" height="850px">
-    <p style="text-align: center; padding: 20px; background: #f5f5f5; border-radius: 8px;">
-        您的浏览器（如iPad Safari）可能不支持直接嵌入预览 PDF。<br>
-        <a href="./2025年6月英语六级真题(第2套)-翻译.pdf" target="_blank" style="color: #007bff; font-weight: bold;">
-            👉 点击此处全屏查看或下载 PDF
+<div style="display: flex; flex-direction: column; gap: 10px; margin: 20px 0;"> 
+    <iframe 
+        src="./2025年6月英语六级真题(第2套)-翻译.pdf" 
+        style="width: 100%; height: 80vh; border: 1px solid var(--md-default-fg-color--lightest); border-radius: 8px;"
+        loading="lazy"
+    ></iframe>
+    <div style="text-align: center;">
+        <a href="./2025年6月英语六级真题(第2套)-翻译.pdf" target="_blank" class="md-button md-button--primary">
+            👉 如果无法滚动，请点击此处全屏查看 PDF
         </a>
-    </p>
-</object>
+    </div>
+</div>
 
 #### 第1套-天宫空间站
 
