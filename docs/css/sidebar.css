@@ -1,26 +1,28 @@
-.md-sidebar.md-sidebar--primary .md-sidebar__inner {
-    opacity: 0;
-    transform: translateX(-100%);/* 默认情况下，主侧边栏向左侧移动了其自身宽度的100%，使其不可见。 */
-    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
-    pointer-events: none; /* 禁用鼠标事件，这意味着在透明状态下无法与侧边栏内容互动。 */
-}
+@media screen and (min-width: 1220px)  {
 
-.md-sidebar.md-sidebar--primary .md-sidebar__scrollwrap:hover .md-sidebar__inner {
-    opacity: 1;
-    transform: translateX(0);/* 当鼠标悬停时，主侧边栏回到其原始位置。 */
-    pointer-events: auto;/* 启用鼠标事件，使其内容可以互动。 */
-}
+    .md-sidebar.md-sidebar--primary .md-sidebar__inner {
+        opacity: 0;
+        transform: translateX(-100%);/* 默认情况下，主侧边栏向左侧移动了其自身宽度的100%，使其不可见。 */
+        transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+        pointer-events: none; /* 禁用鼠标事件，这意味着在透明状态下无法与侧边栏内容互动。 */
+    }
 
-.md-sidebar.md-sidebar--secondary .md-sidebar__inner {
-    opacity: 0;/* 默认情况下，次级侧边栏（通常是页面目录）完全透明。 */
-    transform: translateX(100%);
-    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
-    pointer-events: none;
-}
+    .md-sidebar.md-sidebar--primary .md-sidebar__scrollwrap:hover .md-sidebar__inner {
+        opacity: 1;
+        transform: translateX(0);/* 当鼠标悬停时，主侧边栏回到其原始位置。 */
+        pointer-events: auto;/* 启用鼠标事件，使其内容可以互动。 */
+    }
 
-.md-sidebar.md-sidebar--secondary .md-sidebar__scrollwrap:hover .md-sidebar__inner {
-    opacity: 1;
-    transform: translateX(0);
-    pointer-events: auto;
-}
+    .md-sidebar.md-sidebar--secondary .md-sidebar__inner {
+        opacity: 0;/* 默认情况下，次级侧边栏（通常是页面目录）完全透明。 */
+        transform: translateX(100%);
+        transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+        pointer-events: none;
+    }
 
+    .md-sidebar.md-sidebar--secondary .md-sidebar__scrollwrap:hover .md-sidebar__inner {
+        opacity: 1;
+        transform: translateX(0);
+        pointer-events: auto;
+    }
+}

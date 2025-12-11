@@ -1,0 +1,49 @@
+/* 强制在平板尺寸 (768px - 1220px) 显示桌面布局 */
+@media screen and (min-width: 768px) and (max-width: 1219px) {
+
+  /* 1. 强制显示顶部导航栏 (Tabs) */
+  .md-tabs {
+    display: block !important;
+  }
+  /* 调整 Header 阴影以匹配桌面风格 */
+  .md-header {
+    box-shadow: none !important;
+  }
+
+  /* 2. 扩展页面容器宽度，利用屏幕边缘 */
+  .md-grid {
+    max-width: 98% !important; /* 几乎占满屏幕 */
+    display: flex !important;  /* 恢复弹性布局 */
+  }
+
+  /* 3. 强制显示左侧导航栏 (Sidebar) */
+  .md-sidebar--primary {
+    display: block !important;
+    visibility: visible !important;
+    width: 20% !important; /* 强制左侧栏宽度 */
+    flex-shrink: 0;        /* 防止被压缩 */
+  }
+
+  /* 4. (可选) 强制显示右侧目录栏 (TOC) 
+     如果你觉得平板上太挤，可以删除下面这段 md-sidebar--secondary 的代码
+  */
+  .md-sidebar--secondary {
+    display: block !important; /* 这里的 none 改为 block 即可显示右侧 */
+    visibility: visible !important;
+    width: 18% !important; /* 右侧栏稍微窄一点 */
+    margin-left: 10px;
+  }
+
+  /* 5. 调整中间正文区域的宽度 */
+  .md-content {
+    /* 自动计算剩余空间 */
+    width: auto !important; 
+    flex-grow: 1;
+    min-width: 0; /* 防止代码块撑破布局 */
+  }
+
+  /* 6. 隐藏左上角的“汉堡菜单”按钮 (既然侧边栏都出来了，就不需要它了) 
+  .md-header__button.md-icon[for="__drawer"] {
+    display: none !important;
+  }*/
+}
