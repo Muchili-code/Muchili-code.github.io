@@ -46,6 +46,8 @@ hide:
 
   .nav-page-wrapper { position: relative; min-height: 100vh; background-color: var(--page-bg); color: var(--text-main); font-family: -apple-system, system-ui, sans-serif; padding-top: 20px; }
   [data-md-color-scheme="slate"] .nav-page-wrapper { background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); }
+   /*强制隐藏侧边栏 (覆盖 custom.css 的 display: block) */
+   @media screen and (min-width: 768px) and (max-width: 1219px) { .md-sidebar--primary, .md-sidebar--secondary { display: none !important; } }
 
   /* --- 侧边栏样式 --- */
   .nav-sidebar { position: fixed; left: 15px; width: var(--sidebar-width); top: var(--sidebar-top); bottom: var(--sidebar-bottom); background: var(--sidebar-bg); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-radius: 24px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); z-index: 100; padding: 10px 8px; display: flex; flex-direction: column; transition: width 0.3s ease; overflow: hidden; border: 1px solid var(--card-border); user-select: none; }
