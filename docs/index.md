@@ -1,5 +1,5 @@
 ---
-title: " About me "
+title: " 星河璀璨，志凌九霄 "
 author: "Muchili"
 date: "2025-07-31"
 description: "这是一个文档的简短描述"
@@ -8,15 +8,15 @@ comments: true
 ---
 
 <div markdown="1" class="homepage">
-<h1 style="font-size: 2rem; margin-left: 10%"><span id="typed"></span></h1>
+<h1 style="font-size: 2rem; margin-left: 10%"> <span id="typed"> </span> </h1>
 </div>
 
 <div id="rcorners2">
      <div id="rcorners1"class="date-display">
-          <p class="p1"></p>
+          <p class="p1"> </p>
      </div>
      <style>
-        /* 将rcorners2居中，但不显示背景 */
+        /* 将 rcorners2 居中，但不显示背景 */
         #rcorners2 {
             display: flex;
             justify-content: center;
@@ -59,12 +59,12 @@ comments: true
 <br>
 
 <center>
-    <font color="#788bb8" size="6" class="ml3">无限进步！</font>
+    <font color="#788bb8" size="6" class="ml3"> 无限进步！</font>
 </center> 
 
-???+ success "Blog信息"
-     <center>上次更新于</center>
-     <center>目前本站共有 {{ pages }} 个页面，{{ words }} 个字，{{ codes }} 行代码，{{ images }} 张图片。</center>
+???+ success "Blog 信息"
+     <center> 上次更新于 </center>
+     <center> 目前本站共有 {{ pages }} 个页面，{{ words }} 个字，{{ codes }} 行代码，{{ images }} 张图片。</center>
 
 ---
 
@@ -76,7 +76,7 @@ comments: true
      ---
 
      - 主修生物医学工程
-     - <strong><font color="#788bb8" size=3>Make BME Great Again！</font></strong>
+     - <strong> <font color="#788bb8" size=3> Make BME Great Again！</font> </strong>
      - 大二春夏开始的笔记
      - 收藏的各种网页
 
@@ -84,6 +84,7 @@ comments: true
     
     ---
 
+    - [我的个人导航站](https://muchili-code.github.io/Navigation/navigation/)
     - [我的收藏页](http://muchili-code.github.io/Miscellaneous/友链/)
     - [建站资料](http://muchili-code.github.io/Site Instruction/referrence/)
 
@@ -92,7 +93,7 @@ comments: true
 
 ---
 
-<center size="2.5">芳乃太美啦</center>
+<center size="2.5"> 芳乃太美啦 </center>
 
 
 
@@ -103,7 +104,7 @@ comments: true
 
 <strong>
      <center>
-          <font color="#788bb8" size="3" class="ml3">Ciallo～(∠・ω＜)⌒☆</font>
+          <font color="#788bb8" size="3" class="ml3"> Ciallo～(∠・ω＜)⌒☆ </font>
      </center>     
 </strong>
 
@@ -112,10 +113,10 @@ comments: true
 <body>
     <font color="#B9B9B9">
         <p style="text-align: center;">
-            <span>本站已经运行</span>
-            <span id='box1'></span>
+            <span> 本站已经运行 </span>
+            <span id='box1'> </span>
         </p>
-        <div id="box1"></div>
+        <div id="box1"> </div>
         <script>
             function timingTime() {
                 let start = '2025-06-25 09:08:00';

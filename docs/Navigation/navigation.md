@@ -205,15 +205,16 @@ hide:
       <div id="cat-research" class="category-box">
           <div class="category-title">🔬 科研相关</div>
           <div class="grid-wrapper">
-              <a href="https://scholar.google.com/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/谷歌学术.png" onerror="this.src='default.svg'"><div class="title">谷歌学术</div><div class="desc">Google Scholar</div></a>
-              <a href="http://cqvip.com/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/维普网.png" onerror="this.src='default.svg'"><div class="title">维普网</div><div class="desc">期刊论文</div></a>
-              <a href="https://cn.bing.com/academic" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/必应学术.png" onerror="this.src='default.svg'"><div class="title">必应学术</div><div class="desc">Bing Scholar</div></a>
-              <a href="https://www.iresearch.cn/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/爱学术.png" onerror="this.src='default.svg'"><div class="title">爱学术</div><div class="desc">学术导航</div></a>
-              <a href="https://www.webofscience.com/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/WOS.png" onerror="this.src='default.svg'"><div class="title">WOS</div><div class="desc">SCI检索</div></a>
-              <a href="https://www.cnki.net/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/中国知网.png" onerror="this.src='default.svg'"><div class="title">中国知网</div><div class="desc">中文文献</div></a>
-              <a href="https://xueshu.baidu.com/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/百度学术.png" onerror="this.src='default.svg'"><div class="title">百度学术</div><div class="desc">文献搜索</div></a>
-              <a href="https://www.wanfangdata.com.cn/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/万方数据.png" onerror="this.src='default.svg'"><div class="title">万方数据</div><div class="desc">学术期刊</div></a>
-              <a href="https://sci-hub.se/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/Sci-Hub.png" onerror="this.src='default.svg'"><div class="title">Sci-Hub</div><div class="desc">文献下载</div></a>
+            <a href="https://5j5gl7zvzxk66.ok.kimi.link/index.html" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="   " onerror="this.src='default.svg'"><div class="title">科研工具</div><div class="desc">详细的科研工具合集</div></a>
+            <a href="https://scholar.google.com/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/谷歌学术.png" onerror="this.src='default.svg'"><div class="title">谷歌学术</div><div class="desc">Google Scholar</div></a>
+            <a href="http://cqvip.com/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/维普网.png" onerror="this.src='default.svg'"><div class="title">维普网</div><div class="desc">期刊论文</div></a>
+            <a href="https://cn.bing.com/academic" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/必应学术.png" onerror="this.src='default.svg'"><div class="title">必应学术</div><div class="desc">Bing Scholar</div></a>
+            <a href="https://www.iresearch.cn/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/爱学术.png" onerror="this.src='default.svg'"><div class="title">爱学术</div><div class="desc">学术导航</div></a>
+            <a href="https://www.webofscience.com/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/WOS.png" onerror="this.src='default.svg'"><div class="title">WOS</div><div class="desc">SCI检索</div></a>
+            <a href="https://www.cnki.net/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/中国知网.png" onerror="this.src='default.svg'"><div class="title">中国知网</div><div class="desc">中文文献</div></a>
+            <a href="https://xueshu.baidu.com/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/百度学术.png" onerror="this.src='default.svg'"><div class="title">百度学术</div><div class="desc">文献搜索</div></a>
+            <a href="https://www.wanfangdata.com.cn/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/万方数据.png" onerror="this.src='default.svg'"><div class="title">万方数据</div><div class="desc">学术期刊</div></a>
+            <a href="https://sci-hub.se/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/Sci-Hub.png" onerror="this.src='default.svg'"><div class="title">Sci-Hub</div><div class="desc">文献下载</div></a>
           </div>
       </div>
       <div id="cat-teach" class="category-box">

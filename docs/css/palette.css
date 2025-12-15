@@ -9,6 +9,7 @@
     --md-footer-fg-color--light: #000000;
 } */
 
+/*白天模式配色*/
 [data-md-color-scheme="default"] {
   --md-primary-fg-color: rgb(9, 136, 198);
   --md-primary-fg-color--dark: rgb(9, 136, 198);
@@ -28,5 +29,10 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-image: linear-gradient(180deg, #5e9fbf29 0%, rgb(255 255 255) 100%);
+}
+
+/*黑夜模式配色*/
+[data-md-color-scheme="slate"]{
+  --md-default-bg-color: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%)
 }
 
