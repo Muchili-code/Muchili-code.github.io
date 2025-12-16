@@ -8,7 +8,7 @@ repo_url: https://github.com/Muchili-code/muchili-code.github.io # 博客仓库�
 repo_name: Muchili/Blog # 自定义显示的仓库名称
 
 theme:
-  name: material
+  name: materialx
   custom_dir: overrides # 自定义主题目录,优先级目录   
   language: zh # 一些提示性的文字会变成中文
   favicon: images/kuma.png

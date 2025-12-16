@@ -71,22 +71,23 @@ comments: true
 
 <div class="grid cards" markdown="1">
 
--    :simple-github:{ .lg .middle } __🌱About me__
+-    :simple-github:{ .lg .middle } __About me__
      
      ---
 
-     -  :student: A student in ZJU
-     - 📖 Majoring in the Biomedical Engineering
-     - 🚀 <strong> <font color="#788bb8" size=3> Make BME Great Again！</font> </strong>
+     - :student:A student in ZJU
+     - 📖Major in Biomedical Engineering
+     - 🚀<strong> <font color="#788bb8" size=3> Make BME Great Again！</font> </strong>
      - 收藏的各种网页
 
 -   :simple-materialformkdocs:{ .lg .middle } __推荐阅读__
     
-    ---
+     ---
 
-    - 💡[我的个人导航站](https://muchili-code.github.io/Navigation/navigation/)
-    - 📋️[我的大佬朋友们](https://muchili-code.github.io/link/%E5%8F%8B%E9%93%BE/)
-    - 🛠️[建站资料](https://muchili-code.github.io/Site%20Instruction/%E4%BB%93%E5%BA%93%E9%93%BE%E6%8E%A5/)
+     - 💡[我的个人导航站](https://muchili-code.github.io/Navigation/navigation/)
+     - 📋️[我的大佬朋友们](https://muchili-code.github.io/link/%E5%8F%8B%E9%93%BE/)
+     - 🏷️[我的GitHub个人主页](https://github.com/Muchili-code)
+     - 🛠️[建站资料](https://muchili-code.github.io/Site%20Instruction/%E4%BB%93%E5%BA%93%E9%93%BE%E6%8E%A5/)
 
 
 </div>

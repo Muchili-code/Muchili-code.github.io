@@ -1,5 +1,6 @@
 mkdocs
 mkdocs-material
+mkdocs-materialx
 markdown-gfm-admonition
 mkdocs-mermaid2-plugin
 mkdocs-statistics-plugin
