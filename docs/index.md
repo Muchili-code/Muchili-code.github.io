@@ -58,40 +58,65 @@ comments: true
 </div>  
 <br>
 
+<!--
 <center>
-    <font color="#788bb8" size="6" class="ml3"> 无限进步！</font>
+    <font color="#788bb8" size="6" class="ml3"> 星河璀璨，志凌九霄</font>
 </center> 
-
+--->
 ???+ success "Blog 信息"
      <center> 上次更新于 </center>
      <center> 目前本站共有 {{ pages }} 个页面，{{ words }} 个字，{{ codes }} 行代码，{{ images }} 张图片。</center>
 
----
 
 
 <div class="grid cards" markdown="1">
 
--    :simple-github:{ .lg .middle } __About me__
+-    :simple-github:{ .lg .middle } __🌱About me__
      
      ---
 
-     - 主修生物医学工程
-     - <strong> <font color="#788bb8" size=3> Make BME Great Again！</font> </strong>
-     - 大二春夏开始的笔记
+     -  A student in ZJU :student:
+     - Majoring in the Biomedical Engineering📖
+     - <strong> <font color="#788bb8" size=3> Make BME Great Again！</font> </strong>🚀
      - 收藏的各种网页
 
 -   :simple-materialformkdocs:{ .lg .middle } __推荐阅读__
     
     ---
 
-    - [我的个人导航站](https://muchili-code.github.io/Navigation/navigation/)
-    - [我的收藏页](http://muchili-code.github.io/Miscellaneous/友链/)
-    - [建站资料](http://muchili-code.github.io/Site Instruction/referrence/)
+    - 💡[我的个人导航站](https://muchili-code.github.io/Navigation/navigation/)
+    - 📋️[我的大佬朋友们](https://muchili-code.github.io/link/%E5%8F%8B%E9%93%BE/)
+    - 🛠️[建站资料](https://muchili-code.github.io/Site%20Instruction/%E4%BB%93%E5%BA%93%E9%93%BE%E6%8E%A5/)
 
 
 </div>
 
----
+
+
+<div class="grid cards" markdown>
+
+-   :material-notebook-edit-outline:{ .lg .middle } __To Do list__
+
+    ---
+    ![image](images/wallpaper_1.png){ class="responsive-image" loading="lazy" align=right width="300" height="226" style="border-radius: 2.5em 1.5em 3em 2em / 2em 2.5em 1.5em 3em;" }
+
+    - [ ] 通过<mark>目录</mark>以打开文章
+    - [ ] 其他文章信息<ins>补充和完善</ins>
+    - [ ] 补充<del>[大二](https://muchili-code.github.io/indices/College2/)</del>的笔记
+    - [x] 𝕙𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕥𝕚𝕞𝕖 !
+
+    === "短期计划"
+
+        好好学习天天向上，保研成功收获成长
+
+    === "长期计划"
+
+        全面发展，屹立群山之巅！
+    
+    === "对自己说的话"
+        星河璀璨，志凌九霄
+
+</div>
 
 <center size="2.5"> 芳乃太美啦 </center>
 
