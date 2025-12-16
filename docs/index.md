@@ -76,8 +76,8 @@ comments: true
      ---
 
      - :student:A student in ZJU
-     - 📖Major in Biomedical Engineering
-     - 🚀<strong> <font color="#788bb8" size=3> Make BME Great Again！</font> </strong>
+     - 📖Major: Biomedical Engineering
+     - 🚀<strong><font color="#788bb8" size=3> Make BME Great Again！</font> </strong>
      - 收藏的各种网页
 
 -   :simple-materialformkdocs:{ .lg .middle } __推荐阅读__
@@ -99,7 +99,7 @@ comments: true
 -   :material-notebook-edit-outline:{ .lg .middle } __To Do list__
 
     ---
-    ![image](images/wallpaper_1.png){ class="responsive-image" loading="lazy" align=right width="300" height="226" style="border-radius: 2.5em 1.5em 3em 2em / 2em 2.5em 1.5em 3em;" }
+    ![image](images/wallpaper_1.png){ class="responsive-image" loading="lazy" align=right width="400" height="226" style="border-radius: 2.5em 1.5em 3em 2em / 2em 2.5em 1.5em 3em;" }
 
     - [ ] 通过<mark>目录</mark>以打开文章
     - [ ] 其他文章信息<ins>补充和完善</ins>
