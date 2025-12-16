@@ -197,7 +197,9 @@ nav:
       - 总复习: notes/College 2/2.数据结构与算法分析（FDS）-Fundemental Data Structure/期末复习/自己笔记/总复习.md
 
   - 📚College 3:
+    - indices/College3/index.md
     - 嵌入式系统:
+      - indices/College3/Embedded systems/index.md
       - 1.导论: notes/College 3/1.嵌入式系统/自己笔记/1-导论.md
       - 2.处理器设计导论: notes/College 3/1.嵌入式系统/自己笔记/2-处理器设计导论.md
       - 3.ARM体系结构: notes/College 3/1.嵌入式系统/自己笔记/3-ARM体系结构.md
@@ -210,6 +212,7 @@ nav:
       - 14.ARM处理器核系列介绍: notes/College 3/1.嵌入式系统/自己笔记/14-ARM处理器核系列介绍.md
       - 16.存储器管理单元及保护单元: notes/College 3/1.嵌入式系统/自己笔记/16-存储器管理单元及保护单元.md
     - 误差理论与数据处理: 
+      - indices/College3/Error Theory/index.md
       - 1.误差的基本概念: notes/College 3/1.误差理论和数据处理/期末复习/1-误差的基本概念.md
       - 2.误差的基本性质与处理: notes/College 3/1.误差理论和数据处理/期末复习/2-误差的基本性质与处理.md
       - 3.误差的合成与分配: notes/College 3/1.误差理论和数据处理/期末复习/3-误差的合成与分配.md
@@ -217,10 +220,10 @@ nav:
 
   - 📍杂项: 
     - indices/miscellaneous/index.md
-    - 选调生相关:
-      - 选调生座谈会: Miscellaneous/选调座谈会.md
+    - Career Planning:
+      - selected graduates: Miscellaneous/选调座谈会.md
     - 查老师: Miscellaneous/chalaoshi/chalaoshi.md
-    - 英语备考: Miscellaneous/English_Grade/README.md
+    - English_Grade: Miscellaneous/English_Grade/README.md
 
   - 🔗友情链接: 
     - link/友链.md
