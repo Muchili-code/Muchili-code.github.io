@@ -75,9 +75,9 @@ comments: true
      
      ---
 
-     -  A student in ZJU :student:
-     - Majoring in the Biomedical Engineering📖
-     - <strong> <font color="#788bb8" size=3> Make BME Great Again！</font> </strong>🚀
+     -  :student: A student in ZJU
+     - 📖 Majoring in the Biomedical Engineering
+     - 🚀 <strong> <font color="#788bb8" size=3> Make BME Great Again！</font> </strong>
      - 收藏的各种网页
 
 -   :simple-materialformkdocs:{ .lg .middle } __推荐阅读__
