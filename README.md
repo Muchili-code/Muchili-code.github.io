@@ -7,6 +7,6 @@
 
 Welcome to my blog: [muchili 's  blog](https://muchili-code.github.io/) with my [navigation site](https://muchili-code.github.io/Navigation/navigation/) included. Feel free to offer suggestions, or you can recommend what to put on my personal navigation site. 
 
-![招牌照片](https://img2024.cnblogs.com/blog/3700762/202510/3700762-20251020225530710-2081670639.png)
+![招牌照片](./docs/images/wallpaper_2.png)
 
 <span style="font-size:2em; font-weight:bold;">心若有桃花源，何处不是水云间</span>
