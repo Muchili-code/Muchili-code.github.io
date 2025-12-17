@@ -75,19 +75,19 @@ comments: true
      
      ---
 
-     - :student:A student in ZJU
-     - 📖Major: Biomedical Engineering
-     - 🚀<strong><font color="#788bb8" size=3> Make BME Great Again！</font> </strong>
-     - 收藏的各种网页
+     :student: A student in ZJU<br>
+     📖 Major: Biomedical Engineering<br>
+     🚀<strong><font color="#788bb8" size=3> Make BME Great Again！</font> </strong><br>
+     收藏的各种网页<br>
 
 -   :simple-materialformkdocs:{ .lg .middle } __推荐阅读__
     
      ---
 
-     - 💡[我的个人导航站](https://muchili-code.github.io/Navigation/navigation/)
-     - 📋️[我的大佬朋友们](https://muchili-code.github.io/link/%E5%8F%8B%E9%93%BE/)
-     - 🏷️[我的GitHub个人主页](https://github.com/Muchili-code)
-     - 🛠️[建站资料](https://muchili-code.github.io/Site%20Instruction/%E4%BB%93%E5%BA%93%E9%93%BE%E6%8E%A5/)
+     💡[我的个人导航站](https://muchili-code.github.io/Navigation/navigation/)<br>
+     📋️[我的大佬朋友们](https://muchili-code.github.io/link/%E5%8F%8B%E9%93%BE/)<br>
+     🏷️[我的GitHub个人主页](https://github.com/Muchili-code)<br>
+     🛠️[建站资料](https://muchili-code.github.io/Site%20Instruction/%E4%BB%93%E5%BA%93%E9%93%BE%E6%8E%A5/)<br>
 
 
 </div>
@@ -101,8 +101,9 @@ comments: true
     ---
     ![image](images/wallpaper_1.png){ class="responsive-image" loading="lazy" align=right width="400" height="226" style="border-radius: 2.5em 1.5em 3em 2em / 2em 2.5em 1.5em 3em;" }
 
-    - [ ] 通过<mark>目录</mark>以打开文章
-    - [ ] 其他文章信息<ins>补充和完善</ins>
+    - [ ] 用<mark>目录</mark>打开文章和<ins>补充完善</ins>
+    - [ ] 浅色模式颜色适配
+    - [ ] 浏览器搜索主页构建
     - [ ] 补充<del>[大二](https://muchili-code.github.io/indices/College2/)</del>的笔记
     - [x] 𝕙𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕥𝕚𝕞𝕖 !
 

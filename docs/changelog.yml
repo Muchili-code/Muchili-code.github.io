@@ -1,4 +1,8 @@
 - "2025":
+  - "2025-12-17":
+    - "pageupdate":
+        text: 更换主题，由 mkdocs-material 更换为 mkdocs-materialx
+        href: /
   - "2025-12-15":
     - "function":
         text: 主题更换，友链添加，页面重构，增加科研板块

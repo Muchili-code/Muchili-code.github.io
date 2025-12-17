@@ -166,8 +166,10 @@ nav:
     #- Home: index.md
     - 更新记录: changelog.md
     - 建档指南: 
-      - 仓库链接: Site Instruction/仓库链接.md
+      - indices/Site_Instruction/index.md
       - 参考资料: Site Instruction/referrence.md
+      - 仓库链接: Site Instruction/仓库链接.md
+      
 
   - 🤖人工智能:
     - Artificial Intelligent/index.md
