@@ -13,7 +13,7 @@ comments: true
 ???+ abstract "摘要"
 
     **数据结构与算法分析**
-
+    
     - 时间：2024-2025 春夏学期
     
     - 教师：刘济全
@@ -37,8 +37,12 @@ comments: true
 
 ???+ tip "推荐阅读"
 
-    虽然计院的fds和bme的ds授课内容不同（bme的ds内容涵盖部分计院的ads的内容比如平衡二叉树），但是fds的资源还是计院居多，并且讲解水平也是计院偏好一些。
-
+    虽然计院的fds和bme的ds授课内容不同（bme的ds内容涵盖部分计院的ads的内容比如平衡二叉树），但是fds的资源还是计院居多，并且讲解水平也是计院偏好一些。ads的内容也可以看看
+    
     - [鹤翔万里的笔记本](https://note.tonycrane.cc/cs/algorithm/ds/)
-
+    
     - [咸鱼暄的入门路线](https://xuan-insr.github.io/math_ds_algo/getting_started/)
+    
+    - [noughtQ的笔记](https://note.noughtq.top/algo/fds/)
+    
+    - [Hello算法](https://www.hello-algo.com/)

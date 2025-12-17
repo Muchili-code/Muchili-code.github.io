@@ -150,7 +150,6 @@ markdown_extensions:
   - pymdownx.snippets     # 代码片段。允许你将其他 Markdown 文件或文本文件作为“代码片段”嵌入到当前文件中。
   - pymdownx.superfences  # 增强型代码块。这是 `highlight` 扩展的依赖，提供了更灵活的代码块定义方式，例如嵌套代码块、自定义代码块属性等。
 
-
 plugins:
   - statistics:
       words_per_minute: 200
@@ -168,8 +167,7 @@ nav:
     - 建档指南: 
       - indices/Site_Instruction/index.md
       - 参考资料: Site Instruction/referrence.md
-      - 仓库链接: Site Instruction/仓库链接.md
-      
+      - 仓库链接: Site Instruction/仓库链接.md    
 
   - 🤖人工智能:
     - Artificial Intelligent/index.md
@@ -220,18 +218,17 @@ nav:
       - 3.误差的合成与分配: notes/College 3/1.误差理论和数据处理/期末复习/3-误差的合成与分配.md
       - 4.测量不确定度: notes/College 3/1.误差理论和数据处理/期末复习/4-测量不确定度.md
 
-  - 📍杂项: 
+  - 🔍科研经历:
+    - research/index.md
+
+  - 🔗友情链接: 
+    - link/友链.md    
+
+  - 🗃️杂项: 
     - indices/miscellaneous/index.md
     - Career Planning:
       - selected graduates: Miscellaneous/选调座谈会.md
     - 查老师: Miscellaneous/chalaoshi/chalaoshi.md
     - English_Grade: Miscellaneous/English_Grade/README.md
-
-  - 🔗友情链接: 
-    - link/友链.md
-
-  - 🔍科研经历:
-    - research/index.md
-
 
   - 🛫导航: Navigation/navigation.md
