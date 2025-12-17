@@ -55,7 +55,7 @@ jobs:
       # 步骤 3: 安装 MkDocs 及其主题依赖。
       - name: Install dependencies # 步骤名称
         run: | # 关键：这里使用了一个竖线 |，表示下面的内容是多行字符串
-          pip install mkdocs-material mkdocs-materialx
+          pip install mkdocs-materialx
           pip install markdown-gfm-admonition mkdocs-mermaid2-plugin
           pip install mkdocs-statistics-plugin mkdocs-changelog-plugin mkdocs-awesome-pages-plugin
 
