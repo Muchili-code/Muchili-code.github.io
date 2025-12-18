@@ -5,117 +5,13 @@ hide:
   - feedback
 ---
 
-<style>
-  /* 屏蔽全局雪花特效
-  body > canvas { display: none !important; } */
-
-  /* 基础 MkDocs 样式重置 */
-  .md-content__inner > h1 { display: none; }
-  .md-content { padding: 0 !important; max-width: 100% !important; }
-  .md-grid { max-width: 100% !important; margin: 0 !important; }
-
-  /* --- 变量定义 --- */
-  :root {
-      --page-bg: #f2f3f5;
-      --text-main: #1d1d1f;
-      --text-sub: #86868b;
-      --sidebar-width: 160px;
-      --sidebar-collapsed-width: 68px;
-      --sidebar-top: 150px;
-      --sidebar-bottom: 40px;
-      --sidebar-bg: rgba(255, 255, 255, 0.75);
-      --sidebar-hover: rgba(0, 0, 0, 0.05);
-      --sidebar-active-bg: #007aff;
-      --sidebar-active-text: #ffffff;
-      --section-box-bg: rgba(255, 255, 255, 0.6);
-      --card-bg: #ffffff;
-      --card-border: rgba(0, 0, 0, 0.05);
-  }
-
-  [data-md-color-scheme="slate"] {
-      --page-bg: transparent;
-      --text-main: #f5f5f7;
-      --text-sub: #a1a1a6;
-      --sidebar-bg: rgba(30, 30, 35, 0.5);
-      --sidebar-hover: rgba(255, 255, 255, 0.1);
-      --sidebar-active-bg: #0a84ff;
-      --section-box-bg: rgba(44, 44, 46, 0.4);
-      --card-bg: rgba(44, 44, 46, 0.6);
-      --card-border: rgba(255, 255, 255, 0.1);
-  }
-
-  .nav-page-wrapper { position: relative; min-height: 100vh; background-color: var(--page-bg); color: var(--text-main); font-family: -apple-system, system-ui, sans-serif; padding-top: 20px; }
-  [data-md-color-scheme="slate"] .nav-page-wrapper { background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); }
-   /*强制隐藏侧边栏 (覆盖 custom.css 的 display: block) */
-   @media screen and (min-width: 768px) and (max-width: 1219px) { .md-sidebar--primary, .md-sidebar--secondary { display: none !important; } }
-
-  /* --- 侧边栏样式 --- */
-  .nav-sidebar { position: fixed; left: 15px; width: var(--sidebar-width); top: var(--sidebar-top); bottom: var(--sidebar-bottom); background: var(--sidebar-bg); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-radius: 24px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); z-index: 100; padding: 10px 8px; display: flex; flex-direction: column; transition: width 0.3s ease; overflow: hidden; border: 1px solid var(--card-border); user-select: none; }
-  .nav-sidebar.collapsed { width: var(--sidebar-collapsed-width); }
-
-  .resizer { position: absolute; left: 0; width: 100%; height: 10px; cursor: ns-resize; z-index: 101; opacity: 0; transition: opacity 0.2s; }
-  .resizer:hover { opacity: 1; background: rgba(128, 128, 128, 0.2); }
-  .resizer.top { top: 0; } .resizer.bottom { bottom: 0; }
-
-  .sidebar-menu { flex: 1; overflow-y: auto; overflow-x: hidden; margin: 5px 0; padding-top: 5px; }
-  .sidebar-menu::-webkit-scrollbar { width: 4px; }
-  .sidebar-menu::-webkit-scrollbar-thumb { background: rgba(128, 128, 128, 0.3); border-radius: 4px; }
-
-  .sidebar-item { display: flex; align-items: center; padding: 10px 10px; margin-bottom: 4px; border-radius: 12px; color: var(--text-main); cursor: pointer; transition: background 0.2s; }
-  .sidebar-item:hover { background-color: var(--sidebar-hover); }
-  .sidebar-icon { font-size: 18px; width: 24px; text-align: center; margin-right: 10px; flex-shrink: 0; }
-  .sidebar-text { font-size: 13px; font-weight: 500; white-space: nowrap; opacity: 1; transition: opacity 0.2s; }
-  .nav-sidebar.collapsed .sidebar-text { display: none; }
-
-  .sidebar-footer { border-top: 1px solid var(--card-border); padding-top: 5px; flex-shrink: 0; display: flex; gap: 5px; }
-  .footer-btn { flex: 1; background: transparent; border: none; cursor: pointer; color: var(--text-sub); padding: 8px 0; border-radius: 8px; display: flex; justify-content: center; align-items: center; transition: background 0.2s; }
-  .footer-btn:hover { background: var(--sidebar-hover); color: var(--text-main); }
-
-  /* --- 主内容样式 --- */
-  .nav-main { margin-left: calc(var(--sidebar-width) + 30px); margin-right: 20px; padding-bottom: 80px; transition: margin-left 0.3s ease; }
-  .nav-sidebar.collapsed ~ .nav-main { margin-left: calc(var(--sidebar-collapsed-width) + 30px); }
-
-  .header-area { text-align: center; margin-bottom: 50px; }
-  .main-title { font-size: 32px; font-weight: 800; margin-bottom: 15px; }
-
-  .category-box { background: var(--section-box-bg); backdrop-filter: blur(10px); border-radius: 24px; padding: 25px; margin-bottom: 30px; border: 1px solid var(--card-border);content-visibility: auto; contain-intrinsic-size: 1px 300px; /* 预估一个高度，防止滚动条抽搐 */ }
-  .category-title { font-size: 18px; font-weight: 700; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; padding-left: 5px; scroll-margin-top: 100px; }
-  .grid-wrapper { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 12px; }
-
-  /* 卡片 */
-  .nav-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 14px; padding: 12px 8px; display: flex; flex-direction: column; align-items: center; text-align: center; text-decoration: none !important; color: var(--text-main) !important; transition: transform 0.2s, box-shadow 0.2s; overflow: hidden; }
-  .nav-card:hover { transform: translateY(-3px); box-shadow: 0 8px 16px rgba(0,0,0,0.15); }
-  .nav-card .icon-img { width: 32px; height: 32px; margin-bottom: 8px; border-radius: 6px; object-fit: contain; background: white; padding: 2px; }
-  .nav-card .title { font-size: 13px; font-weight: 600; margin-bottom: 2px; width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-  .nav-card .desc { font-size: 10px; color: var(--text-sub); opacity: 0.8; width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
-
-  /* --- 底部文字渐变动画 --- */
-  .footer-quote { 
-      text-align: center; 
-      color: var(--text-sub); 
-      font-size: 13px; 
-      margin-top: 30px; 
-      opacity: 0.7; 
-      min-height: 20px; /* 防止文字切换时高度塌陷 */
-  }
-
-  /* 关键修复：添加过渡效果 */
-  #typing-text { 
-      transition: opacity 0.8s ease-in-out; 
-      opacity: 1;
-  }
-
-  @media screen and (max-width: 768px) { 
-      .nav-sidebar { left: 5px; width: 60px; top: 80px; bottom: 80px; } 
-      .nav-sidebar .sidebar-text { display: none; } 
-      .resizer { display: none; } 
-      .nav-main { margin-left: 70px; margin-right: 10px; } 
-      .sidebar-footer { display: none; } 
-  }
-</style>
+<link rel="stylesheet" href="../nav_style.css">
+<script defer src="../nav_script.js"></script>
 
 <div class="nav-page-wrapper">
+
   <div id="stars"></div><div id="stars2"></div><div id="stars3"></div>
+  
   <nav id="sidebar" class="nav-sidebar">
       <div id="resizer-top" class="resizer top"></div>
       <div class="sidebar-menu">
@@ -182,10 +78,11 @@ hide:
           <div class="grid-wrapper">
             <a href="https://search.bilibili.com/all?vt=76243560" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/bilibili.png" onerror="this.src='default.svg'"><div class="title">Bibilli搜索版</div><div class="desc">仅搜索引擎的b站</div></a>
               <a href="https://www.cc98.org/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/cc98-1.png" onerror="this.src='default.svg'"><div class="title">CC98</div><div class="desc">ZJUers的校内论坛</div></a>
-              <a href="https://qsct.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/课程攻略.png" onerror="this.src='default.svg'"><div class="title">课程攻略</div><div class="desc">浙大课程攻略共享计划</div></a>
+              <a href="https://z-library.ec" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/Zlibrary.png" onerror="this.src='default.svg'"><div class="title">Zlibrary</div><div class="desc">电子书库</div></a>
               <a href="https://fanyi.baidu.com/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/百度翻译.png" onerror="this.src='default.svg'"><div class="title">百度翻译</div><div class="desc">在线翻译</div></a>
               <a href="https://translate.google.com/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/谷歌翻译.svg" onerror="this.src='default.svg'"><div class="title">谷歌翻译</div><div class="desc">谷歌翻译网站</div></a>
-              <a href="https://z-library.ec" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/Zlibrary.png" onerror="this.src='default.svg'"><div class="title">Zlibrary</div><div class="desc">电子书库</div></a>
+              <a href="https://qsct.zju.edu.cn/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/课程攻略.png" onerror="this.src='default.svg'"><div class="title">课程攻略</div><div class="desc">浙大课程攻略共享计划</div></a>
+              <a href="https://simpletex.cn/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/Simpletex.png" onerror="this.src='default.svg'"><div class="title">Simpletex</div><div class="desc">公式/文档的识别平台</div></a>
           </div>
       </div>
       <div id="cat-cs" class="category-box">
@@ -260,7 +157,7 @@ hide:
               <a href="https://ai.feishu.cn/wiki/VSe1wM70mi6WPBkW8VCc3CCOn7g" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/旷野指南.png" onerror="this.src='default.svg'"><div class="title">旷野指南</div><div class="desc">大学探索</div></a>
           </div>
       </div>
-       <div id="cat-editor" class="category-box">
+      <div id="cat-editor" class="category-box">
           <div class="category-title">📝 编辑器教学</div>
           <div class="grid-wrapper">
               <a href="https://www.overleaf.com/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/Overleaf.png" onerror="this.src='default.svg'"><div class="title">Overleaf</div><div class="desc">在线LaTeX</div></a>
@@ -279,105 +176,3 @@ hide:
       <div class="footer-quote"><span id="typing-text">正在加载灵感...</span></div>
   </main>
 </div>
-
-<script>
-    // --- 侧边栏逻辑 ---
-    const sidebar = document.getElementById('sidebar');
-    const toggleBtn = document.getElementById('toggleBtn');
-    const svgPath = toggleBtn.querySelector('path');
-    if(localStorage.getItem('sidebarState') === 'collapsed') { setCollapsed(true); }
-
-    toggleBtn.addEventListener('click', () => { setCollapsed(!sidebar.classList.contains('collapsed')); });
-    
-    function setCollapsed(collapse) {
-        if(collapse) {
-            sidebar.classList.add('collapsed');
-            svgPath.setAttribute('d', 'M13 5l7 7-7 7M5 5l7 7-7 7'); 
-            localStorage.setItem('sidebarState', 'collapsed');
-        } else {
-            sidebar.classList.remove('collapsed');
-            svgPath.setAttribute('d', 'M11 19l-7-7 7-7m8 14l-7-7 7-7');
-            localStorage.setItem('sidebarState', 'expanded');
-        }
-    }
-    
-    // --- 拖拽与重置逻辑 ---
-    const root = document.documentElement;
-    const resetBtn = document.getElementById('resetBtn');
-    const savedTop = localStorage.getItem('sidebarTop');
-    const savedBottom = localStorage.getItem('sidebarBottom');
-    if (savedTop) root.style.setProperty('--sidebar-top', savedTop);
-    if (savedBottom) root.style.setProperty('--sidebar-bottom', savedBottom);
-    
-    function makeResizable(resizer, isTop) {
-        resizer.addEventListener('mousedown', (e) => {
-            e.preventDefault();
-            document.addEventListener('mousemove', onMouseMove);
-            document.addEventListener('mouseup', onMouseUp);
-            function onMouseMove(e) {
-                if (isTop) {
-                    const newTop = Math.max(70, e.clientY);
-                    root.style.setProperty('--sidebar-top', newTop + 'px');
-                } else {
-                    const newBottom = Math.max(0, window.innerHeight - e.clientY);
-                    root.style.setProperty('--sidebar-bottom', newBottom + 'px');
-                }
-            }
-            function onMouseUp() {
-                localStorage.setItem('sidebarTop', getComputedStyle(root).getPropertyValue('--sidebar-top'));
-                localStorage.setItem('sidebarBottom', getComputedStyle(root).getPropertyValue('--sidebar-bottom'));
-                document.removeEventListener('mousemove', onMouseMove);
-                document.removeEventListener('mouseup', onMouseUp);
-            }
-        });
-    }
-    makeResizable(document.getElementById('resizer-top'), true);
-    makeResizable(document.getElementById('resizer-bottom'), false);
-    
-    resetBtn.addEventListener('click', () => {
-        localStorage.removeItem('sidebarTop');
-        localStorage.removeItem('sidebarBottom');
-        root.style.removeProperty('--sidebar-top');
-        root.style.removeProperty('--sidebar-bottom');
-        resetBtn.style.transform = "rotate(-360deg)";
-        setTimeout(() => resetBtn.style.transform = "none", 400);
-    });
-    
-    // --- 平滑滚动 ---
-    function scrollToId(id) {
-        const element = document.getElementById(id);
-        if (element) {
-            const headerOffset = 80;
-            const offsetPosition = element.getBoundingClientRect().top + window.pageYOffset - headerOffset;
-            window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-        }
-    }
-    
-    // --- 底部文字渐变轮播 ---
-    const quotes = [
-        "或许国内绝大部分大学的本科教学，不是濒临崩溃，而是早已崩溃",
-        "真理无法被传授，而应在每个人自己的命运中寻得",
-        "既然没有所谓的彼岸，那么每一个当下本身就是金子",
-        "人不是被事情困扰，而是被对事情的看法困扰",
-        "生活不可能像你想象得那么好，但也不会像你想象得那么糟"
-    ];
-    let index = 0;
-    const textElement = document.getElementById('typing-text');
-    textElement.innerText = quotes[0];
-    
-    setInterval(() => {
-        textElement.style.opacity = 0; // 淡出
-        setTimeout(() => {
-            index = (index + 1) % quotes.length;
-            textElement.innerText = quotes[index]; // 切换文字
-            textElement.style.opacity = 1; // 淡入
-        }, 800); // 必须与 CSS 中的 transition 时间一致 (0.8s)
-    }, 5000);
-    
-    // --- 默认图标兜底 ---
-    const defaultIcon = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='2' y1='12' x2='22' y2='12'%3E%3C/line%3E%3Cpath d='M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z'%3E%3C/path%3E%3C/svg%3E";
-    document.querySelectorAll('.icon-img').forEach(img => {
-        img.onerror = function() { this.src = defaultIcon; this.onerror = null; };
-        if (img.complete && img.naturalHeight === 0) { img.src = defaultIcon; }
-    });
-</script>
