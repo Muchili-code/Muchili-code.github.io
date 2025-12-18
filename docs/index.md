@@ -59,11 +59,11 @@ comments: true
 <br>
 
 <!--
-
 <center>
     <font color="#788bb8" size="6" class="ml3"> 星河璀璨，志凌九霄</font>
 </center> 
 --->
+
 ???+ success "Blog 信息"
      <center> 上次更新于 </center>
      <center> 目前本站共有 {{ pages }} 个页面，{{ words }} 个字，{{ codes }} 行代码，{{ images }} 张图片。</center>
@@ -79,7 +79,7 @@ comments: true
      :student: A student in ZJU<br>
      📖 Major: Biomedical Engineering<br>
      💡<strong><font color="#788bb8" size=3> Make BME Great Again！</font> </strong><br>
-     🔖收藏的各种网页<br>
+     🔖 收藏的各种网页<br>
      
 -   :simple-materialformkdocs:{ .lg .middle } __推荐阅读__
     
