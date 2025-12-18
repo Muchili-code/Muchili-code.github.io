@@ -71,7 +71,7 @@ hide:
               <a href="https://www.fc8.top/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/FC8软件库.png" onerror="this.src='default.svg'"><div class="title">FC8软件库</div><div class="desc">资源下载</div></a>
               <a href="https://woobx.cn/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/一个木函.png" onerror="this.src='default.svg'"><div class="title">一个木函</div><div class="desc">多功能工具</div></a>
               <a href="https://www.tudingyy.com/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/图钉办公.png" onerror="this.src='default.svg'"><div class="title">图钉办公</div><div class="desc">办公助手</div></a>
-              <a href="https://www.aura.build/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/aura.png" onerror="this.src='default.svg'"><div class="title">Aura</div><div class="desc"></div>前端页面模板集合</a>
+              <a href="https://www.aura.build/" target="_blank" class="nav-card"><img loading="lazy" decoding="async" class="icon-img" src="../images/aura.png" onerror="this.src='default.svg'"><div class="title">Aura</div><div class="desc">前端页面模板集合</div></a>
           </div>
       </div>
       <div id="cat-study" class="category-box">
