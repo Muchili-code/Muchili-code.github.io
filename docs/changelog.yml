@@ -1,4 +1,8 @@
 - "2025":
+  - "2025-12-18":
+    - "pageupdate": 
+        text: 增加“实用工具”一栏
+        href: /
   - "2025-12-17":
     - "pageupdate":
         text: 更换主题，由 mkdocs-material 更换为 mkdocs-materialx

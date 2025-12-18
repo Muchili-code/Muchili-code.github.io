@@ -23,3 +23,10 @@ comments: true
      🌷 [admonitions：丰富页面](https://owenllli.github.io/language/markdown/admonitions/#_7)<br>
      🤩 [善用emoji表情](https://www.emojiall.com/zh-hans)<br>
      💎 [建议活用git](https://note.noughtq.top/tools/git)<br>
+     ❇️ [学会使用markdown](https://hongjun.vip/markdown)
+
+??? warning "项目模仿"
+
+    - [NoughtQ](https://note.noughtq.top/)
+    - [鹤翔万里](https://note.tonycrane.cc/)
+    - [Wcowin](https://wcowin.work/)

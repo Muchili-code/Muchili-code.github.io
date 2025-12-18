@@ -87,7 +87,7 @@ comments: true
      💡[我的个人导航站](https://muchili-code.github.io/Navigation/navigation/)<br>
      📋️[我的大佬朋友们](https://muchili-code.github.io/link/%E5%8F%8B%E9%93%BE/)<br>
      🏷️[我的GitHub个人主页](https://github.com/Muchili-code)<br>
-     🛠️[建站资料](https://muchili-code.github.io/Site%20Instruction/%E4%BB%93%E5%BA%93%E9%93%BE%E6%8E%A5/)<br>
+     🛡️[建站资料](https://muchili-code.github.io/indices/Site_Instruction/)<br>
 
 
 </div>

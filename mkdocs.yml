@@ -230,5 +230,9 @@ nav:
       - selected graduates: Miscellaneous/选调座谈会.md
     - 查老师: Miscellaneous/chalaoshi/chalaoshi.md
     - English_Grade: Miscellaneous/English_Grade/README.md
+  
+  - 🛠️实用工具:
+    - indices/Tools/index.md
+    
 
   - 🛫导航: Navigation/navigation.md
