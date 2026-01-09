@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block scripts %}
+  {{ super() }} 
+  <script src="https://cdn.staticfile.net/translate.js/3.2.1/translate.js"></script>
+  <script>
+    // 1. 初始化
+    translate.language.setLocal('chinese_simplified'); 
+    translate.service.use('client.edge'); 
+    
+    // 忽略本地开发的 CORS 报错（部分版本有效，若无效可忽略报错）
+    translate.listener.start(); 
+
+    // 2. 核心拦截逻辑（改为监听 Hash）
+    document.addEventListener('click', function(e) {
+      const targetLink = e.target.closest('a');
+      
+      if (targetLink) {
+        // 获取链接的 href 属性
+        const href = targetLink.getAttribute('href');
+        
+        // 判断是否是我们定义的切换按钮
+        if (href && (href.endsWith('#en') || href.endsWith('#zh'))) {
+           e.preventDefault(); // 习惯性阻止默认行为（虽然锚点不会跳转）
+           
+           console.log('检测到语言切换:', href);
+
+           if (href.endsWith('#en')) {
+             translate.changeLanguage('english');
+           } else {
+             translate.changeLanguage('chinese_simplified');
+           }
+        }
+      }
+    });
+
+    // 3. 启动
+    translate.execute(); 
+  </script>
+{% endblock %}
