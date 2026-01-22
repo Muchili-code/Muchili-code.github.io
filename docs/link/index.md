@@ -105,6 +105,25 @@ comments: true
 <h>我的朋友们和大佬</h>
 
 <div class="link-container">
+
+
+  <div class="card">
+    <img class="ava" src="https://avatars.githubusercontent.com/u/176311727?s=400&u=953f4d2a796d80a222e47435383aefddf0a94371&v=4" />
+    <div class="card-header">
+      <a href="https://www.cnblogs.com/Muchilli" target="_blank">慕迟离</a>
+      <div class="info">Keep the beginner's mind</div>
+      <div class="info">闻见知行</div>
+    </div>
+  </div> 
+
+  <div class="card">
+    <img class="ava" src="https://blog-of-eden.vercel.app/images/art/e00f1b0a3fc0b8bb.png" />
+    <div class="card-header">
+      <a href="https://blog-of-eden.vercel.app/" target="_blank">Eden Silas</a>
+      <div class="info">听自己的心，徘徊还是所向披靡</div>
+    </div>
+  </div> 
+
   <div class="card">
     <img class="ava" src="https://avatars.githubusercontent.com/u/44120331?v=4" />
     <div class="card-header">
@@ -117,7 +136,7 @@ comments: true
     <img class="ava" src="https://avatars.githubusercontent.com/u/88835299?v=4" />
     <div class="card-header">
       <a href="https://note.noughtq.top/" target="_blank">NoughtQ</a>
-      <div class="info">也是超级巨佬</div>
+      <div class="info">CS笔记大全</div>
     </div>
   </div>
 
@@ -125,7 +144,7 @@ comments: true
     <img class="ava" src="https://avatars.githubusercontent.com/u/48550237?v=4" />
     <div class="card-header">
       <a href="https://isshikihugh.github.io/zju-cs-asio/" target="_blank">ZJU CS</a>
-      <div class="info">收集各类与 ZJU-CS 有关的网站</div>
+      <div class="info">各类与 ZJU-CS 有关的网站</div>
     </div>
   </div>
 
@@ -140,8 +159,8 @@ comments: true
   <div class="card">
     <img class="ava" src="https://avatars.githubusercontent.com/u/157186956?v=4" />
     <div class="card-header">
-      <a href="https://wbx0710.github.io/mymkdocs/index.html" target="_blank">BiXing’s Notebook</a>
-      <div class="info">ACEEer一枚</div>
+      <a href="https://wbx0710.github.io/mymkdocs/index.html" target="_blank">BiXing's Notebook</a>
+      <div class="info">ACEEer,bxgg真神</div>
     </div>
   </div>
 
@@ -149,7 +168,7 @@ comments: true
     <img class="ava" src="https://xw-soleil.github.io/img/myavatar.jpg" />
     <div class="card-header">
       <a href="https://xw-soleil.github.io/" target="_blank">Soleil’s Notebook</a>
-      <div class="info">ACEEer一枚</div>
+      <div class="info">ACEEer,xw亦神</div>
     </div>
   </div>
 
@@ -157,7 +176,7 @@ comments: true
     <img class="ava" src="https://avatars.githubusercontent.com/u/140944302?v=4" />
     <div class="card-header">
       <a href="https://www.aboatwithflow.top/" target="_blank">Aboat’s Blog</a>
-      <div class="info">ACEEer一枚</div>
+      <div class="info">ACEEer,Aboat Withflow</div>
     </div>
   </div>
 
@@ -189,16 +208,10 @@ comments: true
     <img class="ava" src="https://lh-0124.github.io/img/%E5%A4%B4%E5%83%8F.jpg" />
     <div class="card-header">
       <a href="https://lh-0124.github.io/LHstudy/" target="_blank">LH's Study Site</a>
-      <div class="info">cc98学习天地版主的网站</div>
+      <div class="info">98学习天地版主</div>
     </div>
   </div>
 
-  <div class="card">
-    <img class="ava" src="https://avatars.githubusercontent.com/u/176311727?s=400&u=953f4d2a796d80a222e47435383aefddf0a94371&v=4" />
-    <div class="card-header">
-      <a href="https://www.cnblogs.com/Muchilli" target="_blank">慕迟离</a>
-      <div class="info">夹带私货</div>
-    </div>
-  </div>  
+
   
 </div>
