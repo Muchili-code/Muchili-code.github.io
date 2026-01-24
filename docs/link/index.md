@@ -85,8 +85,10 @@ comments: true
     text-transform: none;
     font-family: inherit; 
     white-space: nowrap;
-    overflow: hidden;
+    /*overflow: hidden;*/
     text-overflow: ellipsis;
+    word-wrap: break-word; /* 强制长单词/长短句换行 */
+    white-space: normal;   /* 确保是正常换行模式 */
   }
   /* 悬停时标题高亮颜色 */
   .card:hover .card-header a {
@@ -210,6 +212,14 @@ comments: true
       <a href="https://lh-0124.github.io/LHstudy/" target="_blank">LH's Study Site</a>
       <div class="info">98学习天地版主</div>
     </div>
+  </div>
+
+  <div class="card">
+    <img class="ava" src="https://xiashuangjv123.github.io/photos/avatar.jpeg" />
+    <div class="card-header">
+      <a href="https://xiashuangjv123.github.io/" target="_blank">梁栋烨的个人空间</a>
+      <div class="info">愿天下没有战火，愿贫苦的人们有去处</div>
+  </div>
   </div>
 
 
