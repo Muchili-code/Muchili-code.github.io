@@ -215,9 +215,9 @@ comments: true
   </div>
 
   <div class="card">
-    <img class="ava" src="https://xiashuangjv123.github.io/photos/avatar.jpeg" />
+    <img class="ava" src="https://orebaka.github.io/avatar.jpeg" />
     <div class="card-header">
-      <a href="https://xiashuangjv123.github.io/" target="_blank">梁栋烨的个人空间</a>
+      <a href="https://orebaka.github.io/" target="_blank">梁栋烨的个人空间</a>
       <div class="info">愿天下没有战火，愿贫苦的人们有去处</div>
   </div>
   </div>
