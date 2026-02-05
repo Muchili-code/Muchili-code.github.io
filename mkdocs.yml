@@ -119,6 +119,7 @@ extra_javascript:
   - javascripts/typed_init.js
   - https://unpkg.com/katex@0/dist/katex.min.js # KaTeX 核心 JS
   - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js # auto-render 扩展
+  - https://unpkg.com/mermaid@10.6.1/dist/mermaid.min.js
 
 markdown_extensions:
 
@@ -139,7 +140,10 @@ markdown_extensions:
   - pymdownx.caret        # 插入文本标记。
   - pymdownx.tilde        # 删除线
   - pymdownx.arithmatex:  # LaTeX 数学公式支持。
-      generic: true       
+      generic: true    
+      smart_dollar: false 
+      block_tag: 'div'    
+  - pymdownx.escapeall 
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
@@ -159,8 +163,15 @@ markdown_extensions:
       #linenums: true      # 代码块左侧行号
       #auto_title: true    # 自动在代码块上方显示编程语言的名称
   - pymdownx.inlinehilite # 行内代码高亮
-  - pymdownx.snippets     # 代码片段。允许你将其他 Markdown 文件或文本文件作为“代码片段”嵌入到当前文件中。
-  - pymdownx.superfences  # 增强型代码块。这是 `highlight` 扩展的依赖，提供了更灵活的代码块定义方式，例如嵌套代码块、自定义代码块属性等。
+  - pymdownx.snippets     # 代码片段。其他文件作为“代码片段”嵌入到当前文件中。
+  - sane_lists  # 让列表解析逻辑更符合直觉
+  - pymdownx.superfences:  # 增强型代码块
+      preserve_tabs: false 
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  
 
 plugins:
   - awesome-pages
@@ -231,12 +242,18 @@ nav:
       - 13.ARM-JTAG测试与调试结构: notes/College 3/1.嵌入式系统/自己笔记/13-ARM-JTAG测试与调试结构.md
       - 14.ARM处理器核系列介绍: notes/College 3/1.嵌入式系统/自己笔记/14-ARM处理器核系列介绍.md
       - 16.存储器管理单元及保护单元: notes/College 3/1.嵌入式系统/自己笔记/16-存储器管理单元及保护单元.md
+      - 操作系统: notes/College 3/1.嵌入式系统/自己笔记/OS.md
+      - Linux 线程编程: notes/College 3/1.嵌入式系统/自己笔记/Thread_program.md
+
     - 误差理论与数据处理: 
       - indices/College3/Error Theory/index.md
       - 1.误差的基本概念: notes/College 3/1.误差理论和数据处理/期末复习/1-误差的基本概念.md
       - 2.误差的基本性质与处理: notes/College 3/1.误差理论和数据处理/期末复习/2-误差的基本性质与处理.md
       - 3.误差的合成与分配: notes/College 3/1.误差理论和数据处理/期末复习/3-误差的合成与分配.md
       - 4.测量不确定度: notes/College 3/1.误差理论和数据处理/期末复习/4-测量不确定度.md
+      - 5.最小二乘法: notes/College 3/1.误差理论和数据处理/期末复习/5-线性测量参数的最小二乘法处理.md
+      - 6.回归分析: notes/College 3/1.误差理论和数据处理/期末复习/6-回归分析.md
+      - 7.动态测试: notes/College 3/1.误差理论和数据处理/期末复习/7-动态测试.md
 
     - 高级程序设计: 
       - 基础语法知识: notes/College 3/1.高级程序设计/期末复习/Java Syntax.md

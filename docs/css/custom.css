@@ -59,16 +59,23 @@
   color: #6ca8a4;
 }
 
-[data-md-color-scheme="slate"] .md-typeset pre > code {  /* 代码块容器 */
+[data-md-color-scheme="slate"] mark {
+  background-color: rgba(255, 255, 0, 0.2);
+  color: #ffeb3b;                           
+  border-radius: 2px;                      
+  padding: 0 2px;                           
+}
+
+[data-md-color-scheme="slate"] .md-typeset pre > code {  /* 1代码块容器 */
 
   border: 1px solid rgba(54, 54, 54, 0.901);
   box-shadow: 0 2px 5px rgba(48, 46, 46, 0.03); 
   border-radius: 0.2rem;
 }
 
-[data-md-color-scheme="slate"] :not(pre) > code {
+[data-md-color-scheme="slate"] :not(pre) > code { /*2行内代码*/
   color: #6ca8a4;                          
-  background-color: rgba(108, 168, 164, 0.15); /* 淡淡的青色背景 */
+  background-color: rgba(108, 168, 164, 0.15); 
   padding: 0.1rem 0.3rem;
   border-radius: 0.2rem;
   word-break: break-word;

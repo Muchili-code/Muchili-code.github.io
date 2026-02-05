@@ -103,7 +103,7 @@ comments: true
     ![image](images/wallpaper_1.png){ class="responsive-image" loading="lazy" align=right width="400" height="226" style="border-radius: 2.5em 1.5em 3em 2em / 2em 2.5em 1.5em 3em;" }
 
     - [ ] 用<mark>目录</mark>打开文章和<ins>补充完善</ins>
-    - [ ] 浅色模式颜色适配
+    - [x] 浅色模式颜色适配
     - [ ] 浏览器搜索主页构建
     - [ ] 补充<del>[大二](https://muchili-code.github.io/indices/College2/)</del>的笔记
     - [x] 𝕙𝕒𝕧𝕖 𝕒 𝕘𝕠𝕠𝕕 𝕥𝕚𝕞𝕖 !
