@@ -85,10 +85,10 @@ comments: true
     
     ---
 
-     🚀[我的个人导航站](https://muchili-code.github.io/Navigation/navigation/)<br>
-     📋️[我的大佬朋友们](https://muchili-code.github.io/link/%E5%8F%8B%E9%93%BE/)<br>
-     🏷️[我的GitHub个人主页](https://github.com/Muchili-code)<br>
-     🛡️[建站资料](https://muchili-code.github.io/indices/Site_Instruction/)<br>
+     🚀 [我的个人导航站](https://muchili-code.github.io/Navigation/navigation/)<br>
+     📋️ [我的大佬朋友们](https://muchili-code.github.io/link/%E5%8F%8B%E9%93%BE/)<br>
+     🏷️ [我的GitHub个人主页](https://github.com/Muchili-code)<br>
+     🛡️ [建站资料](https://muchili-code.github.io/indices/Site_Instruction/)<br>
 
 
 </div>
@@ -110,7 +110,7 @@ comments: true
 
     === "短期计划"
 
-        好好学习天天向上，保研成功收获成长
+        好好学习，天天向上
 
     === "长期计划"
 
