@@ -1,0 +1,7 @@
+[data-md-color-scheme="default"] .timeline-card {
+    background-color: rgba(136, 195, 255, 0.5);
+}
+
+[data-md-color-scheme="default"] .timeline-content::before {
+    background-color: rgba(245, 245, 245, 0.6);
+}

@@ -57,7 +57,7 @@ jobs:
         run: | # 关键：这里使用了一个竖线 |，表示下面的内容是多行字符串
           pip install mkdocs-material
           pip install markdown-gfm-admonition mkdocs-mermaid2-plugin
-          pip install mkdocs-statistics-plugin mkdocs-changelog-plugin mkdocs-awesome-pages-plugin
+          pip install mkdocs-statistics-plugin mkdocs-changelog-plugin mkdocs-awesome-pages-plugin mkdocs-glightbox mkdocs-git-revision-date-localized-plugin
 
       # 步骤 4: 构建 MkDocs 网站。
       # 这将在工作流程的运行器中生成 'site' 文件夹，包含所有静态网站文件。

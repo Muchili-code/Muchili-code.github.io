@@ -65,7 +65,7 @@ comments: true
 --->
 
 ???+ success "Blog 信息"
-     <center> 上次更新于 </center>
+     <center> 上次更新于 {{ git_revision_date_localized }}  </center>
      <center> 目前本站共有 {{ pages }} 个页面，{{ words }} 个字，{{ codes }} 行代码，{{ images }} 张图片。</center>
 
 

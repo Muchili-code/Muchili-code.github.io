@@ -13,80 +13,81 @@ theme:
   language: zh # 一些提示性的文字会变成中文
   favicon: images/kuma.png
 
-  palette: #  主题颜色配置
-    - media: "(prefers-color-scheme: light)" # 方案 1: 浅色模式 (Light Mode)
+  palette: 
+    - media: "(prefers-color-scheme: light)" 
       scheme: default # 主题配色方案
       primary: white # 主色调
       toggle: 
-        icon: material/weather-night # 浅色模式下显示的切换图标（例如月亮图标）
-        name: 切换到深色模式                   # 浅色模式下切换按钮的文本
+        icon: material/weather-night 
+        name: 切换到深色模式                  
 
-    - media: "(prefers-color-scheme: dark)"  # 方案 2: 深色模式 (Dark Mode)
-      scheme: slate                           # 使用 Material 主题的深色方案
+    - media: "(prefers-color-scheme: dark)"  
+      scheme: slate                           
       primary: black
       toggle:
-        icon: material/weather-sunny # 深色模式下显示的切换图标（例如太阳图标）
-        name: 切换到浅色模式                   # 深色模式下切换按钮的文本
+        icon: material/weather-sunny 
+        name: 切换到浅色模式         
 
   features:
-    - navigation.tracking   # 在url中使用标题定位锚点，即追踪当前页面在导航中的位置，自动更新浏览器地址栏中的 URL 哈希
+    - navigation.tracking   # 在url中使用标题定位锚点，即追踪当前页面位置，自动更新浏览器URL
     #- navigation.path      # 显示当前路径
     - navigation.prune     # 侧边栏自动折叠，会使得侧边栏只显示当前页面所属的章节及其直接子页面
     - navigation.tabs       # 启用顶级导航为标签页样式，注意顶级导航的概念
     #- navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
-    - navigation.top        # 一键回顶部
-    - navigation.footer     # 底部导航，在底部显示“上一页”和“下一页”的导航链接
-    #- navigation.instant    # 启用页面即时加载，提升浏览体验
-    #- navigation.sections  #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
-    - navigation.expand     # 打开Tab时左侧目录全部展开
+    - navigation.top        
+    - navigation.footer     
+    #- navigation.instant    
+    #- navigation.sections  
+    - navigation.expand     
     - navigation.indexes   #启用节索引页后，可以将文档直接附加到节
 
-    - search.highlight      # 搜索结果高亮
-    - search.suggest        # 提供搜索的建议
+    - search.highlight      
+    - search.suggest        
 
     - content.code.annotate # 代码行号
-    - content.code.copy     # 为代码块添加复制按钮
+    - content.code.copy     
     - content.tabs          # 允许在 Markdown 中创建选项卡
 
-    #- toc.follow            # toc 跟随。滚动页面时，目录自动高亮显示当前的章节标题
+    #- toc.follow            # toc 跟随
     #- toc.integrate
-    - toggle.scheme         # 启用主题切换功能（白天黑夜切换）
-  #toc: 
+    - toggle.scheme         # 启用主题切换
+  # toc: 
   #  depth: 4
+  font:
+    text: JetBrains Mono, LXGW WenKai Screen GB Screen
+    code: JetBrains Mono, Consolas
+
 
 copyright: Copyright &copy; 2025 Muchili/All Rights Reserved. # 左下角的版权声明
 
 extra:
-  generator: false          #删除页脚默认的“使用 MkDocs Material制造”
+  generator: false          # 删除页脚的“使用 MkDocs Material制造”
   social:
-    - icon: fontawesome/brands/github # 我的Github主页
+    - icon: fontawesome/brands/github 
       link: https://github.com/Muchili-code/Muchili-code.github.io
-      title: 我的Github主页 # 鼠标悬停时显示的文本
-    - icon: fontawesome/brands/bilibili # bilibili
+      title: 我的Github主页 
+    - icon: fontawesome/brands/bilibili 
       link: https://space.bilibili.com/3493125026744857?spm_id_from=333.1387.0.0
-    - icon: custom/cc98 # 自定义 SVG 图标--cc98
+    - icon: custom/cc98 
     # D:\Program Files (x86)\Python\python-3.12.10\Lib\site-packages\material\templates\.icons是默认的图标目录，容易出错；此外其寻找方式以自己为根目录
-      link: https://www.cc98.org/ # CC98 论坛的链接
+      link: https://www.cc98.org/ 
       title: CC98 论坛 
-    - icon: fontawesome/solid/paper-plane # 邮件图标
-      link: mailto:<2979568058@qq.com> #联系方式
+    - icon: fontawesome/solid/paper-plane 
+      link: mailto:<2979568058@qq.com> 
       title: 联系我 
   repo:
     provider: github
     host: github.com
-    user: Muchili     # <-- 替换为您的 GitHub 用户名
-    name: Blog        # <-- 替换为您的 MkDocs 仓库名称
-  repo_stats: true    # <-- 启用星标和 Fork 数量显示
-  alternate:
+    user: Muchili     
+    name: Blog        
+  repo_stats: true    # 启用星标和 Fork 数量显示
+  alternate:  # 翻译功能
     - name: 中文
-      link: "#zh"   # <--- 修改这里：使用 #zh
+      link: "#zh"   
       lang: zh
     - name: English
-      link: "#en"   # <--- 修改这里：使用 #en
+      link: "#en"   
       lang: en
-
-
-
 
 extra_css:
   - css/card.css
@@ -99,6 +100,7 @@ extra_css:
   - css/timeline.css
   - css/extra.css
   - css/adaptation.css
+  - css/extra_changelog.css
   - https://gcore.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
   - https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
   - https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap
@@ -122,18 +124,18 @@ markdown_extensions:
 
   - abbr                  # 启用缩写功能。
   - attr_list             # 属性列表。允许你为 Markdown 元素（如标题、段落、图片等）添加 HTML 属性。
-  - md_in_html            # 允许你在 HTML 块（如 <div>）内部使用 Markdown 语法。
-  - meta                  # 支持 Markdown 文件顶部的自定义元数据（YAML Front Matter）。
-  - def_list              # 定义列表。支持类似 HTML <dl>、<dt>、<dd> 的定义列表语法。
-  - footnotes             # 脚注。允许你在文本中添加脚注，并在文档末尾自动生成脚注列表。
-  - tables                # 表格。启用标准的 Markdown 表格语法。
+  - md_in_html            
+  - meta                  
+  - def_list              
+  - footnotes             
+  - tables                
   - toc:                  
-      permalink: ⚓︎       # 为每个标题生成一个永久链接（锚点），图标是⚓︎
-      title: 目录         # 目录标题
+      permalink: ⚓︎       # 标题的链接（锚点），图标是⚓︎
+      title: 目录         
       slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}} # Unicode link
       toc_depth: 2-4
 
-  - pymdownx.mark         # 标记/高亮文本。
+  - pymdownx.mark         
   - pymdownx.caret        # 插入文本标记。
   - pymdownx.tilde        # 删除线
   - pymdownx.arithmatex:  # LaTeX 数学公式支持。
@@ -143,31 +145,39 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.critic       # 评论标记。支持插入、删除、替换等标记，常用于文档审阅
   - pymdownx.keys         # 键盘按键显示。允许你以美观的方式显示键盘按键。
-  - pymdownx.tasklist:    # 任务列表 (Checklist)。支持带有复选框的任务列表。
-      custom_checkbox: true # 使用自定义的 CSS 样式复选框，而非浏览器默认样式，以保持主题一致性。
+  - pymdownx.tasklist:    
+      custom_checkbox: true # 使用自定义CSS
 
-  - admonition            # 提示框 (Admonition)。
-  - markdown_gfm_admonition # 启用 GFM 风格的解析
+  - admonition            
+  - markdown_gfm_admonition 
   - pymdownx.details      # 可折叠的详情块。允许你创建可展开/折叠的内容区域。
   - pymdownx.tabbed:      
       alternate_style: true # 使用另一种样式来渲染选项卡，通常更符合 Material 主题的风格。
 
   - pymdownx.highlight:   # 代码块高亮
       anchor_linenums: true # 当显示行号时，为每行代码生成一个锚点。
-      linenums: true      # 在代码块左侧显示行号。
-      auto_title: true    # 自动在代码块上方显示编程语言的名称
+      #linenums: true      # 代码块左侧行号
+      #auto_title: true    # 自动在代码块上方显示编程语言的名称
   - pymdownx.inlinehilite # 行内代码高亮
   - pymdownx.snippets     # 代码片段。允许你将其他 Markdown 文件或文本文件作为“代码片段”嵌入到当前文件中。
   - pymdownx.superfences  # 增强型代码块。这是 `highlight` 扩展的依赖，提供了更灵活的代码块定义方式，例如嵌套代码块、自定义代码块属性等。
 
 plugins:
+  - awesome-pages
+  - changelog
+  - glightbox
+  - search
+  - git-revision-date-localized:
+      type: datetime
+      timezone: Asia/Shanghai
+      locale: zh
+      enable_creation_date: true
+      fallback_to_build_date: true
   - statistics:
       words_per_minute: 200
       codelines_per_minute: 80
       page_template: "assets/template.html"
-  - changelog
-  - search
-  - awesome-pages
+
 
 nav:
   - 🏠主页: 

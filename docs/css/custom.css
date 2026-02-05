@@ -1,4 +1,10 @@
 /*自定义字体和admonition*/
+/* 字体设置 & 自定义 admonition */
+@font-face {
+  font-family: "Maple Mono";
+  src: url("./fonts/MapleMono.ttf") format("truetype");
+}
+
 :root {
   --md-text-font: "JetBrains Mono", "LXGW WenKai Screen"; 
   --md-code-font: "JetBrains Mono", "Consolas", "LXGW WenKai Screen";
@@ -17,6 +23,60 @@
   --md-admonition-icon--theorem: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M278.5 215.6 23 471c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l74.8-74.8c7.4 4.6 15.3 8.2 23.8 10.5 44.8 12.2 114.5 13.9 182.5-31.2 12.2-8.1 5.8-25.4-8.8-25.4h-16.1c-5.1 0-9.2-4.1-9.2-9.2 0-4.1 2.7-7.6 6.5-8.8l97.7-29.3c3.4-1 6.4-3.1 8.4-6.1 4.4-6.4 8.6-12.9 12.6-19.6 6.2-10.3-1.5-23-13.5-23H377c-5.1 0-9.2-4.1-9.2-9.2 0-4.1 2.7-7.6 6.5-8.8l80.9-24.3c4.6-1.4 8.4-4.8 10.2-9.3 29.1-73.4 42.4-150.3 46.5-199.6.8-9.9-3-19.6-10-26.6S485.2-.6 475.3.2C391.5 7 228.5 40.5 137.4 131.6c-80.1 80.1-80.7 170.7-66.1 224.8 2.1 7.9 12 9.6 17.8 3.8l164.5-164.4c6.2-6.2 16.4-6.2 22.6 0 5.4 5.4 6.1 13.6 2.2 19.8z"/></svg>');
 }
 
+/*黑夜模式配色*/
+
+[data-md-color-scheme="slate"]{
+  /* 黑色配色采用默认 + NoughtQ 的 heimu */
+  --heimu-bg-color: #252525;
+  --heimu-text-color: #252525;
+  --heimu-hover-text-color: rgba(235, 235, 235, 0.9);
+  --heimu-link-hover-color: #add8e6; /* lightblue */
+  --heimu-new-link-color: #ba0000;
+}
+
+[data-md-color-scheme=slate][data-md-color-primary=indigo] {
+  --md-typeset-a-color: #6ca8a4
+}
+
+[data-md-color-scheme="slate"] .md-top { /*回到顶部按钮样式*/
+  background-color: rgba(48, 48, 48, 0.8);
+  color: #fff;
+}
+
+[data-md-color-scheme="slate"] .md-top:focus {
+  background-color:  #6ca8a4;
+}
+
+[data-md-color-scheme="slate"] .md-top:hover {
+  background-color:  #6ca8a4;
+}
+
+[data-md-color-scheme="slate"] ::selection { /*鼠标选中的样式*/
+  background: #474747;
+}
+
+[data-md-color-scheme="slate"] strong { /*加粗样式*/
+  color: #6ca8a4;
+}
+
+[data-md-color-scheme="slate"] .md-typeset pre > code {  /* 代码块容器 */
+
+  border: 1px solid rgba(54, 54, 54, 0.901);
+  box-shadow: 0 2px 5px rgba(48, 46, 46, 0.03); 
+  border-radius: 0.2rem;
+}
+
+[data-md-color-scheme="slate"] :not(pre) > code {
+  color: #6ca8a4;                          
+  background-color: rgba(108, 168, 164, 0.15); /* 淡淡的青色背景 */
+  padding: 0.1rem 0.3rem;
+  border-radius: 0.2rem;
+  word-break: break-word;
+  font-family: var(--md-code-font-family);
+}
+
+
+/* 白天模式配色 */
 [data-md-color-scheme="default"] {
   --md-primary-fg-color: rgb(9, 136, 198);
   --md-primary-fg-color--dark: rgb(9, 136, 198);
@@ -24,7 +84,7 @@
   --md-default-bg-color: rgba(255, 255, 255, 0.5);
   --md-footer-fg-color: #000000;
   --md-footer-bg-color: #e1eef6;
-  --md-footer-bg-color--dark:rgb(159, 224, 252);
+  --md-footer-bg-color--dark:rgb(159, 224, 252); /**/
   --md-footer-fg-color--light: #000000;
   --md-footer-fg-color--lighter: #000000;
   --md-default-fg-color--lightest: rgba(0, 0, 0, 0.4);
@@ -36,6 +96,56 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-image: linear-gradient(180deg, #5e9fbf29 0%, rgb(255 255 255) 100%);
+
+  --heimu-bg-color: #dcdcdc; 
+  --heimu-text-color: #dcdcdc;
+  --heimu-hover-text-color: #252525;
+  --heimu-link-hover-color: #0056b3; /* 深蓝，在浅色背景上更清晰 */
+  --heimu-new-link-color: #d9534f;
+}
+
+[data-md-color-scheme="default"] .md-top {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgb(48, 48, 48);
+}
+
+[data-md-color-scheme="default"] .md-top:focus, .md-top:hover {
+  background-color: rgb(208, 239, 255);
+}
+
+[data-md-color-scheme="default"] ::selection {
+  background: rgb(208, 239, 255);
+}
+
+[data-md-color-scheme="default"] .md-copyright {
+  color: #8c8c8c;
+}
+
+[data-md-color-scheme="default"] strong {
+  color: rgb(9, 136, 198);
+}
+
+[data-md-color-scheme="default"] .md-typeset pre > code { /* 代码块容器 */
+  border: 1px solid rgba(0, 0, 0, 0.05); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+  border-radius: 0.2rem;
+}
+
+[data-md-color-scheme="default"] .md-typeset :not(pre) > code { /*行内代码*/
+  background-color: rgba(9, 136, 198, 0.08); 
+  color: rgb(9, 136, 198);
+  padding: 0.1em 0.3em;
+  border-radius: 0.2rem;
+  word-break: break-word;
+  font-family: var(--md-code-font-family);
+}
+
+
+
+
+/* 防止加粗字体覆盖接触链接时的颜色 */
+a:hover strong {
+  color: inherit;
 }
 
 /* 两侧目录栏修改（by @TonyCrane） */
@@ -227,22 +337,32 @@ img:not([src$=".svg"]) {
 }
 
 /* heimu moegirl, Reference：https://www.cnblogs.com/Vanilla-chan/p/12355387.html*/
-.heimu, .heimu a, a .heimu, .heimu a.new {
-  background-color: #252525;
-  color: #252525;
+.heimu, 
+.heimu a, 
+a .heimu, 
+.heimu a.new {
+  background-color: var(--heimu-bg-color);
+  color: var(--heimu-text-color);
   text-shadow: none;
+  transition: color 0.2s ease-in-out; /* 增加一点渐变效果让体验更好 */
 }
+
+/* 悬停/激活状态：显示文字 */
 .heimu:hover, .heimu:active,
 .heimu:hover .heimu, .heimu:active .heimu {
-  color: white !important;
+  color: var(--heimu-hover-text-color) !important;
 }
+
+/* 链接悬停状态 */
 .heimu:hover a, a:hover .heimu,
 .heimu:active a, a:active .heimu {
-  color: lightblue !important;
+  color: var(--heimu-link-hover-color) !important;
 }
+
+/* New 链接状态 */
 .heimu:hover .new, .heimu .new:hover, .new:hover .heimu,
 .heimu:active .new, .heimu .new:active, .new:active .heimu {
-  color: #BA0000 !important;
+  color: var(--heimu-new-link-color) !important;
 }
 
 
