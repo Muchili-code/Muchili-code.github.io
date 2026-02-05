@@ -1,3 +1,10 @@
+- "2026":
+  - "2026-02-05":
+    - "pageupdate":
+        text: 改回 material 主题，优化 UI
+        href: /
+    - "function":
+        text: 增加 git 追踪和图片查看功能
 - "2025":
   - "2025-12-18":
     - "pageupdate": 
