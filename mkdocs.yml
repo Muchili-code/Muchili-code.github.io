@@ -1,5 +1,6 @@
 site_name: Muchili's Blog
 site_url: https://muchili-code.github.io/
+use_directory_urls: false  # 禁用目录级URL
 site_author: 慕迟离
 site_description: Welcome To my site!
 
@@ -150,13 +151,13 @@ markdown_extensions:
   - pymdownx.critic       # 评论标记。支持插入、删除、替换等标记，常用于文档审阅
   - pymdownx.keys         # 键盘按键显示。允许你以美观的方式显示键盘按键。
   - pymdownx.tasklist:    
-      custom_checkbox: true # 使用自定义CSS
+      custom_checkbox: true 
 
   - admonition            
-  - markdown_gfm_admonition 
-  - pymdownx.details      # 可折叠的详情块。允许你创建可展开/折叠的内容区域。
+  #- markdown_gfm_admonition 
+  - pymdownx.details      
   - pymdownx.tabbed:      
-      alternate_style: true # 使用另一种样式来渲染选项卡，通常更符合 Material 主题的风格。
+      alternate_style: true 
 
   - pymdownx.highlight:   # 代码块高亮
       anchor_linenums: true # 当显示行号时，为每行代码生成一个锚点。
@@ -175,6 +176,8 @@ markdown_extensions:
 
 plugins:
   - awesome-pages
+  - callouts:
+      aliases: false
   - changelog
   - glightbox
   - search
@@ -195,6 +198,7 @@ nav:
     - index.md 
     #- Home: index.md
     - 更新记录: changelog.md
+    - 样式参考: style.md
     - 建档指南: 
       - indices/Site_Instruction/index.md
       - 参考资料: Site Instruction/referrence.md
@@ -256,7 +260,27 @@ nav:
       - 7.动态测试: notes/College 3/1.误差理论和数据处理/期末复习/7-动态测试.md
 
     - 高级程序设计: 
-      - 基础语法知识: notes/College 3/1.高级程序设计/期末复习/Java Syntax.md
+      - indices/College3/Advanced_Program_Design/index.md
+      - Java 学习路线: notes/College 3/1.高级程序设计/期末复习/Java学习路线.md
+      - Java 语法:
+        - Java 基础语法: notes/College 3/1.高级程序设计/期末复习/Java基础语法.md
+        - Java 变量类型: notes/College 3/1.高级程序设计/期末复习/Java变量类型.md
+        - Java 数据类型: notes/College 3/1.高级程序设计/期末复习/Java数据类型结构.md
+      - Java 面向对象: 
+        - Java 继承与多态: notes/College 3/1.高级程序设计/期末复习/Java继承与多态.md
+        - Java 包: notes/College 3/1.高级程序设计/期末复习/Java包.md
+        - Java 数据管理的类: notes/College 3/1.高级程序设计/期末复习/Java-管理数据的类.md
+        - Java 静态类: notes/College 3/1.高级程序设计/期末复习/Java静态类与方法.md
+      - Java 设计模式: 
+        - Java 设计模式: notes/College 3/1.高级程序设计/期末复习/Java设计模式.md
+        - Java 测试驱动: notes/College 3/1.高级程序设计/期末复习/Java-写入一个程序.md
+      - Java 正则: 
+        - 正则语法: notes/College 3/1.高级程序设计/期末复习/new_regex.html
+        - Java 正则表达式: notes/College 3/1.高级程序设计/期末复习/Java-正则表达式.md
+        - Java 正则语法: notes/College 3/1.高级程序设计/期末复习/Java-正则语法.md
+
+      
+
 
   - 🔍科研经历:
     - research/index.md

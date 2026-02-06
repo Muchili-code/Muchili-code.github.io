@@ -21,6 +21,8 @@
   --md-admonition-icon--bug: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4.72.22a.75.75 0 0 1 1.06 0l1 .999a3.5 3.5 0 0 1 2.441 0l.999-1a.748.748 0 0 1 1.265.332.75.75 0 0 1-.205.729l-.775.776c.616.63.995 1.493.995 2.444v.327q0 .15-.025.292c.408.14.764.392 1.029.722l1.968-.787a.75.75 0 0 1 .556 1.392L13 7.258V9h2.25a.75.75 0 0 1 0 1.5H13v.5q-.002.615-.141 1.186l2.17.868a.75.75 0 0 1-.557 1.392l-2.184-.873A5 5 0 0 1 8 16a5 5 0 0 1-4.288-2.427l-2.183.873a.75.75 0 0 1-.558-1.392l2.17-.868A5 5 0 0 1 3 11v-.5H.75a.75.75 0 0 1 0-1.5H3V7.258L.971 6.446a.75.75 0 0 1 .558-1.392l1.967.787c.265-.33.62-.583 1.03-.722a1.7 1.7 0 0 1-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72 1.28a.75.75 0 0 1 0-1.06m.53 6.28a.75.75 0 0 0-.75.75V11a3.5 3.5 0 1 0 7 0V7.25a.75.75 0 0 0-.75-.75ZM6.173 5h3.654A.17.17 0 0 0 10 4.827V4.5a2 2 0 1 0-4 0v.327c0 .096.077.173.173.173"/></svg>');
   --md-admonition-icon--definition: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m410.3 231 11.3-11.3-33.9-33.9-62.1-62.1-33.9-33.9-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2l199.2-199.2zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9l-78.2 23 23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7l-14.4 14.5-22.6 22.6-11.4 11.3 33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5l-39.3-39.4c-25-25-65.5-25-90.5 0zm-47.4 168-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6"/></svg>');
   --md-admonition-icon--theorem: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M278.5 215.6 23 471c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l74.8-74.8c7.4 4.6 15.3 8.2 23.8 10.5 44.8 12.2 114.5 13.9 182.5-31.2 12.2-8.1 5.8-25.4-8.8-25.4h-16.1c-5.1 0-9.2-4.1-9.2-9.2 0-4.1 2.7-7.6 6.5-8.8l97.7-29.3c3.4-1 6.4-3.1 8.4-6.1 4.4-6.4 8.6-12.9 12.6-19.6 6.2-10.3-1.5-23-13.5-23H377c-5.1 0-9.2-4.1-9.2-9.2 0-4.1 2.7-7.6 6.5-8.8l80.9-24.3c4.6-1.4 8.4-4.8 10.2-9.3 29.1-73.4 42.4-150.3 46.5-199.6.8-9.9-3-19.6-10-26.6S485.2-.6 475.3.2C391.5 7 228.5 40.5 137.4 131.6c-80.1 80.1-80.7 170.7-66.1 224.8 2.1 7.9 12 9.6 17.8 3.8l164.5-164.4c6.2-6.2 16.4-6.2 22.6 0 5.4 5.4 6.1 13.6 2.2 19.8z"/></svg>');
+  --md-admonition-icon--caution: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1-64 0z"/></svg>');
+  --md-admonition-icon--important: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24v112c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zm32 224a32 32 0 1 1-64 0 32 32 0 1 1 64 0z"/></svg>');
 }
 
 /*黑夜模式配色*/
@@ -414,4 +416,261 @@ a .heimu,
   box-shadow: 0 2px 12px 0 rgba(60,60,60,0.07);
   transition: border-radius 0.4s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
   overflow: hidden;
+}
+
+/* customized admonition from NoughtQ */
+
+/* note（修改） */
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-color: rgb(68, 138, 255);
+}
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary {
+  background-color: rgba(68, 138, 255, 0.1);
+}
+.md-typeset .note > .admonition-title::before,
+.md-typeset .note > summary::before {
+  background-color: rgb(68, 138, 255);
+  -webkit-mask-image: var(--md-admonition-icon--note);
+          mask-image: var(--md-admonition-icon--note);
+}
+
+/* example（修改） */
+.md-typeset .admonition.example,
+.md-typeset details.example {
+  border-color: rgb(124, 77, 255);
+}
+.md-typeset .example > .admonition-title,
+.md-typeset .example > summary {
+  background-color: rgba(124, 77, 255, 0.1);
+}
+.md-typeset .example > .admonition-title::before,
+.md-typeset .example > summary::before {
+  background-color: rgb(124, 77, 255);
+  -webkit-mask-image: var(--md-admonition-icon--example);
+          mask-image: var(--md-admonition-icon--example);
+}
+
+/* info（修改） */
+.md-typeset .admonition.info,
+.md-typeset details.info {
+  border-color: rgb(0, 184, 212);
+}
+.md-typeset .info > .admonition-title,
+.md-typeset .info > summary {
+  background-color: rgba(0, 184, 212, 0.1);
+}
+.md-typeset .info > .admonition-title::before,
+.md-typeset .info > summary::before {
+  background-color: rgb(0, 184, 212);
+  -webkit-mask-image: var(--md-admonition-icon--info);
+          mask-image: var(--md-admonition-icon--info);
+}
+
+/* bug（修改） */
+.md-typeset .admonition.bug,
+.md-typeset details.bug {
+  border-color: rgb(245, 0, 87);
+}
+.md-typeset .bug > .admonition-title,
+.md-typeset .bug > summary {
+  background-color: rgba(245, 0, 87, 0.1);
+}
+.md-typeset .bug > .admonition-title::before,
+.md-typeset .bug > summary::before {
+  background-color: rgb(245, 0, 87);
+  -webkit-mask-image: var(--md-admonition-icon--bug);
+          mask-image: var(--md-admonition-icon--bug);
+}
+
+/* play（新增）：.gif 动画演示 */
+.md-typeset .admonition.play,
+.md-typeset details.play {
+  border-color: rgb(133, 255, 153);
+}
+.md-typeset .play > .admonition-title,
+.md-typeset .play > summary {
+  background-color: rgba(133, 255, 153, 0.1);
+}
+.md-typeset .play > .admonition-title::before,
+.md-typeset .play > summary::before {
+  background-color: rgb(133, 255, 153);
+  -webkit-mask-image: var(--md-admonition-icon--play);
+          mask-image: var(--md-admonition-icon--play);
+}
+
+/* code（新增）：较长代码块 */
+.md-typeset .admonition.code,
+.md-typeset details.code {
+  border-color: rgb(184, 184, 184);
+}
+.md-typeset .code > .admonition-title,
+.md-typeset .code > summary {
+  background-color: rgba(184, 184, 184, 0.1);
+}
+.md-typeset .code > .admonition-title::before,
+.md-typeset .code > summary::before {
+  background-color: rgb(184, 184, 184);
+  -webkit-mask-image: var(--md-admonition-icon--code);
+          mask-image: var(--md-admonition-icon--code);
+}
+
+/* card（新增，但之后不会使用）： */
+.md-typeset .admonition.card,
+.md-typeset details.card {
+  border-color: rgb(146, 146, 146);
+}
+.md-typeset .card > .admonition-title,
+.md-typeset .card > summary {
+  background-color: rgba(146, 146, 146);
+}
+.md-typeset .card > .admonition-title::before,
+.md-typeset .card > summary::before {
+  background-color: rgb(146, 146, 146);
+}
+
+/* plan（新增）：计划表 */
+.md-typeset .admonition.plan,
+.md-typeset details.plan {
+  border-color: rgb(255, 23, 68);
+}
+.md-typeset .plan > .admonition-title,
+.md-typeset .plan > summary {
+  background-color: rgba(255, 23, 68, 0.1);
+}
+.md-typeset .plan > .admonition-title::before,
+.md-typeset .plan > summary::before {
+  background-color: rgb(255, 23, 68);
+  -webkit-mask-image: var(--md-admonition-icon--plan);
+          mask-image: var(--md-admonition-icon--plan);
+}
+
+/* statistic（新增）：统计数据，配色同 code */
+.md-typeset .admonition.statistic,
+.md-typeset details.statistic {
+  border-color: rgb(184, 184, 184);
+}
+.md-typeset .statistic > .admonition-title,
+.md-typeset .statistic > summary {
+  background-color: rgba(184, 184, 184, 0.1);
+}
+.md-typeset .statistic > .admonition-title::before,
+.md-typeset .statistic > summary::before {
+  background-color: rgb(184, 184, 184);
+  -webkit-mask-image: var(--md-admonition-icon--statistic);
+          mask-image: var(--md-admonition-icon--statistic);
+}
+
+/* recommend（新增）：推荐内容 */
+.md-typeset .admonition.recommend,
+.md-typeset details.recommend {
+  border-color: rgb(42, 177, 125);
+}
+.md-typeset .recommend > .admonition-title,
+.md-typeset .recommend > summary {
+  background-color: rgba(54, 238, 168, 0.1);
+}
+.md-typeset .recommend > .admonition-title::before,
+.md-typeset .recommend > summary::before {
+  background-color: rgb(38, 196, 136);
+  -webkit-mask-image: var(--md-admonition-icon--recommend);
+          mask-image: var(--md-admonition-icon--recommend);
+}
+
+/* tools（新增）：工具 */
+.md-typeset .admonition.tools,
+.md-typeset details.tools {
+  border-color: rgb(108, 108, 108);
+}
+.md-typeset .tools > .admonition-title,
+.md-typeset .tools > summary {
+  background-color: rgba(108, 108, 108, 0.1);
+}
+.md-typeset .tools > .admonition-title::before,
+.md-typeset .tools > summary::before {
+  background-color: rgb(108, 108, 108);
+  -webkit-mask-image: var(--md-admonition-icon--tools);
+          mask-image: var(--md-admonition-icon--tools);
+}
+
+/* proof（新增）：证明 */
+.md-typeset .admonition.proof,
+.md-typeset details.proof {
+  border-color: rgb(170, 204, 216);
+}
+.md-typeset .proof > .admonition-title,
+.md-typeset .proof > summary {
+  background-color: rgba(170, 204, 216, 0.1);
+}
+.md-typeset .proof > .admonition-title::before,
+.md-typeset .proof > summary::before {
+  background-color: rgb(170, 204, 216);
+  -webkit-mask-image: var(--md-admonition-icon--proof);
+          mask-image: var(--md-admonition-icon--proof);
+}
+
+
+/* theorem（新增）：定义 */
+.md-typeset .admonition.definition,
+.md-typeset details.definition {
+  border-color: rgb(233, 254, 105);
+}
+.md-typeset .definition > .admonition-title,
+.md-typeset .definition > summary {
+  background-color: rgba(233, 254, 105, 0.1);
+}
+.md-typeset .definition > .admonition-title::before,
+.md-typeset .definition > summary::before {
+  background-color: rgb(233, 254, 105);
+  -webkit-mask-image: var(--md-admonition-icon--definition);
+          mask-image: var(--md-admonition-icon--definition);
+}
+
+/* theorem（新增）：定理 */
+.md-typeset .admonition.theorem,
+.md-typeset details.theorem {
+  border-color: rgb(232, 184, 51);
+}
+.md-typeset .theorem > .admonition-title,
+.md-typeset .theorem > summary {
+  background-color: rgba(232, 184, 51, 0.1);
+}
+.md-typeset .theorem > .admonition-title::before,
+.md-typeset .theorem > summary::before {
+  background-color: rgb(232, 184, 51);
+  -webkit-mask-image: var(--md-admonition-icon--theorem);
+          mask-image: var(--md-admonition-icon--theorem);
+}
+
+/* caution（新增） */
+.md-typeset .admonition.caution,
+.md-typeset details.caution {
+  border-color: rgb(255, 214, 0); /* Amber A700 - 醒目的黄色 */
+}
+.md-typeset .caution > .admonition-title,
+.md-typeset .caution > summary {
+  background-color: rgba(255, 214, 0, 0.1);
+}
+.md-typeset .caution > .admonition-title::before,
+.md-typeset .caution > summary::before {
+  background-color: rgb(255, 214, 0);
+  -webkit-mask-image: var(--md-admonition-icon--caution);
+          mask-image: var(--md-admonition-icon--caution);
+}
+
+/* important（新增） */
+.md-typeset .admonition.important,
+.md-typeset details.important {
+  border-color: rgb(126, 87, 194); /* Deep Purple 400 */
+}
+.md-typeset .important > .admonition-title,
+.md-typeset .important > summary {
+  background-color: rgba(126, 87, 194, 0.1);
+}
+.md-typeset .important > .admonition-title::before,
+.md-typeset .important > summary::before {
+  background-color: rgb(126, 87, 194);
+  -webkit-mask-image: var(--md-admonition-icon--important);
+          mask-image: var(--md-admonition-icon--important);
 }
