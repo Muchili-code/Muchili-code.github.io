@@ -180,6 +180,7 @@ plugins:
       aliases: false
   - changelog
   - glightbox
+  - macros
   - search
   - git-revision-date-localized:
       type: datetime

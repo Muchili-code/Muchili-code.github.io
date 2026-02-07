@@ -1,4 +1,8 @@
 - "2026":
+  - "2026-02-07":
+    - "pageupdate":
+        text: 增加高级程序设计、医学成像的笔记，优化网站内容体验
+        href: /
   - "2026-02-05":
     - "pageupdate":
         text: 改回 material 主题，优化 UI
