@@ -10,8 +10,8 @@ repo_name: Muchili/Blog # 自定义显示的仓库名称
 
 theme:
   name: material
-  custom_dir: overrides # 自定义主题目录,优先级目录   
-  language: zh # 一些提示性的文字会变成中文
+  custom_dir: overrides 
+  language: zh 
   favicon: images/kuma.png
 
   palette: 
@@ -135,7 +135,7 @@ markdown_extensions:
       permalink: ⚓︎       # 标题的链接（锚点），图标是⚓︎
       title: 目录         
       slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}} # Unicode link
-      toc_depth: 2-4
+      toc_depth: 2-6
 
   - pymdownx.mark         
   - pymdownx.caret        # 插入文本标记。
@@ -161,10 +161,10 @@ markdown_extensions:
 
   - pymdownx.highlight:   # 代码块高亮
       anchor_linenums: true # 当显示行号时，为每行代码生成一个锚点。
-      #linenums: true      # 代码块左侧行号
+      linenums: true      # 代码块左侧行号
       #auto_title: true    # 自动在代码块上方显示编程语言的名称
   - pymdownx.inlinehilite # 行内代码高亮
-  - pymdownx.snippets     # 代码片段。其他文件作为“代码片段”嵌入到当前文件中。
+  - pymdownx.snippets     # 其他文件作为“代码片段”嵌入到当前文件中。参见 https://facelessuser.github.io/pymdown-extensions/extensions/snippets/#snippets-notation
   - sane_lists  # 让列表解析逻辑更符合直觉
   - pymdownx.superfences:  # 增强型代码块
       preserve_tabs: false 
@@ -207,7 +207,7 @@ nav:
   - 🤖人工智能:
     - Artificial Intelligent/index.md
     - AI 客户端:
-      - AI 客户端应用介绍: Artificial Intelligent/AI Desktop Use/quick-start.md # 子页面的路径是相对于 docs/ 目录的
+      - AI 客户端应用介绍: Artificial Intelligent/AI Desktop Use/quick-start.md 
       - AI 客户端应用的使用: Artificial Intelligent/AI Desktop Use/installation.md
     - GitHub Pages网站搭建指导:
       - Git命令行的使用: Artificial Intelligent/GitHub Pages Instruction/Git命令行.md
@@ -217,7 +217,7 @@ nav:
 
   - 📕College 2: # 这个路径是相对于你的主仓库的 docs/ 目录的
     - indices/College2/index.md
-    - 数据结构与算法分析: # 这里就是子模块的调用
+    - 数据结构与算法分析: 
       - indices/College2/DS/index.md
       - 0.进阶语法知识: "notes/College 2/2.数据结构与算法分析（FDS）-Fundemental Data Structure/期末复习/自己笔记/0.基础语法知识.md"
       - 1.绪论: "notes/College 2/2.数据结构与算法分析（FDS）-Fundemental Data Structure/期末复习/自己笔记/1.绪论.md"
@@ -233,6 +233,15 @@ nav:
 
   - 📚College 3:
     - indices/College3/index.md
+
+    - 医学成像: 
+      - indices/College3/Medical_Imaging/index.md
+      - CT: notes/College 3/1.生物医学成像技术/期末复习/1.XRayCT/XRayCT.md
+      - PET: notes/College 3/1.生物医学成像技术/期末复习/PET.md
+      - US: notes/College 3/1.生物医学成像技术/期末复习/超声习题.md
+      - Optics: notes/College 3/1.生物医学成像技术/期末复习/光学.md
+      - MRI: notes/College 3/1.生物医学成像技术/期末复习/5. MRI/MRI.md
+
     - 嵌入式系统:
       - indices/College3/Embedded systems/index.md
       - 1.导论: notes/College 3/1.嵌入式系统/自己笔记/1-导论.md
@@ -248,16 +257,6 @@ nav:
       - 16.存储器管理单元及保护单元: notes/College 3/1.嵌入式系统/自己笔记/16-存储器管理单元及保护单元.md
       - 操作系统: notes/College 3/1.嵌入式系统/自己笔记/OS.md
       - Linux 线程编程: notes/College 3/1.嵌入式系统/自己笔记/Thread_program.md
-
-    - 误差理论与数据处理: 
-      - indices/College3/Error Theory/index.md
-      - 1.误差的基本概念: notes/College 3/1.误差理论和数据处理/期末复习/1-误差的基本概念.md
-      - 2.误差的基本性质与处理: notes/College 3/1.误差理论和数据处理/期末复习/2-误差的基本性质与处理.md
-      - 3.误差的合成与分配: notes/College 3/1.误差理论和数据处理/期末复习/3-误差的合成与分配.md
-      - 4.测量不确定度: notes/College 3/1.误差理论和数据处理/期末复习/4-测量不确定度.md
-      - 5.最小二乘法: notes/College 3/1.误差理论和数据处理/期末复习/5-线性测量参数的最小二乘法处理.md
-      - 6.回归分析: notes/College 3/1.误差理论和数据处理/期末复习/6-回归分析.md
-      - 7.动态测试: notes/College 3/1.误差理论和数据处理/期末复习/7-动态测试.md
 
     - 高级程序设计: 
       - indices/College3/Advanced_Program_Design/index.md
@@ -275,13 +274,28 @@ nav:
         - Java 设计模式: notes/College 3/1.高级程序设计/期末复习/Java设计模式.md
         - Java 测试驱动: notes/College 3/1.高级程序设计/期末复习/Java-写入一个程序.md
       - Java 正则: 
-        - 正则语法: notes/College 3/1.高级程序设计/期末复习/new_regex.html
         - Java 正则表达式: notes/College 3/1.高级程序设计/期末复习/Java-正则表达式.md
         - Java 正则语法: notes/College 3/1.高级程序设计/期末复习/Java-正则语法.md
+        - 正则表达式: notes/College 3/1.高级程序设计/期末复习/new_regex.html
+      - 其他:
+        - Java与python: notes/College 3/1.高级程序设计/期末复习/Java与python.md
+        - 测试驱动开发: notes/College 3/1.高级程序设计/期末复习/Java-写入一个程序.md
+        - Web 开发: notes/College 3/1.高级程序设计/期末复习/Web开发.html
+        - exam: notes/College 3/1.高级程序设计/期末复习/exam.md
+
+    - 误差理论与数据处理: 
+      - indices/College3/Error Theory/index.md
+      - 1.误差的基本概念: notes/College 3/1.误差理论和数据处理/期末复习/1-误差的基本概念.md
+      - 2.误差的基本性质与处理: notes/College 3/1.误差理论和数据处理/期末复习/2-误差的基本性质与处理.md
+      - 3.误差的合成与分配: notes/College 3/1.误差理论和数据处理/期末复习/3-误差的合成与分配.md
+      - 4.测量不确定度: notes/College 3/1.误差理论和数据处理/期末复习/4-测量不确定度.md
+      - 5.最小二乘法: notes/College 3/1.误差理论和数据处理/期末复习/5-线性测量参数的最小二乘法处理.md
+      - 6.回归分析: notes/College 3/1.误差理论和数据处理/期末复习/6-回归分析.md
+      - 7.动态测试: notes/College 3/1.误差理论和数据处理/期末复习/7-动态测试.md
+
+
 
       
-
-
   - 🔍科研经历:
     - research/index.md
 

@@ -1,8 +1,11 @@
 mkdocs
 mkdocs-material
-mkdocs-materialx
+# mkdocs-materialx
 markdown-gfm-admonition
-mkdocs-mermaid2-plugin
+# mkdocs-mermaid2-plugin
 mkdocs-statistics-plugin
 mkdocs-changelog-plugin
 mkdocs-awesome-pages-plugin
+mkdocs-glightbox 
+mkdocs-git-revision-date-localized-plugin 
+mkdocs-callouts

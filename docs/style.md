@@ -15,7 +15,7 @@
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
 
-> [!INFO]
+> [!CODE]
 > Code here
 
 ---
