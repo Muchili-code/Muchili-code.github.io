@@ -1,6 +1,6 @@
 site_name: Muchili's Blog
 site_url: https://muchili-code.github.io/
-use_directory_urls: false  # 禁用目录级URL
+use_directory_urls: false  # 禁用目录级 URL，使文件索引方式与 typora 一致
 site_author: 慕迟离
 site_description: Welcome To my site!
 
@@ -59,7 +59,7 @@ theme:
     code: JetBrains Mono, Consolas
 
 
-copyright: Copyright &copy; 2025 Muchili/All Rights Reserved. # 左下角的版权声明
+copyright: Copyright &copy; 2025 Muchili/All Rights Reserved. 
 
 extra:
   generator: false          # 删除页脚的“使用 MkDocs Material制造”
