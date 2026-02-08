@@ -3,14 +3,15 @@ title: " ⭐星河璀璨，志凌九霄🚀 "
 author: "Muchili"
 date: "2025-07-31"
 description: "这是一个文档的简短描述"
+template: home.html
 statistics: True
 comments: true
 ---
 
-<div markdown="1" class="homepage">
-<h1 style="font-size: 2rem; margin-left: 10%"> <span id="typed"> </span> </h1>
-</div>
+<link rel="stylesheet" href="./css/home.css">
+<script defer src="./javascripts/home.js"></script>
 
+<!--
 <div id="rcorners2">
      <div id="rcorners1"class="date-display">
           <p class="p1"> </p>
@@ -58,7 +59,6 @@ comments: true
 </div>  
 <br>
 
-<!--
 <center>
     <font color="#788bb8" size="6" class="ml3"> 星河璀璨，志凌九霄</font>
 </center> 

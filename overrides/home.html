@@ -1,0 +1,39 @@
+{% extends "main.html" %}
+
+{% block tabs %}
+  {{ super() }}
+  
+  <section class="mdx-hero" id="heroSection">
+    <div class="mdx-hero__layer mdx-hero__layer--bg" id="heroBg"></div>
+    
+    <div class="mdx-hero__overlay"></div>
+    
+    <div class="mdx-hero__content" id="heroContent">
+      <h1 class="hero-title">
+         <span id="typed"></span>
+      </h1>
+      <p class="hero-subtitle">⭐星河璀璨，🚀志凌九霄</p>
+    </div>
+
+    <a href="#start-content" class="mdx-hero__scroll-down" id="scrollDownBtn">
+        <span class="tw-animate-bounce">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="currentColor"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </span> 
+    </a>
+  </section>
+{% endblock %}
+
+{% block container %}
+  <div id="start-content"></div>
+
+  <div class="mdx-container" id="mainContent">
+    <div class="md-grid md-typeset" style="max-width: 1200px !important; margin: 0 auto;">
+      <div class="content-wrapper">
+        {{ page.content }}
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block sidebar %}{% endblock %}
+{% block footer %}{% endblock %}

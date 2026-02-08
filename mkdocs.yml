@@ -115,9 +115,9 @@ extra_javascript:
   - javascripts/extra.js
   - javascripts/katex.js 
   - javascripts/toc.js 
+  - javascripts/typed_init.js
   #- javascripts/typed.js
   - https://cdn.jsdelivr.net/npm/typed.js@2.0.11
-  - javascripts/typed_init.js
   - https://unpkg.com/katex@0/dist/katex.min.js # KaTeX 核心 JS
   - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js # auto-render 扩展
   - https://unpkg.com/mermaid@10.6.1/dist/mermaid.min.js
