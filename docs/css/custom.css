@@ -412,7 +412,7 @@ a .heimu,
 /* 让所有admonition（包括!!! tip）圆角化且更自然 */
 .md-typeset .admonition,
 .md-typeset details {
-  border-radius: 1.5em;
+  border-radius: 1em;
   box-shadow: 0 2px 12px 0 rgba(60,60,60,0.07);
   transition: border-radius 0.4s cubic-bezier(.4,2,.6,1), box-shadow 0.3s;
   overflow: hidden;

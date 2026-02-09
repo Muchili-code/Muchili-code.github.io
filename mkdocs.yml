@@ -197,13 +197,7 @@ plugins:
 nav:
   - 🏠主页: 
     - index.md 
-    #- Home: index.md
-    - 更新记录: changelog.md
-    - 样式参考: style.md
-    - 建档指南: 
-      - indices/Site_Instruction/index.md
-      - 参考资料: Site Instruction/referrence.md
-      - 仓库链接: Site Instruction/仓库链接.md    
+    #- Home: index.md   
 
   - 🤖人工智能:
     - Artificial Intelligent/index.md
@@ -293,9 +287,6 @@ nav:
       - 5.最小二乘法: notes/College 3/1.误差理论和数据处理/期末复习/5-线性测量参数的最小二乘法处理.md
       - 6.回归分析: notes/College 3/1.误差理论和数据处理/期末复习/6-回归分析.md
       - 7.动态测试: notes/College 3/1.误差理论和数据处理/期末复习/7-动态测试.md
-
-
-
       
   - 🔍科研经历:
     - research/index.md
@@ -305,8 +296,15 @@ nav:
 
   - 🗃️杂项: 
     - indices/miscellaneous/index.md
+    - 更新记录: changelog.md
+    - 样式参考: Miscellaneous/style.md
+    - 建档指南: 
+      - indices/Site_Instruction/index.md
+      - 参考资料: Site Instruction/referrence.md
+      - 仓库链接: Site Instruction/仓库链接.md 
     - Career Planning:
-      - selected graduates: Miscellaneous/选调座谈会.md
+      - indices/miscellaneous/career_planning/index.md
+      - selected graduates: Miscellaneous/Selected_student.md
     - 查老师: Miscellaneous/chalaoshi/chalaoshi.md
     - English_Grade: Miscellaneous/English_Grade/README.md
 

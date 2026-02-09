@@ -10,9 +10,20 @@ comments: true
 ???+ abstract "摘要"
     存放我大三的学习笔记。
 
-    - [x] [嵌入式系统](Embedded systems/index.md)
-    - [x] [误差理论](Error Theory/index.md)
-    - [ ] 信号处理
-    - [ ] 医学成像
-    - [ ] 高级程序设计
+    !!! note "大三上"
+        专业课百花齐放，为大三下的课程学习大侠坚实基础
+        - [x] [嵌入式系统](Embedded systems/index.md)
+        - [x] [误差理论](Error Theory/index.md)
+        - [ ] 信号处理
+        - [x] [生物医学成像技术](Medical_Imaging/index.md)
+        - [x] [高级程序设计](Advanced_Program_Design/index.md)
+    
+    !!! note "大三下"
+
+        - [ ] 生物医学图像处理
+        - [ ] 仪器系统设计
+        - [ ] 硬件描述语言
+        - [ ] 电子系统设计与实践
+        - [ ] 生物医学传感与检测
+        - [ ] 磁共振成像原理
 

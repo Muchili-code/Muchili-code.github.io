@@ -5,7 +5,10 @@ date: "2025-07-31"
 description: "这是一个文档的简短描述"
 template: home.html
 statistics: True
-comments: true
+comments: True
+hide: 
+  - navigation
+  - toc
 ---
 
 <link rel="stylesheet" href="./css/home.css">
@@ -65,7 +68,7 @@ comments: true
 --->
 
 ???+ success "Blog 信息"
-     <center> 上次更新于 {{ git_revision_date_localized }}  </center>
+     <center> 🕛[更新记录](./changelog.md)。上次更新于 {{ git_revision_date_localized }}  </center>
      <center> 目前本站共有 {{ pages }} 个页面，{{ words }} 个字，{{ codes }} 行代码，{{ images }} 张图片。</center>
 
 
@@ -85,8 +88,8 @@ comments: true
     
     ---
 
-     🚀 [我的个人导航站](https://muchili-code.github.io/Navigation/navigation/)<br>
-     📋️ [我的大佬朋友们](https://muchili-code.github.io/link/%E5%8F%8B%E9%93%BE/)<br>
+     🚀 [我的个人导航站](https://muchili-code.github.io/Navigation/navigation.html)<br>
+     📋️ [我的大佬朋友们](https://muchili-code.github.io/link/index.html)<br>
      🏷️ [我的GitHub个人主页](https://github.com/Muchili-code)<br>
      🛡️ [建站资料](https://muchili-code.github.io/indices/Site_Instruction/)<br>
 
@@ -102,7 +105,7 @@ comments: true
     ---
     ![image](images/wallpaper_1.png){ class="responsive-image" loading="lazy" align=right width="400" height="226" style="border-radius: 2.5em 1.5em 3em 2em / 2em 2.5em 1.5em 3em;" }
 
-    - [ ] 用<mark>目录</mark>打开文章和<ins>补充完善</ins>
+    - [x] 用<mark>目录</mark>打开文章和<ins>补充完善</ins>
     - [x] 浅色模式颜色适配
     - [ ] 浏览器搜索主页构建
     - [ ] 补充<del>[大二](https://muchili-code.github.io/indices/College2/)</del>的笔记
@@ -126,7 +129,7 @@ comments: true
 
 
 <div style="text-align: center;">
-  <img src="./images/朝武芳乃.png" style="width: 100%; max-width: 100%;" />
+  <img src="./images/朝武芳乃.png" style="width: 80%; max-width: 100%;" />
 </div>
 
 
