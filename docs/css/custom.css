@@ -267,10 +267,10 @@ a:hover strong {
 }
 
 
-/* 链接下划线 */
+/* 链接下划线*/
 .md-typeset a {
   border-bottom: 1px dashed;
-}
+} 
 
 .md-typeset a.md-content__button, .md-typeset .tabbed-labels.tabbed-labels--linked a, html .md-footer-meta.md-typeset a, .md-typeset .highlighttable a, .md-typeset a.headerlink, .md-typeset a.footnote-ref {
   border-bottom: none;
@@ -343,6 +343,29 @@ img:not([src$=".svg"]) {
 [data-md-color-scheme="default"] .md-header, [data-md-color-scheme="default"] .md-tabs {
   background-color: rgba(9, 136, 198, 0.7);
   backdrop-filter: blur(10px);
+}
+
+/*自定义进度条*/
+.prog-custom {
+  -webkit-appearance: none;
+  appearance: none; 
+  width: 80%;
+  height: 10px; 
+  border: none;
+  border-radius: 10px; /* 圆角 */
+  overflow: hidden; /* 保证子元素不溢出圆角 */
+}
+
+.prog-custom::-webkit-progress-bar {  /* 进度条的槽（背景底色） */
+  background-color: #eee; 
+  border-radius: 10px;
+}
+
+
+.prog-custom::-webkit-progress-value {   /* 进度条的值-蓝色渐变+动态特效 */
+  background: linear-gradient(90deg, #36d1dc, #5b86e5); /* 蓝色渐变 */
+  border-radius: 10px;
+  transition: width 0.5s ease; 
 }
 
 /* heimu moegirl, Reference：https://www.cnblogs.com/Vanilla-chan/p/12355387.html*/

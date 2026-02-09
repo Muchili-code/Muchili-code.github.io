@@ -180,7 +180,7 @@ plugins:
       aliases: false
   - changelog
   - glightbox
-  - macros
+  #- macros
   - search
   - git-revision-date-localized:
       type: datetime
@@ -193,11 +193,17 @@ plugins:
       codelines_per_minute: 80
       page_template: "assets/template.html"
 
+validation:
+  nav:
+    omitted_files: ignore  # 告诉 MkDocs：没写进 nav 的文件不要报警告
 
 nav:
   - 🏠主页: 
     - index.md 
     #- Home: index.md   
+
+  - 🔖标签:
+    - Tag/tag.md
 
   - 🤖人工智能:
     - Artificial Intelligent/index.md
@@ -304,7 +310,7 @@ nav:
       - 仓库链接: Site Instruction/仓库链接.md 
     - Career Planning:
       - indices/miscellaneous/career_planning/index.md
-      - selected graduates: Miscellaneous/Selected_student.md
+      - selected graduates: Miscellaneous/Selected_Student.md
     - 查老师: Miscellaneous/chalaoshi/chalaoshi.md
     - English_Grade: Miscellaneous/English_Grade/README.md
 
@@ -313,5 +319,6 @@ nav:
   - 🛠️实用工具:
     - indices/Tools/index.md
     
+  - 🔦个人生活: https://blog-of-eden.vercel.app/
 
   

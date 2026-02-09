@@ -148,3 +148,96 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+// 记录网站运行的时间
+function timingTime(){
+          let start = '2024-10-28 00:00:00'
+          let startTime = new Date(start).getTime()
+          let currentTime = new Date().getTime()
+          let difference = currentTime - startTime
+          let m =  Math.floor(difference / (1000))
+          let mm = m % 60  // 秒
+          let f = Math.floor(m / 60)
+          let ff = f % 60 // 分钟
+          let s = Math.floor(f/ 60) // 小时
+          let ss = s % 24
+          let day = Math.floor(s  / 24 ) // 天数
+          return day + "天" + ss + "时" + ff + "分" + mm +'秒'
+        }
+        setInterval(()=>{
+          document.getElementById('box1').innerHTML = timingTime()
+        },1000)
+
+
+// =====栏目信息状态显示=====
+// 统计栏
+function toggle_statistics() {
+    var statistics = document.getElementById("statistics");
+    var about = document.getElementById("about");
+    var recommend = document.getElementById("recommend");
+
+    // 隐藏 "about" 区块（如果它是可见的）
+    if (about.style.display === "block") {
+        about.style.display = "none";
+    }
+
+    // 隐藏 "recommend" 区块（如果它是可见的）
+    if (recommend.style.display === "block") {
+        recommend.style.display = "none";
+    }
+
+    // 切换 "statistics" 区块的显示状态
+    if (statistics.style.display === "none" || statistics.style.display === "") {
+        statistics.style.display = "block";
+    } else {
+        statistics.style.display = "none";
+    }
+}
+
+// 关于栏
+function toggle_about() {
+    var about = document.getElementById("about");
+    var statistics = document.getElementById("statistics");
+    var recommend = document.getElementById("recommend");
+
+    // 隐藏 "statistics" 区块（如果它是可见的）
+    if (statistics.style.display === "block") {
+        statistics.style.display = "none";
+    }
+
+    // 隐藏 "recommend" 区块（如果它是可见的）
+    if (recommend.style.display === "block") {
+        recommend.style.display = "none";
+    }
+
+    // 切换 "about" 区块的显示状态
+    if (about.style.display === "none" || about.style.display === "") {
+        about.style.display = "block";
+    } else {
+        about.style.display = "none";
+    }
+}
+
+// 推荐栏
+function toggle_recommend() {
+    var about = document.getElementById("about");
+    var statistics = document.getElementById("statistics");
+    var recommend = document.getElementById("recommend");
+
+    // 隐藏 "about" 区块（如果它是可见的）
+    if (about.style.display === "block") {
+        about.style.display = "none";
+    }
+
+    // 隐藏 "statistics" 区块（如果它是可见的）
+    if (statistics.style.display === "block") {
+        statistics.style.display = "none";
+    }
+
+    // 切换 "recommend" 区块的显示状态
+    if (recommend.style.display === "none" || recommend.style.display === "") {
+        recommend.style.display = "block";
+    } else {
+        recommend.style.display = "none";
+    }
+}

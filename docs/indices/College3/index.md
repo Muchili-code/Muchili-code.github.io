@@ -10,15 +10,21 @@ comments: true
 ???+ abstract "摘要"
     存放我大三的学习笔记。
 
-    !!! note "大三上"
+    !!! tip "大三上"
         专业课百花齐放，为大三下的课程学习大侠坚实基础
-        - [x] [嵌入式系统](Embedded systems/index.md)
-        - [x] [误差理论](Error Theory/index.md)
+
         - [ ] 信号处理
         - [x] [生物医学成像技术](Medical_Imaging/index.md)
+        - [x] [嵌入式系统](Embedded systems/index.md)
         - [x] [高级程序设计](Advanced_Program_Design/index.md)
+        - [x] [误差理论](Error Theory/index.md)
     
-    !!! note "大三下"
+    !!! tip "大三下"
+        各种 <span style="text-decoration:line-through;">shi</span> 课<span class=heimu title="简直无语的一个学期">（各种意义上的）</span>混杂在一起构成毫无学习意义的整个大三下，被无意义的实验报告和作业填充的一整个学期。倒也不是教考分离，而是这些东西根本毫无意义。
+        
+        1.等到研究生阶段相关的内容还得自己学习，这既说明教学质量极差，也说明讲学内容聊胜于无。
+        
+        2.相同类型的实验要做一堆，这也说明学院教学的规划严重不符合当今需求
 
         - [ ] 生物医学图像处理
         - [ ] 仪器系统设计

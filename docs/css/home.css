@@ -151,7 +151,7 @@
 .mdx-container {
     position: relative;
     z-index: 10; 
-    width: 70%;
+    width: 100%;
     max-width: 1400px; /* 防止在大屏幕上过宽 */
     min-height: 100vh;
     margin: 99.8vh auto 0 auto; 
