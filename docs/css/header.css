@@ -1,5 +1,6 @@
 .md-header.md-header--shadow {
     opacity: 0;/* 默认情况下，页眉完全透明（不可见）。 */
+    z-index: 1000 !important; /* 确保层级高于首页的图片和正文 */
     transition: opacity 0.3s ease-out, transform 0.3s ease-out, visibility 0.3s;
     /* 定义了当透明度、变换或可见性改变时，0.3 秒的平滑过渡效果。 */
 }

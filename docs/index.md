@@ -79,28 +79,26 @@ hide:
       <div id="box1"></div> <!--home.js的timingTime()函对应id="box1"-->
 </body>
 
-<br>
-<br>
-<br>
+
 
 <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-bottom: 20px;" markdown="1">
 
-<a href="https://muchili-code.github.io/changelog.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 10px; border: 1px solid rgb(255, 196, 0); border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s;" onmouseover="this.style.background='rgb(128,128,128,0.1)'" onmouseout="this.style.background='transparent'">
+<a href="https://muchili-code.github.io/changelog.html" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 3px; border: 1px solid rgb(255, 196, 0); border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s;" onmouseover="this.style.background='rgb(128,128,128,0.1)'" onmouseout="this.style.background='transparent'">
 <span style="font-size: 1.5em; margin-bottom: 4px; color: rgb(255, 196,0)">:material-clock-time-two-outline:</span>
 <span style="font-weight: bold; font-size: 0.9em; color: rgb(255, 196,0)">最近更新</span>
 </a>
 
-<a href="javascript:toggle_about();" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 10px; border: 1px solid rgb(1, 175, 255); border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s;" onmouseover="this.style.background='rgba(128,128,128,0.1)'" onmouseout="this.style.background='transparent'">
+<a href="javascript:toggle_about();" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 3px; border: 1px solid rgb(1, 175, 255); border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s;" onmouseover="this.style.background='rgba(128,128,128,0.1)'" onmouseout="this.style.background='transparent'">
 <span style="font-size: 1.5em; margin-bottom: 4px; color: rgb(1, 175, 255)">:octicons-person-16:</span>
 <span style="font-weight: bold; font-size: 0.9em; color: rgb(1, 175, 255)">关于我</span>
 </a>
 
-<a href="javascript:toggle_statistics();" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 10px; border: 1px solid rgb(24, 202, 134); border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s;" onmouseover="this.style.background='rgba(128,128,128,0.1)'" onmouseout="this.style.background='transparent'">
+<a href="javascript:toggle_statistics();" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 3px; border: 1px solid rgb(24, 202, 134); border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s;" onmouseover="this.style.background='rgba(128,128,128,0.1)'" onmouseout="this.style.background='transparent'">
 <span style="font-size: 1.5em; margin-bottom: 4px; color: rgb(24, 202, 134)">:material-chart-line:</span>
 <span style="font-weight: bold; font-size: 0.9em; color: rgb(24, 202, 134)">站点统计</span>
 </a>
 
-<a href="javascript:toggle_recommend();" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 10px; border: 1px solid rgb(126, 87, 194); border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s; ;" onmouseover="this.style.background='rgba(128,128,128,0.1)'" onmouseout="this.style.background='transparent'">
+<a href="javascript:toggle_recommend();" style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 3px; border: 1px solid rgb(126, 87, 194); border-radius: 10px; text-decoration: none; color: inherit; transition: all 0.2s; ;" onmouseover="this.style.background='rgba(128,128,128,0.1)'" onmouseout="this.style.background='transparent'">
 <span style="font-size: 1.5em; margin-bottom: 4px; color: rgb(126, 87, 194)">:octicons-thumbsup-16:</span>
 <span style="font-weight: bold; font-size: 0.9em; color: rgb(126, 87, 194)">推荐阅读</span>
 </a>
@@ -109,14 +107,11 @@ hide:
 
 <div id="about" markdown="1" class="card" style="width: 40em; margin: 0 auto 20px auto; border-color: transparent; display: none; font-size: 95% ">
 <div style="padding-left: 1em; text-align: center" markdown="1">
-ZJU 本科 23 级 bmer
-
-正在摸索感兴趣的方向（似乎没有感兴趣的方向，maybe较为浑噩）
-
-平时喜欢阅读、钻研等。纯天然牛马体质人
-
+ZJU 本科 23 级 bmer<br>
+正在摸索感兴趣的方向（似乎没有感兴趣的方向，maybe较为浑噩）<br>
+平时喜欢阅读、钻研等。纯天然牛马体质人<br>
 欢迎找我~
-
+<br>
 [:fontawesome-solid-blog: 我的博客](https://blog-of-eden.vercel.app/) | 
 [:fontawesome-solid-box-archive: 我的 ZJU 课程资料库](https://github.com/Muchili-code/College-Notes) | 
 [:simple-github: 我的 GitHub](https://github.com/Muchili-code) | 
@@ -129,7 +124,7 @@ ZJU 本科 23 级 bmer
 - :material-file-document: 页面总数：{{pages}}  
 - :material-circle-edit-outline: 总字数：{{words}}  
 - :fontawesome-solid-code: 代码块行数：{{codes}}  
-- :octicons-clock-16: 网站运行时间：<span id='box1'></span>
+- :octicons-clock-16: 上次更新时间：{{ git_revision_date_localized }}
 </div>
 </div>
 
@@ -147,7 +142,7 @@ ZJU 本科 23 级 bmer
 
 <div class="grid cards" markdown>
 
--   :material-notebook-edit-outline:{ .lg .middle } __Blog 信息__
+-   :material-notebook-edit-outline:{ .lg .middle } Blog 信息
 
     ---
     
@@ -171,7 +166,7 @@ ZJU 本科 23 级 bmer
 
     === "对自己说的话"
         
-        ⭐星河璀璨，志凌九霄🚀
+        ⭐星河璀璨，🚀志凌九霄
 
 </div>
 
@@ -183,17 +178,16 @@ ZJU 本科 23 级 bmer
 
 <div class="grid cards" markdown="1">
 
--    :simple-github:{ .lg .middle } __About me__
+-    :simple-github:{ .lg .middle } About me
      
      ---
 
-     :student: A student in ZJU<br>
+     :student: A college student in ZJU majoring in Biomedical Engineering<br>
      📖 Major in Biomedical Engineering<br>
      💡<strong><font color="#788bb8" size=3> Make BME Great Again！</font> </strong><br>
-     🔖 An optimistic enfj<br>
-     ❤️ A technical lover
+     ❤️ Optimistic enfj&technical lover
      
--   :simple-materialformkdocs:{ .lg .middle } __我的收藏__
+-   :simple-materialformkdocs:{ .lg .middle } 我的收藏
     
     ---
 
@@ -202,7 +196,7 @@ ZJU 本科 23 级 bmer
      🏷️ [我的个人生活主页](https://blog-of-eden.vercel.app/)<br>
      🛡️ [建站资料](https://muchili-code.github.io/indices/Site_Instruction/)<br>
 
--   :material-book-education:{ .lg .middle } __To Do List__
+-   :material-book-education:{ .lg .middle } To Do List
 
     ---
 

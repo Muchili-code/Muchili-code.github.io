@@ -30,10 +30,11 @@
     <div class="md-grid md-typeset" style="max-width: 1200px !important; margin: 0 auto;">
       <div class="content-wrapper">
         {{ page.content }}
+
+        {% include "partials/comments.html" %}
       </div>
     </div>
   </div>
 {% endblock %}
 
 {% block sidebar %}{% endblock %}
-{% block footer %}{% endblock %}
