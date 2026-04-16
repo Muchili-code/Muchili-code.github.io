@@ -293,6 +293,15 @@ nav:
       - 5.最小二乘法: notes/College 3/1.误差理论和数据处理/期末复习/5-线性测量参数的最小二乘法处理.md
       - 6.回归分析: notes/College 3/1.误差理论和数据处理/期末复习/6-回归分析.md
       - 7.动态测试: notes/College 3/1.误差理论和数据处理/期末复习/7-动态测试.md
+
+    - 生物医学图像处理:
+      - 1.绪论: notes/College 3/2.生物医学图像处理/期末复习/Lecture1.md
+      - 2.图像处理基础: notes/College 3/2.生物医学图像处理/期末复习/Lecture2.md
+      - 3.图像变换: notes/College 3/2.生物医学图像处理/期末复习/Lecture3.md
+      - 4.时域滤波器设计: notes/College 3/2.生物医学图像处理/期末复习/Lecture4.md
+      - 5.图像的 Fourier 变换: notes/College 3/2.生物医学图像处理/期末复习/Lecture5.md
+      - 6.频域滤波: notes/College 3/2.生物医学图像处理/期末复习/Lecture6.md
+      - 7.图像重建: notes/College 3/2.生物医学图像处理/期末复习/Lecture7.md
       
   - 🔍科研经历:
     - research/index.md
