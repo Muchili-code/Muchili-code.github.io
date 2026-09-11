@@ -33,7 +33,7 @@ preview/：截图和 embed.html 本地 iframe 预览页，不被正式首页加�
 
 链接
 Base URL：https://muchilli-ai-lab.aitoken.credit/v1
-开始使用：https://muchilli-ai-lab.aitoken.credit/home
+开始使用：https://muchilli-ai-lab.aitoken.credit/dashboard
 模型与定价：https://muchilli-ai-lab.aitoken.credit/marketplace?tab=models
 文档：https://muchilli-ai-lab.aitoken.credit/docs/
 
