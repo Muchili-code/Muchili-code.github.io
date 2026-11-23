@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="./nav_style.css">
+<script defer src="./nav_script.js"></script>
+
+<div class="nav-page-wrapper">
+
+  <div id="stars"></div><div id="stars2"></div><div id="stars3"></div>
+
+  <nav id="sidebar" class="nav-sidebar" aria-label="导航分类">
+      <div id="resizer-top" class="resizer top"></div>
+      <div class="sidebar-menu">
+          {% for category in categories %}
+          <a href="#{{ category.id }}" class="sidebar-item" aria-label="{{ category.title }}">
+              <span class="sidebar-icon" aria-hidden="true">{{ category.icon }}</span>
+              <span class="sidebar-text">{{ category.title }}</span>
+          </a>
+          {% endfor %}
+      </div>
+      <div id="resizer-bottom" class="resizer bottom"></div>
+      <div class="sidebar-footer">
+          <button id="resetBtn" type="button" class="footer-btn" title="恢复"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path><path d="M3 3v5h5"></path></svg></button>
+          <button id="toggleBtn" type="button" class="footer-btn" title="折叠"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 19l-7-7 7-7m8 14l-7-7 7-7"></path></svg></button>
+      </div>
+  </nav>
+  <main class="nav-main">
+      <div class="header-area">
+          <div class="main-title">我的导航站</div>
+          <div style="font-size: 18px; color: var(--text-sub);">
+              优绩主义挥舞着鞭子，驱使我去追赶每一个领域的领跑者。<br>
+              <span style="font-size: 0.8em; opacity: 0.8;">而漫无目的的奔忙，结局注定是平庸与疲惫。</span>
+          </div>
+      </div>
+
+      {% for category in categories %}
+      <section id="{{ category.id }}" class="category-box" aria-labelledby="{{ category.id }}-title">
+          <div id="{{ category.id }}-title" class="category-title">{{ category.icon }} {{ category.title }}</div>
+          <div class="grid-wrapper">
+              {% for site in category.sites %}
+              <a href="{{ site.url }}" target="_blank" rel="noopener" class="nav-card">
+                  <img loading="lazy" decoding="async" class="icon-img" src="./images/{{ site.icon }}" alt="">
+                  <div class="title">{{ site.title }}</div>
+                  <div class="desc">{{ site.description }}</div>
+              </a>
+              {% endfor %}
+          </div>
+      </section>
+      {% endfor %}
+      <div class="footer-quote"><span id="typing-text">正在加载灵感...</span></div>
+  </main>
+</div>

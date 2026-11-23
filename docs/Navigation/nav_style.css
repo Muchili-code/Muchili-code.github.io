@@ -73,9 +73,13 @@ body > canvas { display: none !important; }
 .header-area { text-align: center; margin-bottom: 50px; }
 .main-title { font-size: 32px; font-weight: 800; margin-bottom: 15px; }
 
-.category-box { background: var(--section-box-bg); backdrop-filter: blur(10px); border-radius: 24px; padding: 25px; margin-bottom: 30px; border: 1px solid var(--card-border);content-visibility: auto; contain-intrinsic-size: 1px 300px; }
-.category-title { font-size: 18px; font-weight: 700; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; padding-left: 5px; scroll-margin-top: 100px; }
+.category-box { background: var(--section-box-bg); backdrop-filter: blur(10px); border-radius: 24px; padding: 25px; margin-bottom: 30px; border: 1px solid var(--card-border);content-visibility: auto; contain-intrinsic-size: 1px 300px; scroll-margin-top: 80px; }
+.category-title { font-size: 18px; font-weight: 700; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; padding-left: 5px; }
 .grid-wrapper { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 12px; }
+
+@media (prefers-reduced-motion: no-preference) {
+    html:has(.nav-page-wrapper) { scroll-behavior: smooth; }
+}
 
 /* 卡片 */
 .nav-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 14px; padding: 12px 8px; display: flex; flex-direction: column; align-items: center; text-align: center; text-decoration: none !important; color: var(--text-main) !important; transition: transform 0.2s, box-shadow 0.2s; overflow: hidden; }

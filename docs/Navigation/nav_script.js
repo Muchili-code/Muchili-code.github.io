@@ -62,16 +62,6 @@ resetBtn.addEventListener('click', () => {
     setTimeout(() => resetBtn.style.transform = "none", 400);
 });
 
-// --- 平滑滚动 ---
-function scrollToId(id) {
-    const element = document.getElementById(id);
-    if (element) {
-        const headerOffset = 80;
-        const offsetPosition = element.getBoundingClientRect().top + window.pageYOffset - headerOffset;
-        window.scrollTo({ top: offsetPosition, behavior: "smooth" });
-    }
-}
-
 // --- 底部文字渐变轮播 ---
 const quotes = [
     "或许国内绝大部分大学的本科教学，不是濒临崩溃，而是早已崩溃",
@@ -94,8 +84,13 @@ setInterval(() => {
 }, 5000);
 
 // --- 默认图标兜底 ---
-const defaultIcon = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='2' y1='12' x2='22' y2='12'%3E%3C/line%3E%3Cpath d='M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z'%3E%3C/path%3E%3C/svg%3E";
-document.querySelectorAll('.icon-img').forEach(img => {
-    img.onerror = function() { this.src = defaultIcon; this.onerror = null; };
-    if (img.complete && img.naturalHeight === 0) { img.src = defaultIcon; }
+document.querySelectorAll('.nav-card .icon-img').forEach(img => {
+    const useDefaultIcon = () => {
+        img.src = './images/default.svg';
+    };
+    if (img.complete && img.naturalHeight === 0) {
+        useDefaultIcon();
+    } else {
+        img.addEventListener('error', useDefaultIcon, { once: true });
+    }
 });

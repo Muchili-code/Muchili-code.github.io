@@ -1,92 +1,545 @@
-{
-  "谷歌翻译": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Google_Translate_logo.svg",
-  "维基百科": "https://upload.wikimedia.org/wikipedia/commons/8/80/Wikipedia-logo-v2.svg",
-  
-  "学在浙大": "https://courses.zju.edu.cn/",
-  "教务网": "http://jwbinfosys.zju.edu.cn/",
-  "素质拓展": "http://st.zju.edu.cn/",
-  "智云课堂": "https://classroom.zju.edu.cn/",
-  "教学资源": "http://zy.zju.edu.cn/",
-  "查老师": "https://chalaoshi.de/static/img/favicon.ico",
-  "浙大图书馆": "http://libweb.zju.edu.cn/",
-  "MOOC": "https://www.icourse163.org/",
-  "智慧树": "https://www.zhihuishu.com/",
-
-  "CC98": "https://www.cc98.org/",
-  "课程攻略": "https://qsct.zju.edu.cn/",
-  "百度翻译": "https://fanyi.baidu.com/",
-  "Zlibrary": "https://z-library.ec/",
-  "zjuers轻首页": "https://zjuers.com/",
-  "Bibilli": "https://www.bilibili.com/",
-  "Simpletex": "https://simpletex.cn/favicon.ico",
-
-  "谷歌学术": "https://scholar.google.com/",
-  "维普网": "https://cqvip.com/favicon.ico",
-  "必应学术": "https://cn.bing.com/academic",
-  "爱学术": "https://www.iresearch.cn/",
-  "WOS": "https://www.webofscience.com/",
-  "中国知网": "https://www.cnki.net/",
-  "百度学术": "https://xueshu.baidu.com/",
-  "万方数据": "https://www.wanfangdata.com.cn/",
-  "Sci-Hub": "https://sci-hub.se/",
-
-  "RVPN": "https://rvpn.zju.edu.cn/",
-  "WebVPN": "https://webvpn.zju.edu.cn/",
-  "上网认证": "http://net.zju.edu.cn/",
-  "网络缴费": "http://cwsf.zju.edu.cn/",
-  "正版软件": "http://ms.zju.edu.cn/favicon.ico",
-  "浙大邮箱": "https://mail.zju.edu.cn/",
-  "浙大云盘": "https://pan.zju.edu.cn/",
-  "服务平台": "http://zuinfo.zju.edu.cn/",
-
-  "ChatGPT": "https://upload.wikimedia.org/wikipedia/commons/e/ef/ChatGPT-Logo.svg", 
-  "Gemini": "https://gemini.google.com/",
-  "AI Studio": "https://aistudio.google.com/",
-  "豆包": "https://www.doubao.com/",
-  "DeepSeek": "https://www.deepseek.com/",
-  "腾讯元宝": "https://yuanbao.tencent.com/",
-  "浙大先生": "https://chat.zju.edu.cn/",
-  "Kimi": "https://kimi.moonshot.cn/",
-  "Claude": "https://claude.ai/",
-  "Zhcat": "https://www.zchat.tech/",
-  "钱多多API": "https://api2.aigcbest.top/favicon.ico",
-  "ChatAnyWhere": "https://api.chatanywhere.tech/favicon.ico",
-
-  "Tbox导航": "https://www.tboxn.com/",
-  "旁门左道PPT": "https://www.pangmenzd.vip/",
-  "个人导航": "https://www.goto-mars.com/favicon.ico",
-  "马小帮": "https://www.maxiaobang.com/",
-  "IT技术之家": "https://www.it168.com/",
-  "FC8软件库": "https://www.fc8.top/",
-  "一个木函": "https://woobx.cn/",
-  "图钉办公": "https://www.tudingyy.com/",
-  "aura": "https://www.aura.build/favicon.ico",
-
-  "GitHub": "https://github.com/",
-  "GitHub CN": "https://www.github-zh.com/",
-  "CS自学指南": "https://csdiy.wiki/",
-  "菜鸟教程": "https://www.runoob.com/",
-  "W3Schools": "https://www.w3schools.com/",
-  "编程指北": "https://csguide.cn/",
-  "爱编程的大丙": "https://subingwen.cn/",
-  "Hello 算法": "https://www.hello-algo.com/",
-  "王道操作系统": "https://space.bilibili.com/95228778?spm_id_from=333.788.upinfo.head.click",
-
-  "浙江大学": "https://www.zju.edu.cn/",
-  "生仪学院": "http://www.cbeis.zju.edu.cn/",
-  "本科生院": "http://bksy.zju.edu.cn/",
-  "心理服务": "http://www.xlzx.zju.edu.cn/",
-  "智慧团建": "https://zhtj.youth.cn/zhtj/",
-  "浙大团委": "http://www.youth.zju.edu.cn/",
-  "竞赛管理": "http://js.zju.edu.cn/",
-  "学信网": "https://www.chsi.com.cn/",
-  "旷野指南": "https://www.feishu.cn/favicon.ico",
-
-  "Overleaf": "https://www.overleaf.com/",
-  "Typora技巧": "https://typora.io/", 
-  "Markdown": "https://markdown.com.cn/",
-  "LaTeX教程": "https://www.latex-project.org/",
-  "LaTeX公式": "https://katex.org/",
-  "我的博客": "https://muchili-code.github.io/",
-  "博客园": "https://www.cnblogs.com/"
-}
+[
+  {
+    "id": "cat-ai",
+    "icon": "🤖",
+    "title": "AI 工具",
+    "sites": [
+      {
+        "title": "Gemini",
+        "url": "https://gemini.google.com/",
+        "description": "Google AI",
+        "icon": "Gemini.png"
+      },
+      {
+        "title": "AI Studio",
+        "url": "https://aistudio.google.com/",
+        "description": "Google Dev",
+        "icon": "AI Studio.png"
+      },
+      {
+        "title": "ChatGPT",
+        "url": "https://chatgpt.com/",
+        "description": "OpenAI",
+        "icon": "ChatGPT.svg"
+      },
+      {
+        "title": "Claude",
+        "url": "https://claude.ai/",
+        "description": "Anthropic",
+        "icon": "Claude.png"
+      },
+      {
+        "title": "千问系列",
+        "url": "https://tongyi.aliyun.com/",
+        "description": "Aliyun",
+        "icon": "qwen.svg"
+      },
+      {
+        "title": "DeepSeek",
+        "url": "https://www.deepseek.com/",
+        "description": "深度求索",
+        "icon": "DeepSeek.png"
+      },
+      {
+        "title": "豆包",
+        "url": "https://www.doubao.com/",
+        "description": "字节跳动",
+        "icon": "豆包.png"
+      },
+      {
+        "title": "Kimi",
+        "url": "https://kimi.moonshot.cn/",
+        "description": "Moonshot Al",
+        "icon": "Kimi.png"
+      },
+      {
+        "title": "腾讯元宝",
+        "url": "https://yuanbao.tencent.com/",
+        "description": "Tecent",
+        "icon": "腾讯元宝.png"
+      },
+      {
+        "title": "浙大先生",
+        "url": "https://chat.zju.edu.cn/",
+        "description": "ZJU官方结合ds推出",
+        "icon": "浙大先生.png"
+      },
+      {
+        "title": "Zchat",
+        "url": "https://www.zchat.tech/",
+        "description": "zju学生自建的AI集合",
+        "icon": "Zhcat.png"
+      },
+      {
+        "title": "ChatAnyWhere",
+        "url": "https://api.chatanywhere.tech/#/shop",
+        "description": "api站点",
+        "icon": "ChatAnyWhere.png"
+      },
+      {
+        "title": "钱多多API",
+        "url": "https://api2.aigcbest.top/",
+        "description": "api站点",
+        "icon": "钱多多API.png"
+      }
+    ]
+  },
+  {
+    "id": "cat-tools",
+    "icon": "🛠",
+    "title": "工具集合",
+    "sites": [
+      {
+        "title": "轻首页",
+        "url": "https://zjuers.com/",
+        "description": "zjuers的轻首页",
+        "icon": "zjuers轻首页.png"
+      },
+      {
+        "title": "轻首页自定义版",
+        "url": "https://zjuers.jiepeng.tech/",
+        "description": "自定义版的轻首页",
+        "icon": "zjuers轻首页.png"
+      },
+      {
+        "title": "Tbox导航",
+        "url": "https://www.tboxn.com/",
+        "description": "工具导航",
+        "icon": "Tbox导航.png"
+      },
+      {
+        "title": "旁门左道PPT",
+        "url": "https://www.pangmenzd.vip/",
+        "description": "PPT资源",
+        "icon": "旁门左道PPT.png"
+      },
+      {
+        "title": "旁门-个人导航",
+        "url": "https://www.goto-mars.com/people/aLYqyNvYvd",
+        "description": "旁门左道的个人导航",
+        "icon": "个人导航.png"
+      },
+      {
+        "title": "马小帮",
+        "url": "https://www.maxiaobang.com/",
+        "description": "效率工具",
+        "icon": "马小帮.png"
+      },
+      {
+        "title": "云渡书舟",
+        "url": "https://nav.sufine.top/",
+        "description": "实用站点导航",
+        "icon": "sufine.png"
+      },
+      {
+        "title": "IT技术之家",
+        "url": "https://www.it168.com/",
+        "description": "技术资讯",
+        "icon": "IT技术之家.png"
+      },
+      {
+        "title": "FC8软件库",
+        "url": "https://www.fc8.top/",
+        "description": "资源下载",
+        "icon": "FC8软件库.png"
+      },
+      {
+        "title": "一个木函",
+        "url": "https://woobx.cn/",
+        "description": "多功能工具",
+        "icon": "一个木函.png"
+      },
+      {
+        "title": "图钉办公",
+        "url": "https://www.tudingyy.com/",
+        "description": "办公助手",
+        "icon": "图钉办公.png"
+      },
+      {
+        "title": "Aura",
+        "url": "https://www.aura.build/",
+        "description": "前端页面模板集合",
+        "icon": "aura.png"
+      }
+    ]
+  },
+  {
+    "id": "cat-study",
+    "icon": "📖",
+    "title": "学习资源",
+    "sites": [
+      {
+        "title": "Bibilli搜索版",
+        "url": "https://search.bilibili.com/all?vt=76243560",
+        "description": "仅搜索引擎的b站",
+        "icon": "bilibili.png"
+      },
+      {
+        "title": "YouTube",
+        "url": "https://www.youtube.com/",
+        "description": "视频教程与公开课",
+        "icon": "YouTube.png"
+      },
+      {
+        "title": "CC98",
+        "url": "https://www.cc98.org/",
+        "description": "ZJUers的校内论坛",
+        "icon": "cc98-1.png"
+      },
+      {
+        "title": "Zlibrary",
+        "url": "https://z-library.ec",
+        "description": "电子书库",
+        "icon": "Zlibrary.png"
+      },
+      {
+        "title": "百度翻译",
+        "url": "https://fanyi.baidu.com/",
+        "description": "在线翻译",
+        "icon": "百度翻译.png"
+      },
+      {
+        "title": "谷歌翻译",
+        "url": "https://translate.google.com/",
+        "description": "谷歌翻译网站",
+        "icon": "谷歌翻译.svg"
+      }
+    ]
+  },
+  {
+    "id": "cat-cs",
+    "icon": "💻",
+    "title": "计算机学习",
+    "sites": [
+      {
+        "title": "GitHub",
+        "url": "https://github.com/",
+        "description": "全球最大计算机平台",
+        "icon": "GitHub.png"
+      },
+      {
+        "title": "GitHub CN",
+        "url": "https://www.github-zh.com/",
+        "description": "GitHub的中文社区",
+        "icon": "GitHub CN.png"
+      },
+      {
+        "title": "菜鸟教程",
+        "url": "https://www.runoob.com/",
+        "description": "基础技术教程",
+        "icon": "菜鸟教程.png"
+      },
+      {
+        "title": "W3Schools",
+        "url": "https://www.w3schools.com/",
+        "description": "Web开发教程",
+        "icon": "W3Schools.png"
+      },
+      {
+        "title": "CS自学指南",
+        "url": "https://csdiy.wiki/",
+        "description": "自学百科全书",
+        "icon": "CS自学指南.png"
+      },
+      {
+        "title": "编程指北",
+        "url": "https://csguide.cn/",
+        "description": "校招/路线图",
+        "icon": "编程指北.png"
+      },
+      {
+        "title": "爱编程的大丙",
+        "url": "https://subingwen.cn/",
+        "description": "C++/Linux",
+        "icon": "爱编程的大丙.png"
+      },
+      {
+        "title": "Hello 算法",
+        "url": "https://www.hello-algo.com/",
+        "description": "动画图解算法",
+        "icon": "Hello 算法.png"
+      },
+      {
+        "title": "王道操作系统",
+        "url": "https://space.bilibili.com/95228778?spm_id_from=333.788.upinfo.head.click",
+        "description": "BiliBili资源",
+        "icon": "王道操作系统.png"
+      }
+    ]
+  },
+  {
+    "id": "cat-research",
+    "icon": "🔬",
+    "title": "科研相关",
+    "sites": [
+      {
+        "title": "科研工具",
+        "url": "https://5j5gl7zvzxk66.ok.kimi.link/index.html",
+        "description": "详细的科研工具合集",
+        "icon": "default.svg"
+      },
+      {
+        "title": "谷歌学术",
+        "url": "https://scholar.google.com/",
+        "description": "Google Scholar",
+        "icon": "谷歌学术.png"
+      },
+      {
+        "title": "维普网",
+        "url": "http://cqvip.com/",
+        "description": "期刊论文",
+        "icon": "维普网.png"
+      },
+      {
+        "title": "必应学术",
+        "url": "https://cn.bing.com/academic",
+        "description": "Bing Scholar",
+        "icon": "必应学术.png"
+      },
+      {
+        "title": "爱学术",
+        "url": "https://www.iresearch.cn/",
+        "description": "学术导航",
+        "icon": "爱学术.png"
+      },
+      {
+        "title": "WOS",
+        "url": "https://www.webofscience.com/",
+        "description": "SCI检索",
+        "icon": "WOS.png"
+      },
+      {
+        "title": "中国知网",
+        "url": "https://www.cnki.net/",
+        "description": "中文文献",
+        "icon": "中国知网.png"
+      },
+      {
+        "title": "百度学术",
+        "url": "https://xueshu.baidu.com/",
+        "description": "文献搜索",
+        "icon": "百度学术.png"
+      },
+      {
+        "title": "万方数据",
+        "url": "https://www.wanfangdata.com.cn/",
+        "description": "学术期刊",
+        "icon": "万方数据.png"
+      },
+      {
+        "title": "Sci-Hub",
+        "url": "https://sci-hub.se/",
+        "description": "文献下载",
+        "icon": "Sci-Hub.png"
+      }
+    ]
+  },
+  {
+    "id": "cat-teach",
+    "icon": "📚",
+    "title": "教学管理",
+    "sites": [
+      {
+        "title": "学在浙大",
+        "url": "https://courses.zju.edu.cn/",
+        "description": "课程平台",
+        "icon": "学在浙大.png"
+      },
+      {
+        "title": "教务网",
+        "url": "https://zdbk.zju.edu.cn/",
+        "description": "教学管理相关的网站",
+        "icon": "zju.png"
+      },
+      {
+        "title": "素质拓展",
+        "url": "https://sztz.zju.edu.cn/dekt/",
+        "description": "浙江大学素拓网站",
+        "icon": "素质拓展.png"
+      },
+      {
+        "title": "智云课堂",
+        "url": "https://classroom.zju.edu.cn/",
+        "description": "课程回放",
+        "icon": "浙江大学.png"
+      },
+      {
+        "title": "教学资源",
+        "url": "https://jxzygl.zju.edu.cn/",
+        "description": "资源管理",
+        "icon": "教学资源.png"
+      },
+      {
+        "title": "“查老师”集合",
+        "url": "https://muchili-code.github.io/Miscellaneous/chalaoshi/chalaoshi/",
+        "description": "教师评价",
+        "icon": "查老师.png"
+      },
+      {
+        "title": "浙大图书馆",
+        "url": "http://libweb.zju.edu.cn/",
+        "description": "资源检索",
+        "icon": "浙江大学.png"
+      },
+      {
+        "title": "MOOC",
+        "url": "https://www.icourse163.org/",
+        "description": "慕课网",
+        "icon": "MOOC.png"
+      },
+      {
+        "title": "智慧树",
+        "url": "https://www.zhihuishu.com/",
+        "description": "网课平台",
+        "icon": "智慧树.png"
+      }
+    ]
+  },
+  {
+    "id": "cat-info",
+    "icon": "📡",
+    "title": "信息服务",
+    "sites": [
+      {
+        "title": "RVPN",
+        "url": "https://rvpn.zju.edu.cn/",
+        "description": "校外访问",
+        "icon": "RVPN.png"
+      },
+      {
+        "title": "WebVPN",
+        "url": "https://webvpn.zju.edu.cn/",
+        "description": "网页VPN",
+        "icon": "WebVPN.png"
+      },
+      {
+        "title": "上网认证",
+        "url": "http://net3.zju.edu.cn/",
+        "description": "校园网连接",
+        "icon": "上网认证.png"
+      },
+      {
+        "title": "网络缴费",
+        "url": "https://myvpn.zju.edu.cn/",
+        "description": "学杂费",
+        "icon": "网络缴费.png"
+      },
+      {
+        "title": "正版软件",
+        "url": "http://ms.zju.edu.cn/",
+        "description": "OS/Office",
+        "icon": "正版软件.png"
+      },
+      {
+        "title": "浙大邮箱",
+        "url": "https://mail.zju.edu.cn/",
+        "description": "Student Mail",
+        "icon": "浙大邮箱.png"
+      },
+      {
+        "title": "浙大云盘",
+        "url": "https://pan.zju.edu.cn/",
+        "description": "文件存储",
+        "icon": "浙大云盘.png"
+      },
+      {
+        "title": "服务平台",
+        "url": "https://service.zju.edu.cn/_s2/cs_sy/main.psp",
+        "description": "综合服务",
+        "icon": "浙江大学.png"
+      },
+      {
+        "title": "ETA",
+        "url": "https://eta.zju.edu.cn/",
+        "description": "三全育人平台",
+        "icon": "浙江大学.png"
+      },
+      {
+        "title": "就业服务",
+        "url": "https://www.career.zju.edu.cn/",
+        "description": "浙江大学就业指导与服务中心",
+        "icon": "浙江大学.png"
+      }
+    ]
+  },
+  {
+    "id": "cat-zju-other",
+    "icon": "🏫",
+    "title": "浙大 · 其他",
+    "sites": [
+      {
+        "title": "浙江大学",
+        "url": "https://www.zju.edu.cn/",
+        "description": "官方主页",
+        "icon": "浙江大学.png"
+      },
+      {
+        "title": "生仪学院",
+        "url": "http://www.cbeis.zju.edu.cn/",
+        "description": "生物医学工程",
+        "icon": "生仪学院.png"
+      },
+      {
+        "title": "本科生院",
+        "url": "http://bksy.zju.edu.cn/",
+        "description": "教学管理",
+        "icon": "本科生院.png"
+      },
+      {
+        "title": "心理服务",
+        "url": "http://www.xlzx.zju.edu.cn/",
+        "description": "心理健康中心",
+        "icon": "心理服务.png"
+      },
+      {
+        "title": "智慧团建",
+        "url": "https://zhtj.youth.cn/zhtj/",
+        "description": "网上共青团",
+        "icon": "智慧团建.png"
+      },
+      {
+        "title": "浙大团委",
+        "url": "http://www.youth.zju.edu.cn/",
+        "description": "团委官网",
+        "icon": "浙江大学.png"
+      },
+      {
+        "title": "竞赛管理",
+        "url": "http://kyjs.zju.edu.cn/preview#/preview",
+        "description": "学科竞赛",
+        "icon": "竞赛管理.png"
+      },
+      {
+        "title": "学信网",
+        "url": "https://www.chsi.com.cn/",
+        "description": "学籍查询",
+        "icon": "学信网.png"
+      },
+      {
+        "title": "旷野指南",
+        "url": "https://ai.feishu.cn/wiki/VSe1wM70mi6WPBkW8VCc3CCOn7g",
+        "description": "大学探索",
+        "icon": "旷野指南.png"
+      }
+    ]
+  },
+  {
+    "id": "cat-my",
+    "icon": "🏠",
+    "title": "我的站点",
+    "sites": [
+      {
+        "title": "我的个人博客",
+        "url": "https://muchili-code.github.io/",
+        "description": "返回主页",
+        "icon": "我的博客.png"
+      },
+      {
+        "title": "我的博客园",
+        "url": "https://www.cnblogs.com/Muchilli/",
+        "description": "返回",
+        "icon": "博客园.png"
+      }
+    ]
+  }
+]
