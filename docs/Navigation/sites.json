@@ -29,9 +29,15 @@
         "icon": "Claude.png"
       },
       {
-        "title": "千问系列",
-        "url": "https://tongyi.aliyun.com/",
-        "description": "Aliyun",
+        "title": "Grok",
+        "url": "https://grok.com/",
+        "description": "AI 对话助手",
+        "icon": "Grok.svg"
+      },
+      {
+        "title": "通义千问",
+        "url": "https://www.qianwen.com/",
+        "description": "阿里 AI 助手",
         "icon": "qwen.svg"
       },
       {
@@ -51,6 +57,36 @@
         "url": "https://kimi.moonshot.cn/",
         "description": "Moonshot Al",
         "icon": "Kimi.png"
+      },
+      {
+        "title": "GLM（智谱）",
+        "url": "https://chat.z.ai/",
+        "description": "智谱模型对话",
+        "icon": "GLM.svg"
+      },
+      {
+        "title": "MiniMax",
+        "url": "https://minimax.cn/",
+        "description": "大模型与 AI 工具",
+        "icon": "MiniMax.ico"
+      },
+      {
+        "title": "小米 MiMo",
+        "url": "https://aistudio.xiaomimimo.com/",
+        "description": "MiMo Studio 模型体验",
+        "icon": "MiMo.ico"
+      },
+      {
+        "title": "文心一言",
+        "url": "https://wenxin.baidu.com/",
+        "description": "百度文心助手",
+        "icon": "Wenxin.svg"
+      },
+      {
+        "title": "腾讯混元",
+        "url": "https://hy.tencent.com/",
+        "description": "腾讯自研大模型",
+        "icon": "Hunyuan.png"
       },
       {
         "title": "腾讯元宝",
