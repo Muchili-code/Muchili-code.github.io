@@ -187,6 +187,12 @@
         "icon": "cc98-1.png"
       },
       {
+        "title": "X（Twitter）",
+        "url": "https://x.com/",
+        "description": "技术动态与社区讨论",
+        "icon": "X.png"
+      },
+      {
         "title": "Zlibrary",
         "url": "https://z-library.ec",
         "description": "电子书库",
