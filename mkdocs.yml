@@ -98,7 +98,6 @@ extra_css:
   - css/header.css
   #- css/palette.css
   - css/sidebar.css
-  - css/timeline.css
   - css/extra.css
   - css/adaptation.css
   - css/extra_changelog.css

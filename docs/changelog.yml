@@ -1,4 +1,8 @@
 - "2026":
+  - "2026-11-23":
+    - "pageupdate":
+        text: 重构导航站结构，将站点清单与页面模板拆分，让维护逻辑更清晰。新增 MkDocs 构建钩子，自动根据站点清单生成侧栏和导航卡片。
+        href: /Navigation/navigation.html
   - "2026-02-09":
     - "pageupdate":
         text: 优化首页的内容排版，完成背景图的移动、放大和背景图与背景色的渐变
@@ -11,8 +15,7 @@
     - "pageupdate":
         text: 改回 material 主题，优化 UI
         href: /
-    - "function":
-        text: 增加 git 追踪和图片查看功能
+    - "function": 增加 git 追踪和图片查看功能
 
 - "2025":
   - "2025-12-18":
@@ -34,19 +37,19 @@
   - "2025-11-29":
     - "newpage":
         text: 增加了自己的网址页导航
-        href: /Navigation/
+        href: /Navigation/navigation.html
   - "2025-11-18":
     - "pageupdate":
         text: 添加误差理论的笔记
-        href: /notes/College 3/1.误差理论和数据处理/期末复习/
+        href: /indices/College3/Error%20Theory/index.html
   - "2025-11-14":
     - "pageupdate":
         text: 添加嵌入式系统的笔记
-        href: /notes/College 3/1.嵌入式系统/自己笔记/1-导论/
+        href: /notes/College 3/1.嵌入式系统/自己笔记/1-导论.html
   - "2025-08-12":
     - "pageupdate":
         text: 添加数据结构的笔记
-        href: /notes/College 2/2.数据结构与算法分析（FDS）-Fundemental Data Structure/期末复习/自己笔记/0.基础语法知识/
+        href: /notes/College 2/2.数据结构与算法分析（FDS）-Fundemental Data Structure/期末复习/自己笔记/0.基础语法知识.html
   - "2025-08-11":
     - "function":
         text: 增加了网站的一些功能
